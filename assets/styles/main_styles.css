@@ -1,0 +1,187 @@
+:root {
+  --color-white: #fff;
+  --color-smoke: #f4f5f8;
+  --color-silver: #bbc4d2;
+  --color-shadow: #637695;
+  --color-grey: #858e97;
+  --color-grey-20: #bdc4d0;
+  --color-grey-40: #848d9e;
+  --color-grey-45: #6d7687;
+  --color-grey-55: #596072;
+  --color-darkGrey: #56616a;
+  --color-midnight: #2a2d38;
+  --color-darkMidnight: #17191f;
+  --color-black: #06070a;
+  --color-social-share: #ededed;
+  --color-article-about: #f6f6f6;
+  --color-error: #d82b2b;
+  --color-cardGrey: #212328;
+  --color-cardGreyHover: #282a30;
+  --color-textSelection: #dcecf4;
+  --color-headerWhite: #ffffff80;
+  --color-headerDark: #17191f80;
+  --color-lightGrey: #f3f4f6;
+  --ease: cubic-bezier(1, 0, 0, 1);
+  --ease-out: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-in: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  --default: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --easeOutExpo: cubic-bezier(0.16, 1, 0.3, 1);
+  --easeInExpo: cubic-bezier(0.7, 0, 0.84, 0);
+  --z-card: 103;
+  --z-header: 102;
+  --z-popup: 101;
+  --menu-follow-delay: 0ms;
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navbar-mine {
+  background: rgba(255, 255, 255, 0.5); /* semi-transparent white */
+  backdrop-filter: blur(10px); /* blur effect behind */
+  -webkit-backdrop-filter: blur(10px);
+  font-family: "Universal Sans PU", system-ui, -apple-system, Segoe UI, Roboto,
+    Arial, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 80px;
+  width: 100%;
+  max-width: 1700px;
+  opacity: 100%;
+}
+
+.navbar-container-mine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+  padding: 0.5rem 2rem;
+}
+.navbar-logo-mine {
+  color: #0a0909;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.2s;
+}
+.navbar-logo-mine span {
+  color: #00c6ff;
+}
+.navbar-menu-mine {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.navbar-menu-mine li a {
+  position: relative;
+  display: inline-block;
+  color: #060606;
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-menu-mine li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: silver;
+  transition: width 0.3s ease;
+}
+
+.navbar-menu-mine li a:hover::after {
+  width: 100%;
+}
+
+.navbar-toggle-mine {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  z-index: 300;
+  position: relative;
+  width: 28px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.navbar-toggle-mine span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #060606;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+  transform-origin: center;
+}
+
+.navbar-toggle-mine.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.navbar-toggle-mine.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle-mine.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar-mine {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+  }
+  .navbar-menu-mine {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: calc(100vh - 80px);
+    background: #000;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    z-index: 200;
+    margin: 0;
+    padding: 2rem 0;
+    overflow-y: auto;
+    display: none; /* Initially hidden on mobile */
+  }
+
+  .navbar-menu-mine.active {
+    display: flex; /* Show when active */
+  }
+
+  .navbar-menu-mine li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-menu-mine li a {
+    color: #fff !important;
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: block;
+  }
+
+  .navbar-toggle-mine {
+    display: flex;
+  }
+}
