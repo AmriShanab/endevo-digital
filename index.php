@@ -458,7 +458,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <!-- Left Column (col-lg-5) -->
+            
             <div class="col-lg-5 col-md-12">
                 <div class="footer-contact">
                     <h2 class="footer-lets-talk">LET'S TALK</h2>
