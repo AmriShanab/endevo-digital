@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title> <!-- Always include a title -->
+    <title>Endevo Digital</title> <!-- Always include a title -->
     <link rel="stylesheet" href="assets/styles/main_styles.css">
     <link rel="stylesheet" href="assets/styles/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -509,8 +509,8 @@
                             </ul>
                         </div>
 
-                        <!-- Badges Section -->
-                        <!-- <div class="footer-badges">
+                        
+                         <div class="footer-badges">
                             
                             <div class="badge-item">
                                 <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
@@ -519,7 +519,7 @@
 
 
                             <div class="badge-item">
-                                <div class="trustpilot-widget" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="689e403d944373452ddd6e37" data-style-height="52px" data-style-width="100%" data-token="c322e6d0-8ab1-4ed5-a8a8-47571f14e7f3">
+                                <div class="trustpilot-widget" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="689e403d944373452ddd6e37" data-style-height="40px" data-style-width="100%" data-token="c322e6d0-8ab1-4ed5-a8a8-47571f14e7f3">
                                     <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener">Trustpilot</a>
                                 </div>
                             </div>
@@ -534,7 +534,7 @@
                             <div class="badge-item placeholder-badge">
                                 
                             </div>
-                        </div> -->
+                        </div> 
 
                         <!-- Copyright and Legal -->
                         <div class="footer-legal">
