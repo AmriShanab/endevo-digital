@@ -327,3 +327,11 @@
         color: #00c6ff;
     }
 }
+
+.navbar-mine {
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.navbar-mine.navbar-hidden {
+    transform: translateY(-100%);
+}

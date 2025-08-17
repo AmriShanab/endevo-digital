@@ -509,9 +509,9 @@
                             </ul>
                         </div>
 
-                        
-                         <div class="footer-badges">
-                            
+
+                        <div class="footer-badges">
+
                             <div class="badge-item">
                                 <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
                                 <div data-designrush-widget data-agency-id="99274" data-style="dark" aria-label="DesignRush agency reviews section"></div>
@@ -524,17 +524,17 @@
                                 </div>
                             </div>
 
-                            
+
                             <div class="badge-item clutch-badge">
                                 <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
                                 <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-nofollow="false" data-expandifr="true" data-scale="100" data-clutchcompany-id="2551338"></div>
                             </div>
 
-                            
+
                             <div class="badge-item placeholder-badge">
-                                
+
                             </div>
-                        </div> 
+                        </div>
 
                         <!-- Copyright and Legal -->
                         <div class="footer-legal">
@@ -566,101 +566,156 @@
     <script src="assets/scripts/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Navbar Toggle Functionality
-            const initNavbar = () => {
-                const toggleBtn = document.getElementById('navbarToggle');
-                const menu = document.getElementById('navbarMenu');
-                const navbar = document.querySelector('.navbar-mine');
+    // Navbar Toggle Functionality
+    const initNavbar = () => {
+        const toggleBtn = document.getElementById('navbarToggle');
+        const menu = document.getElementById('navbarMenu');
+        const navbar = document.querySelector('.navbar-mine');
 
-                if (!toggleBtn || !menu || !navbar) return;
+        if (!toggleBtn || !menu || !navbar) return;
 
-                const toggleMenu = () => {
-                    const isActive = menu.classList.toggle('active');
-                    toggleBtn.classList.toggle('active', isActive);
-                    navbar.classList.toggle('active-background', isActive);
-                    document.querySelector('.mobile-social-container').style.display = isActive ? 'block' : 'none';
-                    document.body.style.overflow = isActive ? 'hidden' : '';
-                };
-                toggleBtn.addEventListener('click', toggleMenu);
+        const toggleMenu = () => {
+            const isActive = menu.classList.toggle('active');
+            toggleBtn.classList.toggle('active', isActive);
+            navbar.classList.toggle('active-background', isActive);
+            document.querySelector('.mobile-social-container').style.display = isActive ? 'block' : 'none';
+            document.body.style.overflow = isActive ? 'hidden' : '';
+        };
 
-                // Close menu when clicking on links (mobile only)
-                document.querySelectorAll('.navbar-menu-mine a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        if (window.innerWidth <= 768) {
-                            toggleMenu();
-                        }
-                    });
-                });
-            };
+        toggleBtn.addEventListener('click', toggleMenu);
 
-            // Accordion Functionality
-            const initAccordion = () => {
-                document.querySelectorAll('.service-btn').forEach(button => {
-                    button.addEventListener('click', () => {
-                        const serviceItem = button.closest('.service-item');
-                        if (!serviceItem) return;
-
-                        const isActive = serviceItem.classList.toggle('active');
-                        const icon = button.querySelector('.toggle-icon');
-
-                        // Toggle icon
-                        if (icon) {
-                            icon.textContent = isActive ? '−' : '+';
-                        }
-
-                        // Close other items if this one is opening
-                        if (isActive) {
-                            document.querySelectorAll('.service-item').forEach(item => {
-                                if (item !== serviceItem && item.classList.contains('active')) {
-                                    item.classList.remove('active');
-                                    const otherIcon = item.querySelector('.toggle-icon');
-                                    if (otherIcon) otherIcon.textContent = '+';
-                                }
-                            });
-                        }
-                    });
-                });
-            };
-
-            // Dropdown Links Functionality
-            const initDropdowns = () => {
-                document.querySelectorAll('.dropdown-link').forEach(link => {
-                    link.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        const isOpen = this.classList.toggle('open');
-                        const icon = this.querySelector('.toggle-icon');
-
-                        if (icon) {
-                            icon.textContent = isOpen ? '−' : '+';
-                        }
-                    });
-                });
-            };
-
-            // Window Resize Handler
-            const handleResize = () => {
-                if (window.innerWidth > 768) {
-                    const menu = document.getElementById('navbarMenu');
-                    const toggleBtn = document.getElementById('navbarToggle');
-                    const navbar = document.querySelector('.navbar-mine');
-
-                    if (menu && toggleBtn && navbar) {
-                        menu.classList.remove('active');
-                        toggleBtn.classList.remove('active');
-                        navbar.classList.remove('active-background');
-                        document.body.style.overflow = '';
-                    }
+        // Close menu when clicking on links (mobile only)
+        document.querySelectorAll('.navbar-menu-mine a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    toggleMenu();
                 }
-            };
-
-            // Initialize all components
-            initNavbar();
-            initAccordion();
-            initDropdowns();
-
-            // Add resize event listener
-            window.addEventListener('resize', handleResize);
+            });
         });
+    };
+
+    // Scroll hide/show functionality
+    const initScrollBehavior = () => {
+        const navbar = document.querySelector('.navbar-mine');
+        if (!navbar) return;
+
+        let lastScroll = 0;
+        let scrollTimeout;
+        const hideClass = 'navbar-hidden';
+        const scrollThreshold = 100; // How far to scroll before considering hide
+        const hideDelay = 1000; // 1 second after scrolling stops to hide navbar
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Always show navbar at top of page
+            if (currentScroll <= 0) {
+                navbar.classList.remove(hideClass);
+                clearTimeout(scrollTimeout);
+                return;
+            }
+
+            // Don't hide if mobile menu is open
+            if (navbar.classList.contains('active-background')) {
+                return;
+            }
+
+            // Clear any pending hide timeout
+            clearTimeout(scrollTimeout);
+
+            // Show navbar when scrolling (in any direction)
+            navbar.classList.remove(hideClass);
+
+            // Set timeout to hide navbar after scrolling stops
+            scrollTimeout = setTimeout(() => {
+                if (currentScroll > scrollThreshold) {
+                    navbar.classList.add(hideClass);
+                }
+            }, hideDelay);
+
+            lastScroll = currentScroll;
+        });
+    };
+
+    // Add this CSS to your stylesheet
+    /*
+    .navbar-mine {
+        transition: transform 0.3s ease;
+    }
+    .navbar-mine.navbar-hidden {
+        transform: translateY(-100%);
+    }
+    */
+
+    // Accordion Functionality
+    const initAccordion = () => {
+        document.querySelectorAll('.service-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const serviceItem = button.closest('.service-item');
+                if (!serviceItem) return;
+
+                const isActive = serviceItem.classList.toggle('active');
+                const icon = button.querySelector('.toggle-icon');
+
+                // Toggle icon
+                if (icon) {
+                    icon.textContent = isActive ? '−' : '+';
+                }
+
+                // Close other items if this one is opening
+                if (isActive) {
+                    document.querySelectorAll('.service-item').forEach(item => {
+                        if (item !== serviceItem && item.classList.contains('active')) {
+                            item.classList.remove('active');
+                            const otherIcon = item.querySelector('.toggle-icon');
+                            if (otherIcon) otherIcon.textContent = '+';
+                        }
+                    });
+                }
+            });
+        });
+    };
+
+    // Dropdown Links Functionality
+    const initDropdowns = () => {
+        document.querySelectorAll('.dropdown-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const isOpen = this.classList.toggle('open');
+                const icon = this.querySelector('.toggle-icon');
+
+                if (icon) {
+                    icon.textContent = isOpen ? '−' : '+';
+                }
+            });
+        });
+    };
+
+    // Window Resize Handler
+    const handleResize = () => {
+        if (window.innerWidth > 768) {
+            const menu = document.getElementById('navbarMenu');
+            const toggleBtn = document.getElementById('navbarToggle');
+            const navbar = document.querySelector('.navbar-mine');
+
+            if (menu && toggleBtn && navbar) {
+                menu.classList.remove('active');
+                toggleBtn.classList.remove('active');
+                navbar.classList.remove('active-background');
+                document.body.style.overflow = '';
+            }
+        }
+    };
+
+    // Initialize all components
+    initNavbar();
+    initScrollBehavior();
+    initAccordion();
+    initDropdowns();
+
+    // Add resize event listener
+    window.addEventListener('resize', handleResize);
+});
     </script>
 
 </body>
