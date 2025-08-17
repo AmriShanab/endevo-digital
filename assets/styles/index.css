@@ -255,6 +255,7 @@ body {
 @media (max-width: 768px) {
   .image-wrapper {
     border-radius: 12px;
+    align-items: center;
   }
 
   .image-wrapper-ocu {
@@ -263,6 +264,8 @@ body {
 
   .image-wrapper img {
     aspect-ratio: 1/1;
+    align-items: center;
+    margin-left: 25px;
   }
 
   .image-wrapper-ocu img {
