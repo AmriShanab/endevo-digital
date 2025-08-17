@@ -60,14 +60,14 @@
                     <!-- First Image Column -->
                     <div class="col-lg-6 col-md-6 col-12">
                         <div class="image-wrapper hover-zoom">
-                            <img src="assets/images/sample_.jpg" alt="Sample image" class="img-fluid">
+                            <img src="assets/images/wel_image.jpg" alt="Sample image" class="img-fluid">
                         </div>
                     </div>
 
                     <!-- Second Image Column - offset slightly down -->
                     <div class="col-lg-6 col-md-6 col-12 offset-image">
                         <div class="image-wrapper hover-zoom">
-                            <img src="assets/images/sample_1.jpg" alt="Sample image 2" class="img-fluid">
+                            <img src="assets/images/wel_image_2.jpg" alt="Sample image 2" class="img-fluid">
                         </div>
                     </div>
                 </div>
