@@ -272,6 +272,10 @@ body {
     margin: 0 auto; /* center it */
     display: block;
   }
+
+  .image-wrapper-mt-top{
+    margin-top: 20px !important;
+  }
   .row {
     --bs-gutter-x: 1.5rem;
   }
@@ -459,7 +463,7 @@ body {
 
 .welcome-container-left h2 {
   font-size: clamp(2.5rem, 6vw, 4rem);
-  font-weight: 800;
+  font-weight: 750;
   color: #111;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
@@ -612,14 +616,26 @@ body {
 
   .welcome-container-right h2 {
     text-align: left !important;
-    margin-left: 2rem;
+    margin-left: 2.4rem;
     margin-top: -4rem;
   }
 
   .welcome-container-right p {
     margin-left: 2rem;
     margin-top: 10rem;
+    margin-bottom: 10rem;
   }
+
+    .welcome-container-left h2 {
+    text-align: left !important;
+    margin-left: -0.5rem;
+    margin-top: -1rem;
+  }
+
+  /* .welcome-container-left p {
+    /* margin-left: 2rem; */
+    /* margin-top: 10rem; */
+  /* } */
 
   .row-bcgrnd{
     border: 10px solid rgba(255, 255, 255, 0.1) !important;
@@ -1558,5 +1574,12 @@ body {
     .footer-nav ul li {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .badge-item{
+      align-items: center;
+    }
+
+    .clutch-badge div{
+      padding-left: 75px !important;
     }
 }
