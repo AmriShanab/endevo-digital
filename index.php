@@ -22,7 +22,7 @@
             <ul class="navbar-menu-mine" id="navbarMenu">
                 <!-- Regular menu items -->
                 <li><a href="/">Home</a></li>
-                <li><a href="/about.php">About</a></li>
+                <li><a href="about.php">About</a></li>
                 <li><a href="/services.php">Services</a></li>
                 <li><a href="/portfolio.php">Portfolio</a></li>
                 <li><a href="/contact.php">Let's Talk</a></li>
