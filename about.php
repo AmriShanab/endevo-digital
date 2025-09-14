@@ -446,13 +446,11 @@
                 </div>
 
                 <!-- Right Column - Image -->
-                <div class="col-lg-6 col-md-5">
-
-                    <div class="img-container mission-image" data-aos="fade-left" data-aos-delay="200">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Our Team">
-                    </div>
-
-                </div>
+               <div class="col-lg-6 col-md-5">
+  <div class="mission-video" data-aos="fade-right" data-aos-delay="200">
+    <video src="assets/videos/mision.mp4" autoplay muted loop playsinline></video>
+  </div>
+</div>
             </div>
         </div>
     </section>
@@ -864,7 +862,33 @@
             }
         });
     </script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.querySelector(".mission-video video");
+  if (!video) return;
 
+  // --- Autoplay fallback for mobile/desktop ---
+  video.play().catch(() => {
+    const resumePlay = () => {
+      video.play();
+      document.removeEventListener("click", resumePlay);
+      document.removeEventListener("touchstart", resumePlay);
+    };
+    document.addEventListener("click", resumePlay);
+    document.addEventListener("touchstart", resumePlay);
+  });
+
+  // --- Hover behavior (only for desktop screens) ---
+  if (window.innerWidth > 768) {
+    video.addEventListener("mouseenter", () => {
+      video.pause();
+    });
+    video.addEventListener("mouseleave", () => {
+      video.play();
+    });
+  }
+});
+</script>
 
 
 </body>

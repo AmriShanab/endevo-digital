@@ -2,7 +2,7 @@
 .about-hero {
   padding: 8rem 0;
   background-color: var(--color-black);
-  border-radius: 10px;
+  /* border-radius: 20px; */
   margin-top: -80px;
 }
 
@@ -900,4 +900,18 @@
 .company-logo {
   max-height: 90px;
   object-fit: contain;
+}
+
+.mission-video {
+  max-width: 550px;   /* Reduce overall width */
+  margin: 0 auto;     /* Center it */
+  border-radius: 12px; /* Optional rounded corners */
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Nice subtle shadow */
+}
+
+.mission-video video {
+  width: 100%;
+  height: auto;
+  display: block;
 }
