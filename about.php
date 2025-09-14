@@ -271,32 +271,31 @@
         }
 
         .video-container {
-  position: relative;
-  overflow: hidden;
-  border-radius: 16px;
-  cursor: pointer;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-}
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
 
-.video-container video {
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  object-fit: cover;
-  transition: transform 0.4s ease, filter 0.4s ease;
-}
+        .video-container video {
+            width: 100%;
+            height: 700px;
+            border-radius: 16px;
+            object-fit: cover;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
 
-/* Hover effect */
-.video-container:hover {
-  transform: translateY(-5px);
-}
+        /* Hover effect */
+        .video-container:hover {
+            transform: translateY(-5px);
+        }
 
-.video-container:hover video {
-  transform: scale(1.05);
-  filter: brightness(1.1);
-}
-
+        .video-container:hover video {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
     </style>
 </head>
 
@@ -837,34 +836,34 @@
     </script>
 
     <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const video = document.querySelector(".video-container video");
+        document.addEventListener("DOMContentLoaded", () => {
+            const video = document.querySelector(".video-container video");
 
-    if (video) {
-      video.muted = true; // required for autoplay
-      video.loop = true;
+            if (video) {
+                video.muted = true; // required for autoplay
+                video.loop = true;
 
-      function initVideo() {
-        if (window.innerWidth <= 768) {
-          // Mobile: autoplay
-          video.play().catch(err => console.log("Autoplay blocked:", err));
-        } else {
-          // Desktop: play on hover
-          video.addEventListener("mouseenter", () => video.play());
-          video.addEventListener("mouseleave", () => {
-            video.pause();
-            video.currentTime = 0;
-          });
-        }
-      }
+                function initVideo() {
+                    if (window.innerWidth <= 768) {
+                        // Mobile: autoplay
+                        video.play().catch(err => console.log("Autoplay blocked:", err));
+                    } else {
+                        // Desktop: play on hover
+                        video.addEventListener("mouseenter", () => video.play());
+                        video.addEventListener("mouseleave", () => {
+                            video.pause();
+                            video.currentTime = 0;
+                        });
+                    }
+                }
 
-      initVideo();
+                initVideo();
 
-      // Re-check when resizing (mobile ↔ desktop)
-      window.addEventListener("resize", initVideo);
-    }
-  });
-</script>
+                // Re-check when resizing (mobile ↔ desktop)
+                window.addEventListener("resize", initVideo);
+            }
+        });
+    </script>
 
 
 
