@@ -338,7 +338,7 @@
 
 /* Navbar Logo Image Styling */
 .navbar-logo-mine img {
-  max-height: 70px;         /* Keeps navbar height balanced */
+  max-height: 60px;         /* Keeps navbar height balanced */
   width: auto;              /* Keeps aspect ratio */
   object-fit: contain;      /* Prevents distortion */
   display: block;           /* Removes inline gap issues */
