@@ -638,11 +638,12 @@
     color: #0077b6;
 }
 
-/* Badges Section */
 .footer-badges {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 2rem;
+    justify-items: center; /* center logos horizontally */
+    align-items: center;   /* center logos vertically */
     margin-bottom: 3rem;
 }
 
@@ -650,30 +651,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 140px;
-    /* background: rgba(255, 255, 255, 0.7); */
+    min-height: 140px; /* all badges same height */
+    padding: 0.5rem;
     border-radius: 8px;
-    /* padding: 0.5rem; */
     transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
-.goodfirm-widget {
-  margin-top: 30px !important;
+.badge-item img {
+    max-width: 200px; /* same size for all logos */
+    max-height: 140px;
+    width: auto;
+    height: auto;
 }
 
-.trustpilot-widget {
-  margin-top: 60px !important;
-}
 
 .badge-item:hover {
     transform: translateY(-3px);
 }
 
-.placeholder-badge {
-    background: rgba(0, 0, 0, 0.05);
-    border: 1px dashed rgba(0, 0, 0, 0.1);
+/* Remove unnecessary margin hack */
+.teech {
+    margin-left: -125px !important;
 }
-
 /* Legal Section */
 .footer-legal {
     display: flex;
@@ -722,6 +722,10 @@
     .footer-section {
         padding: 4rem 0 2rem;
     }
+
+    .teech {
+      margin-left: 0 !important;
+    }
     
     .footer-contact, .footer-right-content {
         padding: 0 1rem;
@@ -758,6 +762,8 @@
 }
 
 .badge-item img {
-    max-width: 120px  !important;
-    height: auto !important;
+    max-width: 200px; /* same size for all logos */
+    max-height: 140px;
+    width: auto;
+    height: auto;
 }

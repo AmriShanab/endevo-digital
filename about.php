@@ -657,38 +657,41 @@
                         </div>
 
 
-                        <div class="footer-badges">
-
-                            <div class="badge-item">
-                                <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
-                                <div data-designrush-widget data-agency-id="99274" data-style="dark" aria-label="DesignRush agency reviews section"></div>
-                            </div>
-
-
-                       
-
-
-                            <div class="badge-item clutch-badge">
-                                <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
-                                <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-nofollow="false" data-expandifr="true" data-scale="100" data-clutchcompany-id="2551338"></div>
-                            </div>
-                                <div class="badge-item">
-                               
-                            <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener"><img src="assets/images/trustpilot-removebg-preview.png" alt=""></a>
-                           
+                          <div class="footer-badges">
+                        <div class="badge-item">
+                            <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
+                            <div data-designrush-widget data-agency-id="99274" data-style="dark" aria-label="DesignRush agency reviews section"></div>
                         </div>
 
-
-                          <div class="badge-item">
-
-                                <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener"><img src="assets/images/tech_behemoths-removebg-preview.png" alt=""></a>
-
-                            </div>
-
-                          <div class="badge-item">
-                            <a href="https://www.goodfirms.co/company/endevo-digital" target="_blank" rel="noopener"><img src="assets/images/goodfirms-removebg-preview.png" alt=""></a>
+                        <div class="badge-item clutch-badge">
+                            <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+                            <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-nofollow="false" data-expandifr="true" data-scale="100" data-clutchcompany-id="2551338"></div>
                         </div>
+
+                        <div class="badge-item teech">
+                            <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener">
+                                <img src="assets/images/trustpilot-removebg-preview.png" alt="">
+                            </a>
                         </div>
+
+                        <div class="badge-item">
+                            <a href="https://techbehemoths.com/company/endevo-digital" target="_blank" rel="noopener">
+                                <img src="assets/images/tech_behemoths-removebg-preview.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="badge-item">
+                            <a href="https://www.goodfirms.co/company/endevo-digital" target="_blank" rel="noopener">
+                                <img src="assets/images/goodfirms-removebg-preview.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="badge-item teech">
+                            <a href="https://www.example.com" target="_blank" rel="noopener">
+                                <img src="assets/images/google_review-removebg-preview.png" alt="">
+                            </a>
+                        </div>
+                    </div>
 
                         <!-- Copyright and Legal -->
                         <div class="footer-legal">
