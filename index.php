@@ -130,7 +130,7 @@
                                 <p>Building custom software solutions tailored to meet specific business needs, from desktop apps to cloud platforms.</p>
                             </div>
                             <div class="service-content">
-                                <a href="#"><button class="btn button-learn">Learn More</button></a>
+                                <a href="services.php"><button class="btn button-learn">Learn More</button></a>
                             </div>
                         </div>
 
@@ -144,7 +144,7 @@
                                 <p>Creating responsive and user-friendly websites using modern technologies for businesses and individuals.</p>
                             </div>
                             <div class="service-content">
-                                <a href="#"><button class="btn button-learn">Learn More</button></a>
+                                <a href="services.php"><button class="btn button-learn">Learn More</button></a>
                             </div>
                         </div>
 
@@ -158,7 +158,7 @@
                                 <p>Creating and integrating APIs to ensure seamless communication between software systems and third-party services.</p>
                             </div>
                             <div class="service-content">
-                                <a href="#"><button class="btn button-learn">Learn More</button></a>
+                                <a href="services.php"><button class="btn button-learn">Learn More</button></a>
                             </div>
                         </div>
 
@@ -172,7 +172,7 @@
                                 <p>Promoting brands online through strategies like social media, email marketing, and paid ads to boost visibility and sales.</p>
                             </div>
                             <div class="service-content">
-                                <a href="#"><button class="btn button-learn">Learn More</button></a>
+                                <a href="services.php"><button class="btn button-learn">Learn More</button></a>
                             </div>
                         </div>
 
@@ -186,7 +186,7 @@
                                 <p>Designing intuitive and engaging interfaces that enhance user experience and usability across digital platforms.</p>
                             </div>
                             <div class="service-content">
-                                <a href="#"><button class="btn button-learn">Learn More</button></a>
+                                <a href="services.php"><button class="btn button-learn">Learn More</button></a>
                             </div>
                         </div>
 
@@ -200,7 +200,7 @@
                                 <p>Improving website visibility on search engines to drive organic traffic and increase rankings.</p>
                             </div>
                             <div class="service-content">
-                                <a href="#"><button class="btn button-learn">Learn More</button></a>
+                                <a href="services.php"><button class="btn button-learn">Learn More</button></a>
                             </div>
                         </div>
 
@@ -328,8 +328,8 @@
     <!-- Our Core Values -->
     <!-- Header Section -->
     <header class="core-values-header">
-        <h1 class="core-values-title">Our Core Values</h1>
-        <p class="core-values-subtitle">These principles guide everything we do, from project conception to delivery and beyond</p>
+        <h1 class="core-values-title">At Endevo, We Cultivate</h1>
+        <p class="core-values-subtitle">The Core Principles that guide our work and relationships</p>
     </header>
 
     <!-- Core Values Sections -->
@@ -468,7 +468,7 @@
                 <div class="col-lg-4 col-md-4 col-12">
                     <div class="technical-expertise-container">
                         <h2 class="animate__fadeInUp">Technical Expertise</h2>
-                        <p class="animate__fadeInUp animate__delay-1s">No filters, no fluff. Just honest conversations that move ideas forward and teams closer.</p>
+                        <p class="animate__fadeInUp animate__delay-1s">We combine cutting-edge technologies with creative problem-solving to deliver exceptional digital experiences. Our team stays ahead of industry trends to implement the most effective solutions for your business needs.</p>
                     </div>
                 </div>
 
@@ -534,6 +534,29 @@
                                 <img src="assets/images/wordpress.png" alt="Git">
                                 <span>Wordpress</span>
                             </div>
+
+                            <!-- Row 4 -->
+                             <!-- <div class="tech-logo">
+                                <img src="assets/images/php.png" alt="PHP">
+                                <span>PHP</span>
+                            </div> -->
+                            <div class="tech-logo">
+                                <img src="assets/images/laravel.png" alt="Laravel">
+                                <span>Laravel</span>
+                            </div>
+                            <div class="tech-logo">
+                                <img src="assets/images/framer.png" alt="Laravel">
+                                <span>Framer</span>
+                            </div>
+                             <div class="tech-logo">
+                                <img src="assets/images/mysql.png" alt="Laravel">
+                                <span>MYSQL</span>
+                            </div>
+                               <div class="tech-logo">
+                                <img src="assets/images/mongo.png" alt="Laravel">
+                                <span>MongoDB</span>
+                            </div>
+
 
 
                         </div>
