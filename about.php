@@ -510,7 +510,7 @@
         <div class="footer-float-element element-1"></div>
         <div class="footer-float-element element-2"></div>
         <div class="footer-float-element element-3"></div>
-    </div> -->
+        </div> -->
 
         <div class="container-fluid">
             <div class="row">
@@ -520,7 +520,7 @@
                         <h2 class="footer-lets-talk">LET'S TALK</h2>
                         <div class="contact-info">
                             <p class="contact-email">hello@endevodigital.com</p>
-                            <p class="contact-phone">+1 (123) 456-7890</p>
+                            <p class="contact-phone">+94 77 55 18274</p>
                         </div>
                         <div class="social-links">
                             <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
