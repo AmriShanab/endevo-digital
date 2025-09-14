@@ -260,7 +260,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .navbar-logo-mine img {
-    max-height: 10px;       /* Slightly smaller on mobile */
+    max-height: 70px;       /* Slightly smaller on mobile */
     margin-top: 10px !important;
   }
 }
@@ -687,52 +687,117 @@
         });
     </script>
   <script>
-document.addEventListener('DOMContentLoaded', () => {
+ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('.navbar-mine');
-    const logo = document.querySelector('.navbar-logo-mine img');
-
-    const whiteLogo = "assets/images/logo_White-removebg-preview.png"; // white logo for dark navbar
-    const coloredLogo = "assets/images/endevo_logo_big.png"; // colored logo for light navbar
-
-    // Set initial logo on page load
-    logo.src = whiteLogo;
-
-    // Handle scroll effect for navbar theme and logo change
     const heroSection = document.querySelector('.about-hero');
+    const heroImageContainer = document.querySelector('.hero-image-container');
+    const logo = document.querySelector('.navbar-logo-mine img'); // Make sure your logo img has this selector
+    const toggleBtn = document.getElementById('navbarToggle');
+    const menu = document.getElementById('navbarMenu');
 
-    function handleNavbarTheme() {
-        const heroBottom = heroSection.getBoundingClientRect().bottom;
+    const logoDark = 'assets/images/endevo_logo_big.png'; // For light navbar
+    const logoLight = 'assets/images/logo_White-removebg-preview.png'; // For dark navbar
 
-        if (heroBottom <= 0) {
-            // Scrolled past hero, light navbar
-            navbar.classList.remove('navbar-dark');
-            navbar.classList.add('navbar-light');
-            logo.src = coloredLogo;
+    // Set hero image size
+    function setImageSize() {
+        if (!heroImageContainer) return;
+        const viewportHeight = window.innerHeight;
+        const textHeight = document.querySelector('.about-headline').offsetHeight;
+        const maxImageHeight = viewportHeight - textHeight - 100;
+        heroImageContainer.style.maxHeight = `${Math.max(maxImageHeight, 300)}px`;
+    }
+
+    // Determine which logo to use based on navbar theme
+    function updateLogo() {
+        if (!logo) return;
+        if (navbar.classList.contains('navbar-dark') || navbar.classList.contains('active-background')) {
+            logo.src = logoLight;
         } else {
-            // Hero in view, dark navbar
-            navbar.classList.remove('navbar-light');
-            navbar.classList.add('navbar-dark');
-            logo.src = whiteLogo;
+            logo.src = logoDark;
         }
     }
 
-    // Call on scroll
-    window.addEventListener('scroll', handleNavbarTheme);
+    // Scroll behavior
+    function handleScroll() {
+        const scrollY = window.scrollY || window.pageYOffset;
+        const heroBottom = heroSection.getBoundingClientRect().bottom;
 
-    // Also call on load in case page is not at top
-    handleNavbarTheme();
-
-    // Optional: Mobile menu toggle logo change
-    const toggleBtn = document.getElementById('navbarToggle');
-    toggleBtn.addEventListener('click', () => {
-        // Keep mobile menu logo white even if navbar background changes
-        if (!toggleBtn.classList.contains('active')) {
-            logo.src = whiteLogo; // menu opening
+        // Switch navbar theme
+        if (heroBottom <= 0) {
+            navbar.classList.remove('navbar-dark');
+            navbar.classList.add('navbar-light');
         } else {
-            handleNavbarTheme(); // menu closing, revert based on scroll
+            navbar.classList.remove('navbar-light');
+            navbar.classList.add('navbar-dark');
         }
-    });
+
+        updateLogo(); // Update logo based on current navbar theme
+
+        // Hero image scroll effect
+        if (heroImageContainer) {
+            const scrollProgress = Math.min(scrollY / 300, 1);
+            const width = 80 + (20 * scrollProgress);
+            heroImageContainer.style.width = `${width}%`;
+            heroImageContainer.style.opacity = 1 - (scrollProgress * 0.3);
+        }
+
+        // Navbar hide/show
+        if (scrollY <= 0 || navbar.classList.contains('active-background')) {
+            navbar.classList.remove('navbar-hidden');
+            return;
+        }
+
+        clearTimeout(window.scrollTimeout);
+        window.scrollTimeout = setTimeout(() => {
+            if (scrollY > 100) navbar.classList.add('navbar-hidden');
+        }, 1000);
+    }
+
+    // Mobile menu toggle
+    function initMobileMenu() {
+        if (!toggleBtn || !menu) return;
+
+        const toggleMenu = () => {
+            const isActive = menu.classList.toggle('active');
+            toggleBtn.classList.toggle('active', isActive);
+            navbar.classList.toggle('active-background', isActive);
+
+            updateLogo(); // Switch logo when menu is open
+
+            document.body.style.overflow = isActive ? 'hidden' : '';
+        };
+
+        toggleBtn.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking links (mobile)
+        document.querySelectorAll('.navbar-menu-mine a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768 && menu.classList.contains('active')) toggleMenu();
+            });
+        });
+    }
+
+    // Reset menu/logo on resize
+    function handleResize() {
+        setImageSize();
+        if (window.innerWidth > 768 && menu.classList.contains('active')) {
+            menu.classList.remove('active');
+            toggleBtn.classList.remove('active');
+            navbar.classList.remove('active-background');
+            document.body.style.overflow = '';
+        }
+        updateLogo();
+    }
+
+    // Initialize
+    setImageSize();
+    initMobileMenu();
+    updateLogo();
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
 });
+
 </script>
 
 </body>
