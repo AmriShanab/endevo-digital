@@ -281,7 +281,7 @@
 
         .video-container video {
             width: 100%;
-            height: 700px;
+            height: 625px;
             border-radius: 16px;
             object-fit: cover;
             transition: transform 0.4s ease, filter 0.4s ease;
