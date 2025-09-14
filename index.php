@@ -503,9 +503,13 @@
                                 <img src="assets/images/node.png" alt="Node.js">
                                 <span>Node.js</span>
                             </div>
-                            <div class="tech-logo">
+                            <!-- <div class="tech-logo">
                                 <img src="assets/images/canva.png" alt="Vue">
                                 <span>Canva</span>
+                            </div> -->
+                                  <div class="tech-logo">
+                                <img src="assets/images/figma.png" alt="Git">
+                                <span>Figma</span>
                             </div>
 
                             <!-- Row 3 -->
@@ -518,19 +522,20 @@
                                 <span>Django</span>
                             </div>
                             <div class="tech-logo">
-                                <img src="assets/images/illustrator.png" alt="Git">
-                                <span>Illustrator</span>
+                                <img src="assets/images/aws.png" alt="Git">
+                                <span>AWS</span>
                             </div>
 
-                               <div class="tech-logo">
+                            <div class="tech-logo">
                                 <img src="assets/images/github.png" alt="Git">
                                 <span>GitHub</span>
                             </div>
-
-                             <div class="tech-logo">
-                                <img src="assets/images/figma.png" alt="Git">
-                                <span>Figma</span>
+                               <div class="tech-logo">
+                                <img src="assets/images/wordpress.png" alt="Git">
+                                <span>Wordpress</span>
                             </div>
+
+                       
                         </div>
                     </div>
                 </div>

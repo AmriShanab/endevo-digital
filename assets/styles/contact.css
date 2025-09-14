@@ -1,3 +1,6 @@
+/* ===== Contact Page Styles ===== */
+
+/* --- Headings and Text --- */
 .contact-heading {
     font-size: 4.5rem;
     font-weight: bold;
@@ -6,14 +9,14 @@
 }
 
 .contact-description {
-    font-size: 2.0rem;
+    font-size: 2rem;
     color: #555;
     margin-bottom: 40px;
     text-align: left;
 }
 
-.contact-hero h4{
-    font-size: 2.0rem;
+.contact-hero h4 {
+    font-size: 2rem;
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -21,7 +24,7 @@
     color: #555;
 }
 
-.contact-hero p{
+.contact-hero p {
     font-size: 1.5rem;
     color: #555;
     text-align: left;
@@ -35,6 +38,7 @@
     text-align: left;
 }
 
+/* --- Form Styles --- */
 .contact-form .form-label {
     font-size: 1.2rem;
     font-weight: 600;
@@ -67,39 +71,87 @@
     transform: translateY(-2px);
 }
 
-
+/* --- Social Icons --- */
 .cnt-social {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cnt-social a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  background: #000;        /* black background */
-  color: #fff;             /* white icon */
-  border-radius: 50%;      /* circle shape */
-  font-size: 1.4rem;
-  transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
 }
 
 .cnt-social a:hover {
-  background: #fff;        /* invert on hover */
-  color: #000;
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    background: #fff;
+    color: #000;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* ===== Responsive Styles ===== */
+
+/* Large Tablets / Small Desktop */
+@media (max-width: 1200px) {
+    .contact-heading { font-size: 3.8rem; }
+    .contact-description { font-size: 1.8rem; }
+    .contact-hero h4 { font-size: 1.8rem; }
+    .contact-hero p { font-size: 1.4rem; }
+    .form-heading { font-size: 2.2rem; }
+}
+
+/* Medium Tablets */
+@media (max-width: 992px) {
+    .contact-heading { font-size: 3rem; }
+    .contact-description { font-size: 1.6rem; }
+    .contact-hero h4 { font-size: 1.6rem; }
+    .contact-hero p { font-size: 1.3rem; }
+    .form-heading { font-size: 2rem; }
+}
+
+/* Small Tablets / Mobile */
 @media (max-width: 768px) {
-  .cnt-social a {
-    width: 42px;
-    height: 42px;
-    font-size: 1.2rem;
-  }
+    .contact-heading { font-size: 2.5rem; text-align: center; }
+    .contact-description { font-size: 1.4rem; text-align: center; }
+    .contact-hero h4 { font-size: 1.4rem; text-align: center; }
+    .contact-hero p { font-size: 1.2rem; text-align: center; }
+    .form-heading { font-size: 1.8rem; text-align: center; }
+    .contact-form .form-control { font-size: 0.95rem; padding: 12px; }
+    .contact-form button { font-size: 1rem; padding: 12px; }
+    .cnt-social a { width: 42px; height: 42px; font-size: 1.2rem; }
 }
 
+/* Extra Small Mobile */
+@media (max-width: 576px) {
+    .contact-heading { font-size: 2rem; }
+    .contact-description { font-size: 1.2rem; }
+    .contact-hero h4 { font-size: 1.2rem; }
+    .contact-hero p { font-size: 1rem; }
+    .form-heading { font-size: 1.5rem; }
+    .contact-form .form-control { font-size: 0.9rem; padding: 10px; }
+    .contact-form button { font-size: 0.95rem; padding: 10px; }
+    .cnt-social a { width: 36px; height: 36px; font-size: 1rem; }
+}
+
+/* Stack hero image and form vertically on small mobile screens */
+@media (max-width: 480px) {
+    .contact-hero, .contact-form, .cnt-social {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .contact-hero img {
+        max-width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}

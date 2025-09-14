@@ -343,6 +343,7 @@
   object-fit: contain;      /* Prevents distortion */
   display: block;           /* Removes inline gap issues */
   transition: transform 0.3s ease;
+  
 }
 
 /* Slight hover effect (optional) */
@@ -353,6 +354,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .navbar-logo-mine img {
-    max-height: 40px;       /* Slightly smaller on mobile */
+    max-height: 70px;       /* Slightly smaller on mobile */
+    margin-top: 10px !important;
   }
 }

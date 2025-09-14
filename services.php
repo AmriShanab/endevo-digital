@@ -1,3 +1,4 @@
+<?php include 'navbar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,38 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar-mine navbar-dark">
-        <div class="navbar-container-mine">
-            <a href="/" class="navbar-logo-mine">Endevo<span>Digital</span></a>
 
-            <ul class="navbar-menu-mine" id="navbarMenu">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="/services.php">Services</a></li>
-                <li><a href="/portfolio.php">Portfolio</a></li>
-                <li><a href="/contact.php">Let's Talk</a></li>
-
-                <li class="mobile-social-container">
-                    <div class="mobile-social-links">
-                        <p>Get in touch</p>
-                        <a href="mailto:hello@endevodigital.com" class="mobile-email">hello@endevodigital.com</a>
-                        <div class="social-icons">
-                            <a href="#"><i class="bi bi-linkedin"></i></a>
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-twitter-x"></i></a>
-                            <a href="#"><i class="bi bi-instagram"></i></a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-
-            <button class="navbar-toggle-mine" id="navbarToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
     <section class="service-header">
         <div class="container">
             <div class="row align-items-center">
