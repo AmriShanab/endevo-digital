@@ -78,7 +78,7 @@
                         </div>
 
                         <div class="badge-item teech">
-                            <a href="https://www.example.com" target="_blank" rel="noopener">
+                            <a href="https://share.google/re9KrkLd1izA4NxRH" target="_blank" rel="noopener">
                                 <img src="assets/images/google_review-removebg-preview.png" alt="">
                             </a>
                         </div>
