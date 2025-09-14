@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         /* Reset default margins and padding */
         body,
@@ -444,11 +444,11 @@
                 </div>
 
                 <!-- Right Column - Image -->
-               <div class="col-lg-6 col-md-5">
-  <div class="mission-video" data-aos="fade-right" data-aos-delay="200">
-    <video src="assets/videos/mision.mp4" autoplay muted loop playsinline></video>
-  </div>
-</div>
+                <div class="col-lg-6 col-md-5">
+                    <div class="mission-video" data-aos="fade-right" data-aos-delay="200">
+                        <video src="assets/videos/mision.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -607,9 +607,160 @@
                 </div>
             </div>
         </div>
-         <!-- <div class="values-bottom-image">
+        <!-- <div class="values-bottom-image">
             <img src="assets/images/value_image_bottom.png" alt="Values Banner" class="img-fluid full-width-img">
         </div> -->
+
+        <!-- <section class="client-testimonials">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <p class="section-subtitle">Hear from those who've experienced our services</p>
+                </div>
+
+                <div class="testimonial-carousel"> -->
+                    <!-- Carousel Controls -->
+                    <!-- <button class="carousel-control prev" aria-label="Previous testimonial">
+                        <img src="assets/chevron-left-solid.svg" alt="" style="width: 25px; height: 15px;">
+                    </button>
+
+                    <div class="carousel-track"> -->
+                        <!-- Testimonial Items -->
+                        <!-- <div class="testimonial-item active" data-index="0">
+                            <div class="testimonial-content">
+                                <div class="user-info">
+                                    <img src="assets/testimonial_2.png" alt="Sarah J." class="user-avatar">
+                                    <div class="user-details">
+
+                                        <h4>Mohsin Ramzan</h4>
+                                        <p>Founder/ Managing Director, RTE Global</p> -->
+                                        <!-- <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div> -->
+                                    <!-- </div>
+                                </div> -->
+                                <!-- <div class="testimonial-text"> -->
+                                    <!-- <p>"A big thanks to Endevo for their outstanding support at this event. Their expertise in event management, media, and communications made it a memorable experience for York St John University. I highly recommend them."</p> -->
+                                    <!-- <div class="message-time">2 days ago</div> -->
+                                <!-- </div>
+                            </div>
+                        </div> -->
+<!-- 
+                        <div class="testimonial-item" data-index="1">
+                            <div class="testimonial-content">
+                                <div class="user-info">
+                                    <img src="assets/testimonial_1.jpg" alt="Michael T." class="user-avatar">
+                                    <div class="user-details">
+
+                                        <h4>Prof. Rob Morter</h4>
+                                        <p>Pro Vice Chancellor, York St John University</p> -->
+                                        <!-- <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div> -->
+                                    <!-- </div>
+                                </div> -->
+                                <!-- <div class="testimonial-text"> -->
+                                    <!-- <p>"Hi, I'm Professor Rob Morter, the Pro Vice Chancellor of York St John University. I’d like to recommend Endevo for event management services. They’ve done a fantastic job with our York St John University engagement event this evening in Colombo."</p> -->
+                                    <!-- <div class="message-time">1 week ago</div> -->
+                                <!-- </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="testimonial-item" data-index="2">
+                            <div class="testimonial-content">
+                                <div class="user-info">
+                                    <img src="assets/testimonial_3.png" alt="Emily R." class="user-avatar">
+                                    <div class="user-details">
+
+                                        <h4>Dr. Deepal Perera</h4>
+                                        <p>Head of Sales, Ex-pack Corrugated Cartons PLC</p> -->
+                                        <!-- <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div> -->
+                                    <!-- </div>
+                                </div> -->
+                                <!-- <div class="testimonial-text"> -->
+                                    <!-- <p>"Hi, I’m Dr. Deepal Perera. York St John University’s local summit in Sri Lanka was excellently organized by Endevo Private Limited. The young team did a fantastic job with professionalism and style. I wish them all the very best"</p> -->
+                                    <!-- <div class="message-time">3 weeks ago</div> -->
+                                <!-- </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="testimonial-item" data-index="3">
+                    <div class="testimonial-content">
+                        <div class="user-info">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David K." class="user-avatar">
+                            <div class="user-details">
+                                <h4>David Kim</h4>
+                                <p>Founder & CEO</p> -->
+                        <!-- <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div> -->
+                        <!-- </div>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>"Endevo's mobile app development exceeded our expectations. They delivered on time and within budget, and the app has significantly boosted our customer engagement."</p> -->
+                        <!-- <div class="message-time">1 month ago</div> -->
+                        <!-- </div>
+                    </div>
+                </div> -->
+
+                        <!-- <div class="testimonial-item" data-index="4">
+                    <div class="testimonial-content">
+                        <div class="user-info">
+                            <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Lisa M." class="user-avatar">
+                            <div class="user-details">
+                                <h4>Lisa Martinez</h4>
+                                <p>Director of Operations</p> -->
+                        <!-- <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div> -->
+                        <!-- </div>
+                        </div>
+                        <div class="testimonial-text">
+                            <p>"The custom software solution Endevo built for us streamlined our operations and saved us countless hours. Their team was professional, responsive, and truly understood our needs."</p> -->
+                        <!-- <div class="message-time">2 months ago</div> -->
+                        <!-- </div>
+                    </div>
+                </div> -->
+                    <!-- </div> -->
+
+                    <!-- <button class="carousel-control next" aria-label="Next testimonial">
+                        <img src="assets/chevron-right-solid.svg" alt="" style="width: 25px; height: 15px;">
+                    </button>
+                    <br><br> -->
+                    <!-- Carousel Indicators -->
+                    <!-- <div class="carousel-indicators">
+                        <button class="indicator active" data-index="0"></button>
+                        <button class="indicator" data-index="1"></button>
+                        <button class="indicator" data-index="2"></button> -->
+                        <!-- <button class="indicator" data-index="3"></button> -->
+                        <!-- <button class="indicator" data-index="4"></button> -->
+                    <!-- </div>
+
+                </div>
+            </div>
+        </section> -->
     </section>
 
     <footer class="footer-section">
@@ -627,16 +778,19 @@
                     <div class="footer-contact">
                         <h2 class="footer-lets-talk">LET'S TALK</h2>
                         <div class="contact-info">
-                            <p class="contact-email">hello@endevodigital.com</p>
+                            <a href="mailto:hello@endevodigital.com?subject=Inquiry&body=Hello%20Endevo%20Digital">hello@endevodigital.com</a>
+
                             <p class="contact-phone">+94 77 55 18274</p>
+                            <p class="contact-phone">+94 74 35 59668</p>
+                            <p class="contact-phone">No. 654, Galle Road, Colombo 03, Sri Lanka.</p>
                         </div>
                         <div class="social-links">
-                        <a href="https://www.linkedin.com/company/endevo-holdings/" class="social-icon"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61564148454268&mibextid=wwXIfr&rdid=RokhX2XvDpODHrFN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C2fVTgRpT%2F%3Fmibextid%3DwwXIfr#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.tiktok.com/@endevo.co?_t=ZS-8wLvZ6UWhKi&_r=1" class="social-icon"><i class="bi bi-tiktok"></i></a>
-                        <a href="https://www.instagram.com/endevo.digital?igsh=Zmh5dmJwa2FpYzNx&utm_source=qr" class="social-icon"><i class="bi bi-instagram"></i></a>
-                        <a href="https://wa.me/94775518274?text=Hi%20there%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." class="social-icon"><i class="bi bi-whatsapp"></i></a>
-                    </div>
+                            <a href="https://www.linkedin.com/company/endevo-holdings/" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61564148454268&mibextid=wwXIfr&rdid=RokhX2XvDpODHrFN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C2fVTgRpT%2F%3Fmibextid%3DwwXIfr#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.tiktok.com/@endevo.co?_t=ZS-8wLvZ6UWhKi&_r=1" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                            <a href="https://www.instagram.com/endevo.digital?igsh=Zmh5dmJwa2FpYzNx&utm_source=qr" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="https://wa.me/94775518274?text=Hi%20there%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -652,47 +806,47 @@
                                 <li><a href="/portfolio">Portfolio</a></li>
                                 <!-- <li><a href="/careers">Careers</a></li> -->
                                 <li><a href="/blog">Blog</a></li>
-                                <li><a href="/contact">Contact</a></li>
+                                <li><a href="#">Careers</a></li>
                             </ul>
                         </div>
 
 
-                          <div class="footer-badges">
-                        <div class="badge-item">
-                            <a href="https://techbehemoths.com/company/endevo-digital" target="_blank" rel="noopener">
-                                <img src="assets/images/tech_behemoths-removebg-preview.png" alt="">
-                            </a>
-                        </div>
+                        <div class="footer-badges">
+                            <div class="badge-item">
+                                <a href="https://techbehemoths.com/company/endevo-digital" target="_blank" rel="noopener">
+                                    <img src="assets/images/tech_behemoths-removebg-preview.png" alt="">
+                                </a>
+                            </div>
 
-                        <div class="badge-item clutch-badge">
-                            <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
-                            <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-nofollow="false" data-expandifr="true" data-scale="100" data-clutchcompany-id="2551338"></div>
-                        </div>
+                            <div class="badge-item clutch-badge">
+                                <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+                                <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-nofollow="false" data-expandifr="true" data-scale="100" data-clutchcompany-id="2551338"></div>
+                            </div>
 
-                        <div class="badge-item teech">
-                            <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener">
-                                <img src="assets/images/trustpilot-removebg-preview.png" alt="">
-                            </a>
-                        </div>
+                            <div class="badge-item teech">
+                                <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener">
+                                    <img src="assets/images/trustpilot-removebg-preview.png" alt="">
+                                </a>
+                            </div>
 
-                        <div class="badge-item">
-                             <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
-                            <div data-designrush-widget data-agency-id="99274" data-style="dark" aria-label="DesignRush agency reviews section"></div>
-                           
-                        </div>
+                            <div class="badge-item">
+                                <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
+                                <div data-designrush-widget data-agency-id="99274" data-style="dark" aria-label="DesignRush agency reviews section"></div>
 
-                        <div class="badge-item">
-                            <a href="https://www.goodfirms.co/company/endevo-digital" target="_blank" rel="noopener">
-                                <img src="assets/images/goodfirms-removebg-preview.png" alt="">
-                            </a>
-                        </div>
+                            </div>
 
-                        <div class="badge-item teech">
-                            <a href="https://share.google/re9KrkLd1izA4NxRH" target="_blank" rel="noopener">
-                                <img src="assets/images/google_review-removebg-preview.png" alt="">
-                            </a>
+                            <div class="badge-item">
+                                <a href="https://www.goodfirms.co/company/endevo-digital" target="_blank" rel="noopener">
+                                    <img src="assets/images/goodfirms-removebg-preview.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="badge-item teech">
+                                <a href="https://share.google/re9KrkLd1izA4NxRH" target="_blank" rel="noopener">
+                                    <img src="assets/images/google_review-removebg-preview.png" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
 
                         <!-- Copyright and Legal -->
                         <div class="footer-legal">
@@ -711,7 +865,7 @@
 
     <!-- TrustBox script -->
     <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-        <script type="text/javascript" src="https://assets.goodfirms.co/assets/js/widget.min.js"></script>
+    <script type="text/javascript" src="https://assets.goodfirms.co/assets/js/widget.min.js"></script>
 
 
 
@@ -874,33 +1028,33 @@
             }
         });
     </script>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const video = document.querySelector(".mission-video video");
-  if (!video) return;
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const video = document.querySelector(".mission-video video");
+            if (!video) return;
 
-  // --- Autoplay fallback for mobile/desktop ---
-  video.play().catch(() => {
-    const resumePlay = () => {
-      video.play();
-      document.removeEventListener("click", resumePlay);
-      document.removeEventListener("touchstart", resumePlay);
-    };
-    document.addEventListener("click", resumePlay);
-    document.addEventListener("touchstart", resumePlay);
-  });
+            // --- Autoplay fallback for mobile/desktop ---
+            video.play().catch(() => {
+                const resumePlay = () => {
+                    video.play();
+                    document.removeEventListener("click", resumePlay);
+                    document.removeEventListener("touchstart", resumePlay);
+                };
+                document.addEventListener("click", resumePlay);
+                document.addEventListener("touchstart", resumePlay);
+            });
 
-  // --- Hover behavior (only for desktop screens) ---
-  if (window.innerWidth > 768) {
-    video.addEventListener("mouseenter", () => {
-      video.pause();
-    });
-    video.addEventListener("mouseleave", () => {
-      video.play();
-    });
-  }
-});
-</script>
+            // --- Hover behavior (only for desktop screens) ---
+            if (window.innerWidth > 768) {
+                video.addEventListener("mouseenter", () => {
+                    video.pause();
+                });
+                video.addEventListener("mouseleave", () => {
+                    video.play();
+                });
+            }
+        });
+    </script>
 
 
 </body>

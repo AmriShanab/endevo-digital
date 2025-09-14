@@ -302,6 +302,8 @@
                         <div class="contact-info">
                             <p class="contact-email">hello@endevodigital.com</p>
                             <p class="contact-phone">+94 77 55 18274</p>
+                            <p class="contact-phone">+94 74 35 59668</p>
+                            <p class="contact-phone">No. 654, Galle Road, Colombo 03, Sri Lanka.</p>
                         </div>
                         <div class="social-links">
                         <a href="https://www.linkedin.com/company/endevo-holdings/" class="social-icon"><i class="bi bi-linkedin"></i></a>
@@ -324,8 +326,8 @@
                                 <li><a href="/services">Services</a></li>
                                 <li><a href="/portfolio">Portfolio</a></li>
                                 <!-- <li><a href="/careers">Careers</a></li> -->
-                                <li><a href="/blog">Blog</a></li>
-                                <li><a href="/contact">Contact</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Careers</a></li>
                             </ul>
                         </div>
 

@@ -49,11 +49,11 @@
     </section>
 
     <section class="welcome-section">
-        <div class="floating-elements">
+        <!-- <div class="floating-elements">
             <div class="floating-element element-1"></div>
             <div class="floating-element element-2"></div>
             <div class="floating-element element-3"></div>
-        </div>
+        </div> -->
         <div class="container-fluid">
             <div class="row">
                 <!-- Text Content Column -->
@@ -83,12 +83,12 @@
         <div class="half-sphere"></div>
 
         <!-- Purple floating sphere -->
-        <div class="purple-sphere"></div>
+        <!-- <div class="purple-sphere"></div> -->
 
         <!-- Orange orbital sphere -->
-        <div class="orange-orbit">
+        <!-- <div class="orange-orbit">
             <div class="orange-sphere"></div>
-        </div>
+        </div> -->
 
         <!-- Blue figure-8 sphere -->
         <!-- <div class="blue-sphere"></div> -->
@@ -97,10 +97,10 @@
         <!-- <div class="green-sphere"></div> -->
 
         <!-- Pink floating particle -->
-        <div class="pink-particle"></div>
+        <!-- <div class="pink-particle"></div> -->
 
         <!-- Yellow floating particle -->
-        <div class="yellow-particle"></div>
+        <!-- <div class="yellow-particle"></div> -->
     </div>
 
 
@@ -330,8 +330,8 @@
     <!-- Core Values Sections -->
     <div class="container">
         <!-- Decorative elements -->
-        <div class="decoration-circle circle-1"></div>
-        <div class="decoration-circle circle-2"></div>
+        <!-- <div class="decoration-circle circle-1"></div>
+        <div class="decoration-circle circle-2"></div> -->
 
         <!-- First Value -->
         <section class="value-section">
@@ -346,7 +346,7 @@
                         <div class="value-content-right">
                             <h2 class="value-title animate__fadeInUp">Fearless Curiosity</h2>
                             <p class="value-description animate__fadeInUp animate__delay-1s">We specialize in building scalable software and next generation web solutions. Our culture encourages asking tough questions and exploring unconventional solutions.</p>
-                            <a href="#" class="value-cta animate__fadeInUp animate__delay-2s">Learn More</a>
+                            <!-- <a href="#" class="value-cta animate__fadeInUp animate__delay-2s">Learn More</a> -->
                         </div>
                     </div>
                 </div>
@@ -361,7 +361,7 @@
                         <div class="value-content-left">
                             <h2 class="value-title animate__fadeInUp">Transparent Communication</h2>
                             <p class="value-description animate__fadeInUp animate__delay-1s">No filters, no fluff. Just honest conversations that move ideas forward and teams closer. We believe transparency builds trust and enables better collaboration.</p>
-                            <a href="#" class="value-cta animate__fadeInUp animate__delay-2s">Learn More</a>
+                            <!-- <a href="#" class="value-cta animate__fadeInUp animate__delay-2s">Learn More</a> -->
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12 order-lg-2 order-md-2 order-1">
@@ -386,7 +386,7 @@
                         <div class="value-content-right">
                             <h2 class="value-title animate__fadeInUp">Peer-Led Growth</h2>
                             <p class="value-description animate__fadeInUp animate__delay-1s">We grow by teaching and learning from each other. Every interaction is a chance to level up. Our culture promotes mentorship and shared knowledge.</p>
-                            <a href="#" class="value-cta animate__fadeInUp animate__delay-2s">Learn More</a>
+                            <!-- <a href="#" class="value-cta animate__fadeInUp animate__delay-2s">Learn More</a> -->
                         </div>
                     </div>
                 </div>
@@ -400,7 +400,7 @@
                         <div class="value-content-left">
                             <h2 class="value-title animate__fadeInUp">Tech + Heart</h2>
                             <p class="value-description animate__fadeInUp animate__delay-1s">We blend cutting-edge solutions with human-first thinking. Because real impact happens at that intersection.</p>
-                            <a href="#" class="value-cta animate__fadeInUp animate__delay-2s">Learn More</a>
+                            <!-- <a href="#" class="value-cta animate__fadeInUp animate__delay-2s">Learn More</a> -->
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12 order-lg-2 order-md-2 order-1">
@@ -425,7 +425,7 @@
                         <div class="value-content-right">
                             <h2 class="value-title animate__fadeInUp">Purpose Driven Action</h2>
                             <p class="value-description animate__fadeInUp animate__delay-1s">Beyond profits, we focus on progress through ethical practices, community work, and digital responsibility.</p>
-                            <a href="#" class="value-cta animate__fadeInUp animate__delay-2s">Learn More</a>
+                            <!-- <a href="#" class="value-cta animate__fadeInUp animate__delay-2s">Learn More</a> -->
                         </div>
                     </div>
                 </div>
@@ -441,7 +441,7 @@
                         <div class="value-content-left">
                             <h2 class="value-title animate__fadeInUp">Celebration Culture</h2>
                             <p class="value-description animate__fadeInUp animate__delay-1s">From big wins to tiny breakthroughs, we make space to pause, smile, and celebrate our grind.</p>
-                            <a href="#" class="value-cta animate__fadeInUp animate__delay-2s">Learn More</a>
+                            <!-- <a href="#" class="value-cta animate__fadeInUp animate__delay-2s">Learn More</a> -->
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-12 order-lg-2 order-md-2 order-1">

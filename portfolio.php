@@ -349,7 +349,7 @@ include 'navbar.php';
             <!-- Project 2 -->
             <div class="project-card-proj" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <div class="project-img-proj">
-                    <img src="assets/images/BIMT-NEW-LOGO.png" alt="Mobile App">
+                    <img src="assets/images/bimt.jpg" alt="Mobile App">
                     <div class="project-overlay-proj">
                         <a href="https://bimt.lk/"><button class="project-view-btn-proj">View Project</button></a>
                     </div>

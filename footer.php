@@ -15,11 +15,13 @@
 
             <div class="col-lg-5 col-md-12">
                 <div class="footer-contact">
-                    <h2 class="footer-lets-talk">LET'S TALK</h2>
+                    <h2 class="footer-lets-talk">Let's Talk</h2>
                     <div class="contact-info">
                         <a href="mailto:hello@endevodigital.com?subject=Inquiry&body=Hello%20Endevo%20Digital">hello@endevodigital.com</a>
 
                         <p class="contact-phone">+94 77 55 18274</p>
+                        <p class="contact-phone">+94 74 35 59668</p>
+                        <p class="contact-phone">No. 654, Galle Road, Colombo 03, Sri Lanka.</p>
                     </div>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/company/endevo-holdings/" class="social-icon"><i class="bi bi-linkedin"></i></a>
@@ -42,8 +44,8 @@
                             <li><a href="/services">Services</a></li>
                             <li><a href="/portfolio">Portfolio</a></li>
                             <!-- <li><a href="/careers">Careers</a></li> -->
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Carrers</a></li>
                         </ul>
                     </div>
 

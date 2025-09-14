@@ -41,7 +41,7 @@
           and build together.
         </p>
 
-        <h4>Become a Client</h4>
+        <h4>Reach out. We’re listening.</h4>
         <p>hello@endevodigital.com</p>
       </div>
       <div class="col-lg-6 col-md-6 text-center my-5 mx-auto" data-aos="fade-right" data-aos-delay="200">

@@ -928,7 +928,8 @@ body {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
   isolation: isolate;
   /* min-height: 100vh; */
-  top: 10rem;
+  top: 15rem;
+  bottom: 10rem !important;
 }
 
 /* ===== Floating Elements ===== */
@@ -1077,11 +1078,13 @@ body {
 
 /* ===== Trusted Brands Section ===== */
 .trusted-brands-container {
-  padding: 10rem 2rem;
+  /* padding: 8rem 2rem; */
   background: rgba(248, 249, 250, 0.6);
   backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
+  top: 8rem;
+  margin-bottom: 15rem !important;
 }
 
 .trusted-title {
@@ -1117,7 +1120,7 @@ body {
 
 .brand-logo {
   position: relative;
-  padding: 1.5rem;
+  padding: 0.1rem;
   background: white;
   border-radius: 12px;
   /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); */
@@ -1126,7 +1129,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: 0.5rem;
 }
 
 .brand-logo:hover {
@@ -1339,10 +1342,10 @@ body {
 /* ===== Footer Section ===== */
 .footer-section {
   background: #f8f9fa;
-  padding: 5rem 0 3rem;
+  padding: 2rem 0 1rem;
   position: relative;
   overflow: hidden;
-  min-height: 600px;
+  min-height: 300px;
 }
 
 /* Floating Elements */
@@ -1416,7 +1419,7 @@ body {
   font-weight: 800;
   color: #111;
   margin-bottom: 1.5rem;
-  text-transform: uppercase;
+  /* text-transform: ; */
   letter-spacing: -0.03em;
   line-height: 1.1;
 }
@@ -1424,8 +1427,8 @@ body {
 .contact-info a {
   font-size: 1.2rem;
   color: #555;
-  margin-bottom: 1rem;
-  line-height: 1.6;
+  /* margin-bottom: 1rem; */
+  /* line-height: 1.6; */
   text-decoration: none;
 }
 
@@ -1434,7 +1437,7 @@ body {
 }
 
 .social-links {
-  margin-top: 16rem;
+  margin-top: 26rem;
   display: flex;
   gap: 1.5rem;
 }
@@ -1502,6 +1505,7 @@ body {
     border-radius: 8px;
     transition: transform 0.3s ease;
     overflow: hidden;
+    /* margin-left: -55px; */
 }
 
 .badge-item img {
@@ -1528,7 +1532,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 2rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
   margin-top: 90px;
 }
 
