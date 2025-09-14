@@ -704,13 +704,12 @@
             const subTitle = document.querySelector(".sub-title-index");
 
             const mainMessages = [
-                "Beyond Digital Into the Future Experiance",
+                
                 "Creative Innovation In Every Click",
                 "Your Digital Launchpad"
             ];
 
             const subMessages = [
-                "We Craft tomorrow's Digital Experiences Today",
                 "Where Every Interaction Sparks Creativity",
                 "Accelerating Your Digital Transformation "
             ];
@@ -733,11 +732,11 @@
 
                     // Update index
                     index = (index + 1) % mainMessages.length;
-                }, 500); // match CSS transition
+                }, 800); // match CSS transition
             }
 
             // Change every 3 seconds
-            setInterval(updateTitles, 3000);
+            setInterval(updateTitles, 5000);
         });
     </script>
 
