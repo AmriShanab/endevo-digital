@@ -184,19 +184,23 @@ include 'navbar.php';
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
 
-        .project-img-proj {
-            width: 100%;
-            height: 250px;
-            overflow: hidden;
-            position: relative;
-        }
+ .project-img-proj {
+    width: 100%;
+    height: 200px; /* smaller container height */
+    overflow: hidden;
+    position: relative;
+}
 
-        .project-img-proj img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: all 0.5s ease;
-        }
+.project-img-proj img {
+    width: 70%;  /* reduced from 90% → 70% */
+    height: auto; /* maintain aspect ratio */
+    object-fit: contain; /* keeps whole image visible */
+    transition: all 0.5s ease;
+    display: block;
+    margin: 0 auto; /* centers the smaller image */
+}
+
+
 
         .project-card-proj:hover .project-img-proj img {
             transform: scale(1.1);

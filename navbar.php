@@ -12,7 +12,8 @@
                 <li><a href="about.php">About</a></li>
                 <li><a href="services.php">Services</a></li>
                 <li><a href="portfolio.php">Portfolio</a></li>
-                <li><a href="contact.php">Let's Talk</a></li>
+                <li><a href="contact.php" class="btn-pill">Let's Talk</a></li>
+
 
                 <!-- Mobile social links (will be hidden on desktop) -->
                 <li class="mobile-social-container">
