@@ -659,8 +659,9 @@
 
                           <div class="footer-badges">
                         <div class="badge-item">
-                            <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
-                            <div data-designrush-widget data-agency-id="99274" data-style="dark" aria-label="DesignRush agency reviews section"></div>
+                            <a href="https://techbehemoths.com/company/endevo-digital" target="_blank" rel="noopener">
+                                <img src="assets/images/tech_behemoths-removebg-preview.png" alt="">
+                            </a>
                         </div>
 
                         <div class="badge-item clutch-badge">
@@ -675,9 +676,9 @@
                         </div>
 
                         <div class="badge-item">
-                            <a href="https://techbehemoths.com/company/endevo-digital" target="_blank" rel="noopener">
-                                <img src="assets/images/tech_behemoths-removebg-preview.png" alt="">
-                            </a>
+                             <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
+                            <div data-designrush-widget data-agency-id="99274" data-style="dark" aria-label="DesignRush agency reviews section"></div>
+                           
                         </div>
 
                         <div class="badge-item">
