@@ -631,12 +631,12 @@
                             <p class="contact-phone">+94 77 55 18274</p>
                         </div>
                         <div class="social-links">
-                            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
-                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
-                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="social-icon"><i class="bi bi-dribbble"></i></a>
-                        </div>
+                        <a href="https://www.linkedin.com/company/endevo-holdings/" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61564148454268&mibextid=wwXIfr&rdid=RokhX2XvDpODHrFN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C2fVTgRpT%2F%3Fmibextid%3DwwXIfr#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@endevo.co?_t=ZS-8wLvZ6UWhKi&_r=1" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://www.instagram.com/endevo.digital?igsh=Zmh5dmJwa2FpYzNx&utm_source=qr" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/94775518274?text=Hi%20there%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                    </div>
                     </div>
                 </div>
 
@@ -681,7 +681,7 @@
 
                           <div class="badge-item">
 
-                                <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener"><img src="assets/images/TB-Trusted-on-white.svg" alt=""></a>
+                                <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener"><img src="assets/images/tech_behemoths-removebg-preview.png" alt=""></a>
 
                             </div>
 

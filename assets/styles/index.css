@@ -1525,6 +1525,10 @@ body {
   border: 1px dashed rgba(0, 0, 0, 0.1);
 }
 
+.teech {
+  margin-left: -55px !important;
+}
+
 /* Legal Section */
 .footer-legal {
   display: flex;
