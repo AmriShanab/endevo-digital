@@ -84,40 +84,50 @@
   <!-- Hero Section End -->
 
   <!-- Contact Form Start -->
-   <!-- Contact Form Section -->
-<div class="container my-5">
-  <div class="row align-items-center">
-    <!-- Form Column -->
-    <div class="col-lg-6 col-md-6 contact-form" data-aos="fade-up" data-aos-delay="150">
-      <h2 class="form-heading">Send us a Message</h2>
-      <form action="send_mail.php" method="POST">
-        <div class="mb-3">
-          <label for="name" class="form-label">Your Name</label>
-          <input type="text" class="form-control form-control-lg" id="name" name="name" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Your Email</label>
-          <input type="email" class="form-control form-control-lg" id="email" name="email" required>
-        </div>
-        <div class="mb-3">
-          <label for="subject" class="form-label">Subject</label>
-          <input type="text" class="form-control form-control-lg" id="subject" name="subject">
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control form-control-lg" id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark btn-lg w-100">Send Message</button>
-      </form>
-    </div>
+  <!-- Contact Form Section -->
+  <div class="container my-5">
+    <div class="row align-items-center">
+      <!-- Form Column -->
+      <div class="col-lg-6 col-md-6 contact-form" data-aos="fade-up" data-aos-delay="150">
+        <h2 class="form-heading">Send us a Message</h2>
+        <form action="send_mail.php" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control form-control-lg" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control form-control-lg" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control form-control-lg" id="subject" name="subject">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control form-control-lg" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark btn-lg w-100">Send Message</button>
+        </form>
+      </div>
 
-    <!-- Info / Image Column -->
-    <div class="col-lg-6 col-md-6 text-center" data-aos="fade-left" data-aos-delay="200">
-      <img src="assets/images/contact_form.jpg" alt="Contact Form Illustration" class="img-fluid rounded shadow">
+      <!-- Info / Image Column -->
+      <div class="col-lg-6 col-md-6 text-center d-flex align-items-center justify-content-center"
+        data-aos="fade-left" data-aos-delay="200">
+
+        <div class="cnt-social">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        </div>
+
+      </div>
+
     </div>
   </div>
-</div>
-<!-- Contact Form Section End -->
+  <!-- Contact Form Section End -->
 
 
   <!-- Scripts -->
@@ -194,3 +204,4 @@
 </body>
 
 </html>
+<?php include 'footer.php'; ?>

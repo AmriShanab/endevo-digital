@@ -1494,12 +1494,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 120px;
+  min-height: 140px;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 8px;
-  padding: 0.5rem;
+  /* padding: 0.2rem; */
   transition: transform 0.3s ease;
 }
+
+.trustpilot-widget {
+  margin-top: 60px !important;
+}
+
+/* .badge-space {
+  margin-left: 40px !important;
+} */
 
 .badge-item:hover {
   transform: translateY(-3px);

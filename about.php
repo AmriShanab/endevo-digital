@@ -284,7 +284,7 @@
             <div class="row-center">
                 <div class="content-column">
                     <div class="about-headline text-center">
-                        <h1 class="hero-title">Redefining Brands through Innovation and Strategy</h1>
+                        <h1 class="hero-title">Redefining Digital Experiences through Vision and Strategy.</h1>
                     </div>
                     <!-- Image that will expand on scroll -->
                     <div class="hero-image-container">
@@ -305,7 +305,9 @@
                 <div class="col-lg-6 col-md-7">
                     <h2 class="section-title">Who We Are</h2>
                     <p class="section-content">
-                        At Endevo, we started our journey in 2020 as a small team of freelancers, mainly offering event management services to businesses and brands. Over time, our passion, creativity, and hands-on experience helped us grow and in 2024, we officially incorporated to expand our services and deliver more value under one roof. Today, Endevo is a creative and solutions driven company offering a wide range of services, including Web Development, Digital Marketing, Branding & Design, and Event Management. We work with startups, growing businesses, and established brands, helping them build their online presence, promote their services, and reach the right audience. What makes us different is our commitment to quality, quick execution, and a personalized approach to every project. We combine creative thinking with practical execution to deliver solutions that are both visually impactful and performance driven.
+                        At Endevo Digital, software is at the heart of everything we do. We design and develop smart solutions that help businesses grow, connect, and succeed in today’s digital era. From custom applications to dynamic web platforms, our work is built to simplify challenges and create real impact.
+                        Beyond technology, we focus on solving problems and adding value. Our team works with passion and purpose, turning ideas into solutions that are practical, simple, and effective. Every project we take on is guided by creativity, teamwork, and a drive to make a difference. What sets us apart is our dedication to blending creativity with technology. We don’t just build systems; we craft experiences that empower growth and innovation.
+                        At Endevo Digital, our goal is simple to help businesses move forward with confidence in a fast-changing digital world.
                     </p>
 
                     <!-- <div class="highlight-box">
@@ -369,6 +371,53 @@
         </div>
     </section>
 
+    <section class="associated-companies py-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-12 text-center">
+                    <h2 class="section-title-ac">Our Associated Companies</h2>
+                    <p class="section-subtitle-ac">We proudly collaborate with trusted partners worldwide.</p>
+                </div>
+            </div>
+
+            <!-- Logos Grid -->
+            <div class="row justify-content-center">
+                <!-- Company Logo -->
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="company-card">
+                        <img src="assets/images/digi_print.png" alt="Company 1" class="img-fluid company-logo">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="company-card">
+                        <img src="assets/images/max_holdings.jpg" alt="Company 2" class="img-fluid company-logo">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="company-card">
+                        <img src="assets/images/max_engineering.jpg" alt="Company 3" class="img-fluid company-logo">
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="company-card">
+                        <img src="assets/images/max_tourism.jpg" alt="Company 4" class="img-fluid company-logo">
+                    </div>
+                </div>
+
+                <!-- <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="company-card">
+                        <img src="logo5.png" alt="Company 5" class="img-fluid company-logo">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
     <!-- OUR VISION SECTION -->
     <section class="content-section">
         <div class="floating-elements">
@@ -399,110 +448,110 @@
     </section>
 
 
- <section class="values-section">
-    <div class="values-container">
-        <div class="values-header">
-            <h2 class="values-title">Our Core Values</h2>
-            <p class="values-subtitle">The principles that guide everything we do at Endevo Digital</p>
-        </div>
-
-        <!-- Value 1 -->
-        <div class="value-item">
-            <div class="value-content">
-                <div class="value-number">01</div>
-                <h3 class="value-heading">Innovation</h3>
-                <p class="value-description">
-                    We constantly push boundaries and explore new technologies to deliver forward-thinking solutions.
-                </p>
+    <section class="values-section">
+        <div class="values-container">
+            <div class="values-header">
+                <h2 class="values-title">Our Core Values</h2>
+                <p class="values-subtitle">The principles that guide everything we do at Endevo Digital</p>
             </div>
-            <div class="value-image">
-                <div class="value-img-container">
-                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Innovation">
+
+            <!-- Value 1 -->
+            <div class="value-item">
+                <div class="value-content">
+                    <div class="value-number">01</div>
+                    <h3 class="value-heading">Innovation</h3>
+                    <p class="value-description">
+                        We constantly push boundaries and explore new technologies to deliver forward-thinking solutions.
+                    </p>
+                </div>
+                <div class="value-image">
+                    <div class="value-img-container">
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Innovation">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value 2 -->
+            <div class="value-item">
+                <div class="value-content">
+                    <div class="value-number">02</div>
+                    <h3 class="value-heading">Integrity</h3>
+                    <p class="value-description">
+                        We maintain transparency and honesty in all our dealings, building trust with every interaction.
+                    </p>
+                </div>
+                <div class="value-image">
+                    <div class="value-img-container">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Integrity">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value 3 -->
+            <div class="value-item">
+                <div class="value-content">
+                    <div class="value-number">03</div>
+                    <h3 class="value-heading">Excellence</h3>
+                    <p class="value-description">
+                        We pursue perfection in every project, paying attention to even the smallest details.
+                    </p>
+                </div>
+                <div class="value-image">
+                    <div class="value-img-container">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Excellence">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value 4 -->
+            <div class="value-item">
+                <div class="value-content">
+                    <div class="value-number">04</div>
+                    <h3 class="value-heading">Collaboration</h3>
+                    <p class="value-description">
+                        We believe the best results come from teamwork, both within our company and with our clients.
+                    </p>
+                </div>
+                <div class="value-image">
+                    <div class="value-img-container">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Collaboration">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value 5 -->
+            <div class="value-item">
+                <div class="value-content">
+                    <div class="value-number">05</div>
+                    <h3 class="value-heading">Customer Focus</h3>
+                    <p class="value-description">
+                        We listen carefully to understand our clients' unique needs and deliver personalized solutions.
+                    </p>
+                </div>
+                <div class="value-image">
+                    <div class="value-img-container">
+                        <img src="https://images.unsplash.com/photo-1573164574230-db1d5e960238?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Customer Focus">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value 6 - Last Item with Special Styling -->
+            <div class="value-item last-item">
+                <div class="value-content">
+                    <div class="value-number">06</div>
+                    <h3 class="value-heading">Sustainability</h3>
+                    <p class="value-description">
+                        We design solutions that stand the test of time, ensuring long-term value for our clients.
+                    </p>
+                </div>
+                <div class="value-image">
+                    <div class="value-img-container">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Sustainability">
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Value 2 -->
-        <div class="value-item">
-            <div class="value-content">
-                <div class="value-number">02</div>
-                <h3 class="value-heading">Integrity</h3>
-                <p class="value-description">
-                    We maintain transparency and honesty in all our dealings, building trust with every interaction.
-                </p>
-            </div>
-            <div class="value-image">
-                <div class="value-img-container">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Integrity">
-                </div>
-            </div>
-        </div>
-
-        <!-- Value 3 -->
-        <div class="value-item">
-            <div class="value-content">
-                <div class="value-number">03</div>
-                <h3 class="value-heading">Excellence</h3>
-                <p class="value-description">
-                    We pursue perfection in every project, paying attention to even the smallest details.
-                </p>
-            </div>
-            <div class="value-image">
-                <div class="value-img-container">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Excellence">
-                </div>
-            </div>
-        </div>
-
-        <!-- Value 4 -->
-        <div class="value-item">
-            <div class="value-content">
-                <div class="value-number">04</div>
-                <h3 class="value-heading">Collaboration</h3>
-                <p class="value-description">
-                    We believe the best results come from teamwork, both within our company and with our clients.
-                </p>
-            </div>
-            <div class="value-image">
-                <div class="value-img-container">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Collaboration">
-                </div>
-            </div>
-        </div>
-
-        <!-- Value 5 -->
-        <div class="value-item">
-            <div class="value-content">
-                <div class="value-number">05</div>
-                <h3 class="value-heading">Customer Focus</h3>
-                <p class="value-description">
-                    We listen carefully to understand our clients' unique needs and deliver personalized solutions.
-                </p>
-            </div>
-            <div class="value-image">
-                <div class="value-img-container">
-                    <img src="https://images.unsplash.com/photo-1573164574230-db1d5e960238?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Customer Focus">
-                </div>
-            </div>
-        </div>
-
-        <!-- Value 6 - Last Item with Special Styling -->
-        <div class="value-item last-item">
-            <div class="value-content">
-                <div class="value-number">06</div>
-                <h3 class="value-heading">Sustainability</h3>
-                <p class="value-description">
-                    We design solutions that stand the test of time, ensuring long-term value for our clients.
-                </p>
-            </div>
-            <div class="value-image">
-                <div class="value-img-container">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Sustainability">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <footer class="footer-section">
         <!-- Floating Elements -->

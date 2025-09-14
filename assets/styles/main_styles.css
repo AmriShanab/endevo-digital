@@ -335,3 +335,24 @@
 .navbar-mine.navbar-hidden {
     transform: translateY(-100%);
 }
+
+/* Navbar Logo Image Styling */
+.navbar-logo-mine img {
+  max-height: 70px;         /* Keeps navbar height balanced */
+  width: auto;              /* Keeps aspect ratio */
+  object-fit: contain;      /* Prevents distortion */
+  display: block;           /* Removes inline gap issues */
+  transition: transform 0.3s ease;
+}
+
+/* Slight hover effect (optional) */
+.navbar-logo-mine img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-logo-mine img {
+    max-height: 40px;       /* Slightly smaller on mobile */
+  }
+}

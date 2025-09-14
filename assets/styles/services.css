@@ -650,11 +650,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 60px;
+    min-height: 140px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 8px;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     transition: transform 0.3s ease;
+}
+
+.trustpilot-widget {
+  margin-top: 60px !important;
 }
 
 .badge-item:hover {

@@ -107,118 +107,108 @@
             <div class="floating-element element-3"></div> -->
         <!-- </div> -->
         <div class="container-fluid">
-            <div class="row align-items-center">
-                <!-- Text Content Column -->
-                <div class="col-lg-7 col-md-12">
-                    <div class="welcome-container">
-                        <h2 class="animate__fadeInUp">OUR SERVICES</h2>
-                        <p class="animate__fadeInUp animate__delay-1s">We specialize in building scalable software and next generation web solutions...</p>
-                    </div>
-                </div>
-
-                <!-- Services Column -->
-                <div class="col-lg-5 col-md-12">
-                    <div class="services-accordion">
-                        <div class="service-item">
-                            <button class="service-btn">
-                                <span>Web Development</span>
-                                <span class="toggle-icon">+</span>
-                            </button>
-                            <div class="service-content">
-                                <p>Custom websites and web applications built with modern frameworks like React, Vue, and Node.js for optimal performance.</p>
-                            </div>
-
-                            <div class="service-content">
-                                <a href="#"><button class="btn button-learn">Learn More</button></a>
-                            </div>
-                        </div>
-
-
-                        <div class="service-item">
-                            <button class="service-btn">
-                                <span>Digital Marketing</span>
-                                <span class="toggle-icon">+</span>
-                            </button>
-                            <div class="service-content">
-                                <p>Custom websites and web applications built with modern frameworks like React, Vue, and Node.js for optimal performance.</p>
-                            </div>
-                            <div class="service-content">
-                                <a href="#"><button class="btn button-learn">Learn More</button></a>
-                            </div>
-
-                        </div>
-
-                        <div class="service-item">
-                            <button class="service-btn">
-                                <span>UI/UX Design</span>
-                                <span class="toggle-icon">+</span>
-                            </button>
-                            <div class="service-content">
-                                <p>Custom websites and web applications built with modern frameworks like React, Vue, and Node.js for optimal performance.</p>
-                            </div>
-
-                            <div class="service-content">
-                                <a href="#"><button class="btn button-learn">Learn More</button></a>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <button class="service-btn">
-                                <span>SEO</span>
-                                <span class="toggle-icon">+</span>
-                            </button>
-                            <div class="service-content">
-                                <p>Custom websites and web applications built with modern frameworks like React, Vue, and Node.js for optimal performance.</p>
-                            </div>
-
-                            <div class="service-content">
-                                <a href="#"><button class="btn button-learn">Learn More</button></a>
-                            </div>
-                        </div>
-
-                        <!-- <div class="service-item">
-                            <button class="service-btn">
-                                <span>APP Development</span>
-                                <span class="toggle-icon">+</span>
-                            </button>
-                            <div class="service-content">
-                                <p>Custom websites and web applications built with modern frameworks like React, Vue, and Node.js for optimal performance.</p>
-                            </div>
-                        </div> -->
-
-                        <div class="service-item">
-                            <button class="service-btn">
-                                <span>Software Development</span>
-                                <span class="toggle-icon">+</span>
-                            </button>
-                            <div class="service-content">
-                                <p>Custom websites and web applications built with modern frameworks like React, Vue, and Node.js for optimal performance.</p>
-                            </div>
-
-                            <div class="service-content">
-                                <a href="#"><button class="btn button-learn">Learn More</button></a>
-                            </div>
-                        </div>
-
-                        <div class="service-item">
-                            <button class="service-btn">
-                                <span>API Development & Intergration</span>
-                                <span class="toggle-icon">+</span>
-                            </button>
-                            <div class="service-content">
-                                <p>Custom websites and web applications built with modern frameworks like React, Vue, and Node.js for optimal performance.</p>
-                            </div>
-
-                            <div class="service-content">
-                                <a href="#"><button class="btn button-learn">Learn More</button></a>
-                            </div>
-                        </div>
-
-                        <!-- Add other services following the same pattern -->
-                    </div>
-                </div>
+    <div class="row align-items-center">
+        <!-- Text Content Column -->
+        <div class="col-lg-7 col-md-12">
+            <div class="welcome-container">
+                <h2 class="animate__fadeInUp">OUR SERVICES</h2>
+                <p class="animate__fadeInUp animate__delay-1s">We specialize in building scalable software and next generation web solutions...</p>
             </div>
         </div>
+
+        <!-- Services Column -->
+        <div class="col-lg-5 col-md-12">
+            <div class="services-accordion">
+
+                <!-- Software Development -->
+                <div class="service-item">
+                    <button class="service-btn">
+                        <span>Software Development</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="service-content">
+                        <p>Building custom software solutions tailored to meet specific business needs, from desktop apps to cloud platforms.</p>
+                    </div>
+                    <div class="service-content">
+                        <a href="#"><button class="btn button-learn">Learn More</button></a>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="service-item">
+                    <button class="service-btn">
+                        <span>Web Development</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="service-content">
+                        <p>Creating responsive and user-friendly websites using modern technologies for businesses and individuals.</p>
+                    </div>
+                    <div class="service-content">
+                        <a href="#"><button class="btn button-learn">Learn More</button></a>
+                    </div>
+                </div>
+
+                <!-- API Development & Integration -->
+                <div class="service-item">
+                    <button class="service-btn">
+                        <span>API Development & Integration</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="service-content">
+                        <p>Creating and integrating APIs to ensure seamless communication between software systems and third-party services.</p>
+                    </div>
+                    <div class="service-content">
+                        <a href="#"><button class="btn button-learn">Learn More</button></a>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="service-item">
+                    <button class="service-btn">
+                        <span>Digital Marketing</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="service-content">
+                        <p>Promoting brands online through strategies like social media, email marketing, and paid ads to boost visibility and sales.</p>
+                    </div>
+                    <div class="service-content">
+                        <a href="#"><button class="btn button-learn">Learn More</button></a>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="service-item">
+                    <button class="service-btn">
+                        <span>UI/UX Design</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="service-content">
+                        <p>Designing intuitive and engaging interfaces that enhance user experience and usability across digital platforms.</p>
+                    </div>
+                    <div class="service-content">
+                        <a href="#"><button class="btn button-learn">Learn More</button></a>
+                    </div>
+                </div>
+
+                <!-- SEO -->
+                <div class="service-item">
+                    <button class="service-btn">
+                        <span>SEO (Search Engine Optimization)</span>
+                        <span class="toggle-icon">+</span>
+                    </button>
+                    <div class="service-content">
+                        <p>Improving website visibility on search engines to drive organic traffic and increase rankings.</p>
+                    </div>
+                    <div class="service-content">
+                        <a href="#"><button class="btn button-learn">Learn More</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
     </section>
 
 

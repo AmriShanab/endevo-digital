@@ -369,7 +369,7 @@
 
 
                             <div class="badge-item">
-                                <div class="trustpilot-widget" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="689e403d944373452ddd6e37" data-style-height="40px" data-style-width="100%" data-token="c322e6d0-8ab1-4ed5-a8a8-47571f14e7f3">
+                                <div class="trustpilot-widget" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="689e403d944373452ddd6e37" data-style-height="120px" data-style-width="100%" data-token="c322e6d0-8ab1-4ed5-a8a8-47571f14e7f3">
                                     <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener">Trustpilot</a>
                                 </div>
                             </div>
@@ -381,9 +381,9 @@
                             </div>
 
 
-                            <div class="badge-item placeholder-badge">
+                            <!-- <div class="badge-item placeholder-badge">
 
-                            </div>
+                            </div> -->
                         </div>
 
                         <!-- Copyright and Legal -->

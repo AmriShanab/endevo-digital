@@ -4,15 +4,15 @@
 
 <nav class="navbar-mine">
         <div class="navbar-container-mine">
-            <a href="/" class="navbar-logo-mine">Endevo<span>Digital</span></a>
+            <a href="/" class="navbar-logo-mine"><img src="assets/images/endevo_logo.png" alt=""></a>
 
             <ul class="navbar-menu-mine" id="navbarMenu">
                 <!-- Regular menu items -->
-                <li><a href="/">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="/services.php">Services</a></li>
-                <li><a href="/portfolio.php">Portfolio</a></li>
-                <li><a href="/contact.php">Let's Talk</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="services.php">Services</a></li>
+                <li><a href="portfolio.php">Portfolio</a></li>
+                <li><a href="contact.php">Let's Talk</a></li>
 
                 <!-- Mobile social links (will be hidden on desktop) -->
                 <li class="mobile-social-container">
