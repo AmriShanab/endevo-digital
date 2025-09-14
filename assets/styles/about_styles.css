@@ -920,3 +920,17 @@
     max-width: 120px  !important;
     height: auto !important;
 }
+
+.values-bottom-image {
+  max-width: 1500px;
+    width: 100%;
+    margin-top: 50px; /* optional spacing from values section */
+}
+
+.values-bottom-image img.full-width-img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover; /* ensures image covers width nicely */
+    margin-bottom: -85px !important;
+}

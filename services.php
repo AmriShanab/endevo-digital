@@ -357,9 +357,9 @@
 
                             </div>
 
-                            <div class="badge-item">
-                                <div class="goodfirm-widget" data-widget-type="goodfirms-widget-t4" data-height="196" data-company-id="187202"></div>
-                            </div>
+                          <div class="badge-item">
+                            <a href="https://www.goodfirms.co/company/endevo-digital" target="_blank" rel="noopener"><img src="assets/images/goodfirms-removebg-preview.png" alt=""></a>
+                        </div>
                         </div>
 
                         <!-- Copyright and Legal -->

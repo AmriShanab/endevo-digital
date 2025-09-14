@@ -17,7 +17,8 @@
                 <div class="footer-contact">
                     <h2 class="footer-lets-talk">LET'S TALK</h2>
                     <div class="contact-info">
-                        <p class="contact-email">hello@endevodigital.com</p>
+                        <a href="mailto:hello@endevodigital.com?subject=Inquiry&body=Hello%20Endevo%20Digital">hello@endevodigital.com</a>
+
                         <p class="contact-phone">+94 77 55 18274</p>
                     </div>
                     <div class="social-links">
@@ -66,12 +67,12 @@
                         </div>
                         <div class="badge-item">
 
-                            <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener"><img src="assets/images/TB-Trusted-on-white.svg" alt=""></a>
+                            <a href="https://techbehemoths.com/company/endevo-digital" target="_blank" rel="noopener"><img src="assets/images/TB-Trusted-on-white.svg" alt=""></a>
 
                         </div>
 
                         <div class="badge-item">
-                            <div class="goodfirm-widget" data-widget-type="goodfirms-widget-t4" data-height="196" data-company-id="187202"></div>
+                            <a href="https://www.goodfirms.co/company/endevo-digital" target="_blank" rel="noopener"><img src="assets/images/goodfirms-removebg-preview.png" alt=""></a>
                         </div>
                         <!-- <div class="badge-item placeholder-badge">
 

@@ -1421,11 +1421,12 @@ body {
   line-height: 1.1;
 }
 
-.contact-info p {
+.contact-info a {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 1rem;
   line-height: 1.6;
+  text-decoration: none;
 }
 
 .contact-email {
