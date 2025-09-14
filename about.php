@@ -243,26 +243,58 @@
         }
 
         /* Navbar Logo Image Styling */
-.navbar-logo-mine img {
-  max-height: 70px;         /* Keeps navbar height balanced */
-  width: auto;              /* Keeps aspect ratio */
-  object-fit: contain;      /* Prevents distortion */
-  display: block;           /* Removes inline gap issues */
+        .navbar-logo-mine img {
+            max-height: 70px;
+            /* Keeps navbar height balanced */
+            width: auto;
+            /* Keeps aspect ratio */
+            object-fit: contain;
+            /* Prevents distortion */
+            display: block;
+            /* Removes inline gap issues */
+            transition: transform 0.3s ease;
+
+        }
+
+        /* Slight hover effect (optional) */
+        .navbar-logo-mine img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar-logo-mine img {
+                max-height: 70px;
+                /* Slightly smaller on mobile */
+                margin-top: 10px !important;
+            }
+        }
+
+        .video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
-  
 }
 
-/* Slight hover effect (optional) */
-.navbar-logo-mine img:hover {
+.video-container video {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover effect */
+.video-container:hover {
+  transform: translateY(-5px);
+}
+
+.video-container:hover video {
   transform: scale(1.05);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .navbar-logo-mine img {
-    max-height: 70px;       /* Slightly smaller on mobile */
-    margin-top: 10px !important;
-  }
+  filter: brightness(1.1);
 }
 
     </style>
@@ -371,6 +403,36 @@
             </div>
         </div>
     </section>
+    <!-- OUR VISION -->
+    <section class="content-section">
+        <div class="floating-elements">
+            <span class="circle"></span>
+            <span class="triangle"></span>
+            <span class="triangle"></span>
+            <!-- <span class="square"></span> -->
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column - Content -->
+                <div class="col-lg-6 col-md-7">
+                    <div class="video-container" data-aos="fade-right" data-aos-delay="200">
+                        <video src="assets/videos/vision.mp4"></video>
+                    </div>
+
+                </div>
+
+                <!-- Right Column - Image -->
+                <div class="col-lg-6 col-md-5">
+
+                    <h2 class="section-title">OUR VISION</h2>
+                    <p class="section-content">
+                        To be a global leader in digital innovation, empowering businesses to reach their full potential through tailored web, mobile, marketing, and event solutions that drive success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- OUR MISSION SECTION -->
     <section class="content-section">
@@ -378,17 +440,18 @@
             <div class="row align-items-center">
                 <!-- Left Column - Content -->
                 <div class="col-lg-6 col-md-7">
-                    <div class="img-container mission-image" data-aos="fade-left" data-aos-delay="200">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Our Team">
-                    </div>
-                </div>
-
-                <!-- Right Column - Image -->
-                <div class="col-lg-6 col-md-5">
                     <h2 class="section-title">OUR MISSON</h2>
                     <p class="section-content">
                         Our mission is to deliver exceptional, customized digital solutions that enhance our clients' online presence and business operations. We aim to continually evolve, embrace new technologies, and exceed our clients' expectations through high-quality, reliable services.
                     </p>
+                </div>
+
+                <!-- Right Column - Image -->
+                <div class="col-lg-6 col-md-5">
+
+                    <div class="img-container mission-image" data-aos="fade-left" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Our Team">
+                    </div>
 
                 </div>
             </div>
@@ -400,8 +463,8 @@
             <!-- Section Title -->
             <div class="row justify-content-center mb-4">
                 <div class="col-12 text-center">
-                    <h2 class="section-title-ac">Our Associated Companies</h2>
-                    <p class="section-subtitle-ac">We proudly collaborate with trusted partners worldwide.</p>
+                    <h2 class="section-title-ac">Our Associate Companies</h2>
+                    <p class="section-subtitle-ac">Collaborating for impact, crafting legacies together</p>
                 </div>
             </div>
 
@@ -443,33 +506,7 @@
 
 
     <!-- OUR VISION SECTION -->
-    <section class="content-section">
-        <div class="floating-elements">
-            <span class="circle"></span>
-            <span class="triangle"></span>
-            <span class="triangle"></span>
-            <!-- <span class="square"></span> -->
-        </div>
 
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Left Column - Content -->
-                <div class="col-lg-6 col-md-7">
-                    <h2 class="section-title">OUR VISION</h2>
-                    <p class="section-content">
-                        To be a global leader in digital innovation, empowering businesses to reach their full potential through tailored web, mobile, marketing, and event solutions that drive success.
-                    </p>
-                </div>
-
-                <!-- Right Column - Image -->
-                <div class="col-lg-6 col-md-5">
-                    <div class="img-container" data-aos="fade-right" data-aos-delay="200">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Our Team">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <section class="values-section">
@@ -686,119 +723,150 @@
             once: true // whether animation should happen only once
         });
     </script>
-  <script>
- document.addEventListener('DOMContentLoaded', () => {
-    const navbar = document.querySelector('.navbar-mine');
-    const heroSection = document.querySelector('.about-hero');
-    const heroImageContainer = document.querySelector('.hero-image-container');
-    const logo = document.querySelector('.navbar-logo-mine img'); // Make sure your logo img has this selector
-    const toggleBtn = document.getElementById('navbarToggle');
-    const menu = document.getElementById('navbarMenu');
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.querySelector('.navbar-mine');
+            const heroSection = document.querySelector('.about-hero');
+            const heroImageContainer = document.querySelector('.hero-image-container');
+            const logo = document.querySelector('.navbar-logo-mine img'); // Make sure your logo img has this selector
+            const toggleBtn = document.getElementById('navbarToggle');
+            const menu = document.getElementById('navbarMenu');
 
-    const logoDark = 'assets/images/endevo_logo_big.png'; // For light navbar
-    const logoLight = 'assets/images/logo_White-removebg-preview.png'; // For dark navbar
+            const logoDark = 'assets/images/endevo_logo_big.png'; // For light navbar
+            const logoLight = 'assets/images/logo_White-removebg-preview.png'; // For dark navbar
 
-    // Set hero image size
-    function setImageSize() {
-        if (!heroImageContainer) return;
-        const viewportHeight = window.innerHeight;
-        const textHeight = document.querySelector('.about-headline').offsetHeight;
-        const maxImageHeight = viewportHeight - textHeight - 100;
-        heroImageContainer.style.maxHeight = `${Math.max(maxImageHeight, 300)}px`;
-    }
+            // Set hero image size
+            function setImageSize() {
+                if (!heroImageContainer) return;
+                const viewportHeight = window.innerHeight;
+                const textHeight = document.querySelector('.about-headline').offsetHeight;
+                const maxImageHeight = viewportHeight - textHeight - 100;
+                heroImageContainer.style.maxHeight = `${Math.max(maxImageHeight, 300)}px`;
+            }
 
-    // Determine which logo to use based on navbar theme
-    function updateLogo() {
-        if (!logo) return;
-        if (navbar.classList.contains('navbar-dark') || navbar.classList.contains('active-background')) {
-            logo.src = logoLight;
-        } else {
-            logo.src = logoDark;
-        }
-    }
+            // Determine which logo to use based on navbar theme
+            function updateLogo() {
+                if (!logo) return;
+                if (navbar.classList.contains('navbar-dark') || navbar.classList.contains('active-background')) {
+                    logo.src = logoLight;
+                } else {
+                    logo.src = logoDark;
+                }
+            }
 
-    // Scroll behavior
-    function handleScroll() {
-        const scrollY = window.scrollY || window.pageYOffset;
-        const heroBottom = heroSection.getBoundingClientRect().bottom;
+            // Scroll behavior
+            function handleScroll() {
+                const scrollY = window.scrollY || window.pageYOffset;
+                const heroBottom = heroSection.getBoundingClientRect().bottom;
 
-        // Switch navbar theme
-        if (heroBottom <= 0) {
-            navbar.classList.remove('navbar-dark');
-            navbar.classList.add('navbar-light');
-        } else {
-            navbar.classList.remove('navbar-light');
-            navbar.classList.add('navbar-dark');
-        }
+                // Switch navbar theme
+                if (heroBottom <= 0) {
+                    navbar.classList.remove('navbar-dark');
+                    navbar.classList.add('navbar-light');
+                } else {
+                    navbar.classList.remove('navbar-light');
+                    navbar.classList.add('navbar-dark');
+                }
 
-        updateLogo(); // Update logo based on current navbar theme
+                updateLogo(); // Update logo based on current navbar theme
 
-        // Hero image scroll effect
-        if (heroImageContainer) {
-            const scrollProgress = Math.min(scrollY / 300, 1);
-            const width = 80 + (20 * scrollProgress);
-            heroImageContainer.style.width = `${width}%`;
-            heroImageContainer.style.opacity = 1 - (scrollProgress * 0.3);
-        }
+                // Hero image scroll effect
+                if (heroImageContainer) {
+                    const scrollProgress = Math.min(scrollY / 300, 1);
+                    const width = 80 + (20 * scrollProgress);
+                    heroImageContainer.style.width = `${width}%`;
+                    heroImageContainer.style.opacity = 1 - (scrollProgress * 0.3);
+                }
 
-        // Navbar hide/show
-        if (scrollY <= 0 || navbar.classList.contains('active-background')) {
-            navbar.classList.remove('navbar-hidden');
-            return;
-        }
+                // Navbar hide/show
+                if (scrollY <= 0 || navbar.classList.contains('active-background')) {
+                    navbar.classList.remove('navbar-hidden');
+                    return;
+                }
 
-        clearTimeout(window.scrollTimeout);
-        window.scrollTimeout = setTimeout(() => {
-            if (scrollY > 100) navbar.classList.add('navbar-hidden');
-        }, 1000);
-    }
+                clearTimeout(window.scrollTimeout);
+                window.scrollTimeout = setTimeout(() => {
+                    if (scrollY > 100) navbar.classList.add('navbar-hidden');
+                }, 1000);
+            }
 
-    // Mobile menu toggle
-    function initMobileMenu() {
-        if (!toggleBtn || !menu) return;
+            // Mobile menu toggle
+            function initMobileMenu() {
+                if (!toggleBtn || !menu) return;
 
-        const toggleMenu = () => {
-            const isActive = menu.classList.toggle('active');
-            toggleBtn.classList.toggle('active', isActive);
-            navbar.classList.toggle('active-background', isActive);
+                const toggleMenu = () => {
+                    const isActive = menu.classList.toggle('active');
+                    toggleBtn.classList.toggle('active', isActive);
+                    navbar.classList.toggle('active-background', isActive);
 
-            updateLogo(); // Switch logo when menu is open
+                    updateLogo(); // Switch logo when menu is open
 
-            document.body.style.overflow = isActive ? 'hidden' : '';
-        };
+                    document.body.style.overflow = isActive ? 'hidden' : '';
+                };
 
-        toggleBtn.addEventListener('click', toggleMenu);
+                toggleBtn.addEventListener('click', toggleMenu);
 
-        // Close menu when clicking links (mobile)
-        document.querySelectorAll('.navbar-menu-mine a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth <= 768 && menu.classList.contains('active')) toggleMenu();
-            });
+                // Close menu when clicking links (mobile)
+                document.querySelectorAll('.navbar-menu-mine a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (window.innerWidth <= 768 && menu.classList.contains('active')) toggleMenu();
+                    });
+                });
+            }
+
+            // Reset menu/logo on resize
+            function handleResize() {
+                setImageSize();
+                if (window.innerWidth > 768 && menu.classList.contains('active')) {
+                    menu.classList.remove('active');
+                    toggleBtn.classList.remove('active');
+                    navbar.classList.remove('active-background');
+                    document.body.style.overflow = '';
+                }
+                updateLogo();
+            }
+
+            // Initialize
+            setImageSize();
+            initMobileMenu();
+            updateLogo();
+
+            window.addEventListener('scroll', handleScroll);
+            window.addEventListener('resize', handleResize);
         });
-    }
+    </script>
 
-    // Reset menu/logo on resize
-    function handleResize() {
-        setImageSize();
-        if (window.innerWidth > 768 && menu.classList.contains('active')) {
-            menu.classList.remove('active');
-            toggleBtn.classList.remove('active');
-            navbar.classList.remove('active-background');
-            document.body.style.overflow = '';
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const video = document.querySelector(".video-container video");
+
+    if (video) {
+      video.muted = true; // required for autoplay
+      video.loop = true;
+
+      function initVideo() {
+        if (window.innerWidth <= 768) {
+          // Mobile: autoplay
+          video.play().catch(err => console.log("Autoplay blocked:", err));
+        } else {
+          // Desktop: play on hover
+          video.addEventListener("mouseenter", () => video.play());
+          video.addEventListener("mouseleave", () => {
+            video.pause();
+            video.currentTime = 0;
+          });
         }
-        updateLogo();
+      }
+
+      initVideo();
+
+      // Re-check when resizing (mobile ↔ desktop)
+      window.addEventListener("resize", initVideo);
     }
-
-    // Initialize
-    setImageSize();
-    initMobileMenu();
-    updateLogo();
-
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleResize);
-});
-
+  });
 </script>
+
+
 
 </body>
 
