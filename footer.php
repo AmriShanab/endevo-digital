@@ -59,19 +59,27 @@
                             <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-nofollow="false" data-expandifr="true" data-scale="100" data-clutchcompany-id="2551338"></div>
                         </div>
 
-                         <div class="badge-item">
-                               <div class="trustpilot-widget badge-space" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="689e403d944373452ddd6e37" data-style-height="130px" data-style-width="100%" data-token="c322e6d0-8ab1-4ed5-a8a8-47571f14e7f3">
-                                <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener">Trustpilot</a>
-                            </div>
+                        <div class="badge-item">
+
+                            <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener"><img src="assets/images/trustpilot-removebg-preview.png" alt=""></a>
+
+                        </div>
+                        <div class="badge-item">
+
+                            <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener"><img src="assets/images/TB-Trusted-on-white.svg" alt=""></a>
+
                         </div>
 
+                        <div class="badge-item">
+                            <div class="goodfirm-widget" data-widget-type="goodfirms-widget-t4" data-height="196" data-company-id="187202"></div>
+                        </div>
                         <!-- <div class="badge-item placeholder-badge">
 
                         </div> -->
 
-                       
 
-                     
+
+
                     </div>
 
                     <!-- Copyright and Legal -->
@@ -92,7 +100,7 @@
 <!-- TrustBox script -->
 <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 
-
+<script type="text/javascript" src="https://assets.goodfirms.co/assets/js/widget.min.js"></script>
 
 
 

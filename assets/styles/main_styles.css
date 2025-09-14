@@ -41,8 +41,7 @@
   background: rgba(255, 255, 255, 0.5); /* semi-transparent white */
   backdrop-filter: blur(10px); /* blur effect behind */
   -webkit-backdrop-filter: blur(10px);
-  font-family: "Universal Sans PU", system-ui, -apple-system, Segoe UI, Roboto,
-    Arial, sans-serif;
+  font-family: "Inter", sans-serif !important;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -148,61 +147,61 @@
 
 /* Mobile Social Links - Hidden by default */
 .mobile-social-container {
-    display: none;
+  display: none;
 }
 
 /* Only show when mobile menu is active */
 @media (max-width: 768px) {
-    .navbar-menu-mine.active .mobile-social-container {
-        display: block;
-        width: 100%;
-        padding: 2rem 1rem 0;
-        margin-top: 1rem;
-        border-top: 1px solid rgba(255,255,255,0.2);
-    }
+  .navbar-menu-mine.active .mobile-social-container {
+    display: block;
+    width: 100%;
+    padding: 2rem 1rem 0;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
 
-    .mobile-social-links {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
+  .mobile-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-    .mobile-social-links p {
-        color: var(--color-white);
-        font-size: 1.2rem;
-        text-align: center;
-        margin-bottom: 0.5rem;
-    }
+  .mobile-social-links p {
+    color: var(--color-white);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
 
-    .mobile-email {
-        color: var(--color-white);
-        font-size: 1.1rem;
-        text-decoration: none;
-        text-align: center;
-        display: block;
-        margin-bottom: 1rem;
-    }
+  .mobile-email {
+    color: var(--color-white);
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+  }
 
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-    }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 
-    .social-icons a {
-        color: var(--color-white);
-        font-size: 1.5rem;
-        transition: color 0.3s ease;
-    }
+  .social-icons a {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
 
-    .social-icons a:hover {
-        color: #00c6ff;
-    }
+  .social-icons a:hover {
+    color: #00c6ff;
+  }
 }
 
 /* Fix for logo span color */
 .navbar-logo-mine span {
-    color: #00c6ff !important; /* Ensures color stays consistent */
+  color: #00c6ff !important; /* Ensures color stays consistent */
 }
 
 /* Add these media queries to your existing CSS */
@@ -212,7 +211,7 @@
   .navbar-toggle-mine {
     display: flex; /* Show the hamburger menu */
   }
-  
+
   .navbar-menu-mine {
     position: fixed;
     top: 80px; /* Height of your navbar */
@@ -231,17 +230,17 @@
     z-index: 99;
     overflow-y: auto;
   }
-  
+
   .navbar-menu-mine.active {
     transform: translateX(0);
   }
-  
+
   .navbar-menu-mine li a {
     color: #fff !important; /* White text in mobile menu */
     font-size: 1.5rem;
     text-align: left;
   }
-  
+
   .navbar-menu-mine li a::after {
     background: #00c6ff; /* Change underline color for mobile */
   }
@@ -252,11 +251,11 @@
   .navbar-toggle-mine {
     display: none; /* Hide hamburger menu */
   }
-  
+
   .navbar-menu-mine {
     display: flex !important; /* Ensure menu is always visible */
   }
-  
+
   /* Hide mobile social links on desktop */
   .mobile-social-container {
     display: none !important;
@@ -265,85 +264,84 @@
 
 /* Mobile Social Links - Hidden by default */
 .mobile-social-container {
-    display: none;
+  display: none;
 }
 
 /* Show when mobile menu is active */
 @media (max-width: 768px) {
-    .navbar-menu-mine.active {
-        justify-content: space-between; /* Pushes content to top and bottom */
-        padding-bottom: 0; /* Remove bottom padding since we'll handle it in the container */
-    }
+  .navbar-menu-mine.active {
+    justify-content: space-between; /* Pushes content to top and bottom */
+    padding-bottom: 0; /* Remove bottom padding since we'll handle it in the container */
+  }
 
-    .navbar-menu-mine.active .mobile-social-container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 2rem 1.5rem;
-        margin-top: auto; 
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        background: rgba(255, 255, 255, 0.05);
-    }
+  .navbar-menu-mine.active .mobile-social-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+  }
 
-    .mobile-social-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
+  .mobile-social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 
-    .mobile-social-links p {
-        color: var(--color-white);
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
-        opacity: 0.8;
-    }
+  .mobile-social-links p {
+    color: var(--color-white);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+  }
 
-    .mobile-email {
-        color: var(--color-white);
-        font-size: 1rem;
-        text-decoration: none;
-        margin-bottom: 1rem;
-        transition: color 0.3s ease;
-    }
+  .mobile-email {
+    color: var(--color-white);
+    font-size: 1rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+  }
 
-    .mobile-email:hover {
-        color: #00c6ff;
-    }
+  .mobile-email:hover {
+    color: #00c6ff;
+  }
 
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-    }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 
-    .social-icons a {
-        color: var(--color-white);
-        font-size: 1.4rem;
-        transition: color 0.3s ease;
-    }
+  .social-icons a {
+    color: var(--color-white);
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+  }
 
-    .social-icons a:hover {
-        color: #00c6ff;
-    }
+  .social-icons a:hover {
+    color: #00c6ff;
+  }
 }
 
 .navbar-mine {
-    transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .navbar-mine.navbar-hidden {
-    transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
 /* Navbar Logo Image Styling */
 .navbar-logo-mine img {
-  max-height: 60px;         /* Keeps navbar height balanced */
-  width: auto;              /* Keeps aspect ratio */
-  object-fit: contain;      /* Prevents distortion */
-  display: block;           /* Removes inline gap issues */
+  max-height: 60px; /* Keeps navbar height balanced */
+  width: auto; /* Keeps aspect ratio */
+  object-fit: contain; /* Prevents distortion */
+  display: block; /* Removes inline gap issues */
   transition: transform 0.3s ease;
-  
 }
 
 /* Slight hover effect (optional) */
@@ -354,7 +352,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .navbar-logo-mine img {
-    max-height: 70px;       /* Slightly smaller on mobile */
+    max-height: 70px; /* Slightly smaller on mobile */
     margin-top: 10px !important;
   }
 }

@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Inter', sans-serif !important;
 }
 
 .floating-elements {
@@ -80,7 +80,7 @@ body {
   line-height: 1;
   letter-spacing: -0.03em;
   margin: 0;
-  font-family: "Inter", sans-serif; /* Modern font stack */
+  font-family: 'Inter', sans-serif !important;
   background: linear-gradient(90deg, #111 0%, #444 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -95,7 +95,7 @@ body {
   text-align: left;
   line-height: 1.4;
   margin: 0.5rem 0 0 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif !important;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   position: relative;
@@ -420,7 +420,7 @@ body {
 
 /* ===== Welcome Section ===== */
 .welcome-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
   position: relative;
   overflow: hidden;
   background: transparent;
@@ -1502,6 +1502,11 @@ body {
   transition: transform 0.3s ease;
 }
 
+.badge-item img {
+    max-width: 120px  !important;
+    height: auto !important;
+}
+
 .trustpilot-widget {
   margin-top: 60px !important;
 }
@@ -1638,14 +1643,14 @@ body {
 }
 
 .value-section {
-  padding: 2rem 0;
+  padding: 0.1rem 0;
 }
 
 .value-container {
   /* background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); */
   border-radius: 12px;
-  padding: 3rem 2rem;
-  margin: 2rem 0;
+  padding: 2rem 2rem;
+  margin: 0.5rem 0;
   /* box-shadow: var(--box-shadow); */
   transition: transform 0.3s ease;
 }

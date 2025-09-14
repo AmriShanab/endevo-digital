@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -216,113 +221,103 @@
         <h2 class="animate__fadeInUp">TRUSTED BY...</h2>
         <p class="animate__fadeInUp animate__delay-1s">We specialize in building scalable software and next generation web solutions...</p>
     </div> -->
-
-    <div class="container-fluid trusted-brands-container">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <h3 class="trusted-title">Trusted By Leading Brands</h3>
-                <div class="trusted-brands">
-                    <!-- Brand Logo 1 -->
-                    <div class="brand-logo">
-                        <img src="assets/images/BIMT-NEW-LOGO.png" alt="Brand 1" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
-
-                    <!-- Brand Logo 2 -->
-                    <div class="brand-logo">
-                        <img src="assets/images/asma muftha.png" alt="Brand 2" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
-
-                    <!-- Brand Logo 3 -->
-                    <div class="brand-logo">
-                        <img src="assets/images/Carewell.png" alt="Brand 3" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
-
-                    <!-- Brand Logo 4 -->
-                    <div class="brand-logo">
-                        <img src="assets/images/cmi.png" alt="Brand 4" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
-
-                    <!-- Brand Logo 5 -->
-                    <div class="brand-logo">
-                        <img src="assets/images/global ceo forum.jpg" alt="Brand 5" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
+<div class="container-fluid trusted-brands-container">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <h3 class="trusted-title">Trusted By Leading Brands</h3>
+            <div class="trusted-brands">
+                <!-- Big global brands first -->
+                <div class="brand-logo">
+                    <img src="assets/images/bradix-removebg-preview.png" alt="BIMT" class="img-fluid">
+                    <div class="logo-overlay"></div>
                 </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="trusted-brands">
-                    <!-- Brand Logo 1 -->
-                    <div class="brand-logo">
-                        <img src="assets/images/IFA.png" alt="Brand 1" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
-
-                    <!-- Brand Logo 2 -->
-                    <div class="brand-logo">
-                        <img src="assets/images/ihl.png" alt="Brand 2" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
-
-                    <!-- Brand Logo 3 -->
-                    <div class="brand-logo">
-                        <img src="assets/images/york_uni.jpg" alt="Brand 3" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
-
-                    <!-- Brand Logo 4 -->
-                    <div class="brand-logo">
-                        <img src="assets/images/Rte_logo.jpg" alt="Brand 4" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
-
-                    <!-- Brand Logo 5 -->
-                    <div class="brand-logo">
-                        <img src="assets/images/The Next.jpg" alt="Brand 5" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
+                <div class="brand-logo">
+                    <img src="assets/images/asma muftha.png" alt="IFA" class="img-fluid">
+                    <div class="logo-overlay"></div>
                 </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="trusted-brands">
-
-                    <div class="brand-logo">
-                        <img src="assets/images/fujitec.jpg" alt="Brand 1" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
-
-                    <div class="brand-logo">
-                        <img src="assets/images/bradix.jpg" alt="Brand 1" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
-
-
-                    <div class="brand-logo">
-                        <img src="assets/images/mas.jpg" alt="Brand 1" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
-
-                    <div class="brand-logo">
-                        <img src="assets/images/hirdarmani.jpg" alt="Brand 1" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
-
-                    <div class="brand-logo">
-                        <img src="assets/images/cargilss.jpg" alt="Brand 1" class="img-fluid">
-                        <div class="logo-overlay"></div>
-                    </div>
-
+                <div class="brand-logo">
+                    <img src="assets/images/fujitec-removebg-preview.png" alt="Fujitec" class="img-fluid">
+                    <div class="logo-overlay"></div>
                 </div>
+                <div class="brand-logo">
+                    <img src="assets/images/BIMT-NEW-LOGO.png" alt="York University" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+                <div class="brand-logo">
+                    <img src="assets/images/cargilss-removebg-preview (1).png" alt="Cargill" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+
+                <!-- Mid-level brands -->
+                <div class="brand-logo">
+                    <img src="assets/images/global ceo forum.jpg" alt="Global CEO Forum" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+                <div class="brand-logo">
+                    <img src="assets/images/Rte_logo-removebg-preview.png" alt="RTE" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+                <div class="brand-logo">
+                    <img src="assets/images/The_Next-removebg-preview.png" alt="The Next" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+                 <div class="brand-logo">
+                    <img src="assets/images/york_uni.jpg" alt="The Next" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+
+                <!-- Local or smaller brands -->
+                <div class="brand-logo">
+                    <img src="assets/images/mas-removebg-preview.png" alt="MAS" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+                <div class="brand-logo">
+                    <img src="assets/images/hirdarmani-removebg-preview.png" alt="Hirdarmani" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+                <div class="brand-logo">
+                    <img src="assets/images/IFA.png" alt="Asma Muftha" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+                <div class="brand-logo">
+                    <img src="assets/images/Carewell.png" alt="Carewell" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+                <div class="brand-logo">
+                    <img src="assets/images/cmi.png" alt="CMI" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+                <div class="brand-logo">
+                    <img src="assets/images/ihl.png" alt="Bradix" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+                <div class="brand-logo">
+                    <img src="assets/images/wijitha-removebg-preview.png" alt="Bradix" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+                 <div class="brand-logo">
+                    <img src="assets/images/bairaha-removebg-preview.png" alt="Bradix" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+                 <div class="brand-logo">
+                    <img src="assets/images/nawaloka-removebg-preview.png" alt="Bradix" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>    
+                <div class="brand-logo">
+                    <img src="assets/images/breadTalk-removebg-preview.png" alt="Bradix" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+                 <div class="brand-logo">
+                    <img src="assets/images/cinnamon-removebg-preview-removebg-preview.png" alt="Bradix" class="img-fluid">
+                    <div class="logo-overlay"></div>
+                </div>
+            
+            
             </div>
         </div>
     </div>
+</div>
+
 
 
     <!-- Our Core Values -->
@@ -536,7 +531,7 @@
                             </div>
 
                             <!-- Row 4 -->
-                             <!-- <div class="tech-logo">
+                            <!-- <div class="tech-logo">
                                 <img src="assets/images/php.png" alt="PHP">
                                 <span>PHP</span>
                             </div> -->
@@ -548,11 +543,11 @@
                                 <img src="assets/images/framer.png" alt="Laravel">
                                 <span>Framer</span>
                             </div>
-                             <div class="tech-logo">
+                            <div class="tech-logo">
                                 <img src="assets/images/mysql.png" alt="Laravel">
                                 <span>MYSQL</span>
                             </div>
-                               <div class="tech-logo">
+                            <div class="tech-logo">
                                 <img src="assets/images/mongo.png" alt="Laravel">
                                 <span>MongoDB</span>
                             </div>
@@ -727,7 +722,7 @@
             const subTitle = document.querySelector(".sub-title-index");
 
             const mainMessages = [
-                
+
                 "Creative Innovation In Every Click",
                 "Your Digital Launchpad"
             ];
