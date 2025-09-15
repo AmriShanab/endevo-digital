@@ -45,7 +45,7 @@
                             <li><a href="/portfolio">Portfolio</a></li>
                             <!-- <li><a href="/careers">Careers</a></li> -->
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Carrers</a></li>
+                            <li><a href="careers.php">Carrers</a></li>
                         </ul>
                     </div>
 

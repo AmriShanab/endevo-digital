@@ -327,7 +327,7 @@
                                 <li><a href="/portfolio">Portfolio</a></li>
                                 <!-- <li><a href="/careers">Careers</a></li> -->
                                 <li><a href="#">Blog</a></li>
-                                <li><a href="#">Careers</a></li>
+                                <li><a href="careers.php">Careers</a></li>
                             </ul>
                         </div>
 
