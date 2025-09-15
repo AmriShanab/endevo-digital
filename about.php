@@ -132,7 +132,7 @@
             font-weight: 800;
             line-height: 1.2;
             letter-spacing: -0.5px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter' !important;
             color: #fff;
             text-align: center;
             margin: 5rem 0 2rem 0;
@@ -294,6 +294,49 @@
             transform: scale(1.05);
             filter: brightness(1.1);
         }
+
+        .pill-btn {
+  display: inline-block;
+  background: #ffffff;            /* white background */
+  color: #000000 !important;                 /* black text */
+  padding: 0.5rem 1.25rem;        /* vertical / horizontal padding */
+  border-radius: 9999px;          /* pill shape */
+  border: 1px solid #000000;      /* thin black border */
+  text-decoration: none;          /* remove underline */
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1;
+  transition: background-color .18s ease, color .18s ease, transform .08s ease;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+}
+
+/* Hover / focus (invert colors) */
+.pill-btn:hover,
+.pill-btn:focus {
+  background: #000000;            /* black background on hover */
+  color: #ffffff !important;                 /* white text on hover */
+  text-decoration: none;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* Visible keyboard focus ring */
+.pill-btn:focus-visible {
+  box-shadow: 0 0 0 4px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Small/compact variant (optional) */
+.pill-btn.small {
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+}
+
+/* If you want the icon + text centered nicely */
+.pill-btn .icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
     </style>
 </head>
 
@@ -306,8 +349,10 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="services.php">Services</a></li>
-                <li><a href="/portfolio.php">Portfolio</a></li>
-                <li><a href="/contact.php">Let's Talk</a></li>
+                <li><a href="portfolio.php">Portfolio</a></li>
+                <li>
+                    <a href="contact.php" class="pill-btn">Let's Talk</a>
+                </li>
 
                 <li class="mobile-social-container">
                     <div class="mobile-social-links">
@@ -393,8 +438,8 @@
 
                 <!-- Right Column - Image -->
                 <div class="col-lg-6 col-md-5">
-                    <div class="img-container" data-aos="fade-right" data-aos-delay="200">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Our Team">
+                    <div class="mission-video" data-aos="fade-right" data-aos-delay="200">
+                        <video src="assets/videos/who_we_are.mp4" autoplay muted loop playsinline></video>
                     </div>
                 </div>
             </div>
@@ -458,7 +503,7 @@
             <!-- Section Title -->
             <div class="row justify-content-center mb-4">
                 <div class="col-12 text-center">
-                    <h2 class="section-title-ac">Our Associate Companies</h2>
+                    <h2 class="section-title-ac" style="font-family: 'Inter';">Our Associate Companies</h2>
                     <p class="section-subtitle-ac">Collaborating for impact, crafting legacies together</p>
                 </div>
             </div>
@@ -522,7 +567,7 @@
                 </div>
                 <div class="value-image">
                     <div class="value-img-container">
-                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Innovation">
+                        <img src="assets/images/innovation.jpg" alt="Innovation">
                     </div>
                 </div>
             </div>
@@ -538,7 +583,7 @@
                 </div>
                 <div class="value-image">
                     <div class="value-img-container">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Integrity">
+                        <img src="assets/images/integrity.jpg" alt="Integrity">
                     </div>
                 </div>
             </div>
@@ -554,7 +599,7 @@
                 </div>
                 <div class="value-image">
                     <div class="value-img-container">
-                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Excellence">
+                        <img src="assets/images/excellence.jpg" alt="Excellence">
                     </div>
                 </div>
             </div>
@@ -570,7 +615,7 @@
                 </div>
                 <div class="value-image">
                     <div class="value-img-container">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Collaboration">
+                        <img src="assets/images/collaboration.jpg" alt="Collaboration">
                     </div>
                 </div>
             </div>
@@ -586,7 +631,7 @@
                 </div>
                 <div class="value-image">
                     <div class="value-img-container">
-                        <img src="https://images.unsplash.com/photo-1573164574230-db1d5e960238?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Customer Focus">
+                        <img src="assets/images/customer_focus.jpg" alt="Customer Focus">
                     </div>
                 </div>
             </div>
@@ -602,7 +647,7 @@
                 </div>
                 <div class="value-image">
                     <div class="value-img-container">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Sustainability">
+                        <img src="assets/images/sustainability.jpg" alt="Sustainability">
                     </div>
                 </div>
             </div>
@@ -619,14 +664,14 @@
                 </div>
 
                 <div class="testimonial-carousel"> -->
-                    <!-- Carousel Controls -->
-                    <!-- <button class="carousel-control prev" aria-label="Previous testimonial">
+        <!-- Carousel Controls -->
+        <!-- <button class="carousel-control prev" aria-label="Previous testimonial">
                         <img src="assets/chevron-left-solid.svg" alt="" style="width: 25px; height: 15px;">
                     </button>
 
                     <div class="carousel-track"> -->
-                        <!-- Testimonial Items -->
-                        <!-- <div class="testimonial-item active" data-index="0">
+        <!-- Testimonial Items -->
+        <!-- <div class="testimonial-item active" data-index="0">
                             <div class="testimonial-content">
                                 <div class="user-info">
                                     <img src="assets/testimonial_2.png" alt="Sarah J." class="user-avatar">
@@ -634,22 +679,22 @@
 
                                         <h4>Mohsin Ramzan</h4>
                                         <p>Founder/ Managing Director, RTE Global</p> -->
-                                        <!-- <div class="rating">
+        <!-- <div class="rating">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div> -->
-                                    <!-- </div>
+        <!-- </div>
                                 </div> -->
-                                <!-- <div class="testimonial-text"> -->
-                                    <!-- <p>"A big thanks to Endevo for their outstanding support at this event. Their expertise in event management, media, and communications made it a memorable experience for York St John University. I highly recommend them."</p> -->
-                                    <!-- <div class="message-time">2 days ago</div> -->
-                                <!-- </div>
+        <!-- <div class="testimonial-text"> -->
+        <!-- <p>"A big thanks to Endevo for their outstanding support at this event. Their expertise in event management, media, and communications made it a memorable experience for York St John University. I highly recommend them."</p> -->
+        <!-- <div class="message-time">2 days ago</div> -->
+        <!-- </div>
                             </div>
                         </div> -->
-<!-- 
+        <!-- 
                         <div class="testimonial-item" data-index="1">
                             <div class="testimonial-content">
                                 <div class="user-info">
@@ -658,23 +703,23 @@
 
                                         <h4>Prof. Rob Morter</h4>
                                         <p>Pro Vice Chancellor, York St John University</p> -->
-                                        <!-- <div class="rating">
+        <!-- <div class="rating">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star-half-alt"></i>
                                 </div> -->
-                                    <!-- </div>
+        <!-- </div>
                                 </div> -->
-                                <!-- <div class="testimonial-text"> -->
-                                    <!-- <p>"Hi, I'm Professor Rob Morter, the Pro Vice Chancellor of York St John University. I’d like to recommend Endevo for event management services. They’ve done a fantastic job with our York St John University engagement event this evening in Colombo."</p> -->
-                                    <!-- <div class="message-time">1 week ago</div> -->
-                                <!-- </div>
+        <!-- <div class="testimonial-text"> -->
+        <!-- <p>"Hi, I'm Professor Rob Morter, the Pro Vice Chancellor of York St John University. I’d like to recommend Endevo for event management services. They’ve done a fantastic job with our York St John University engagement event this evening in Colombo."</p> -->
+        <!-- <div class="message-time">1 week ago</div> -->
+        <!-- </div>
                             </div>
                         </div> -->
 
-                        <!-- <div class="testimonial-item" data-index="2">
+        <!-- <div class="testimonial-item" data-index="2">
                             <div class="testimonial-content">
                                 <div class="user-info">
                                     <img src="assets/testimonial_3.png" alt="Emily R." class="user-avatar">
@@ -682,81 +727,81 @@
 
                                         <h4>Dr. Deepal Perera</h4>
                                         <p>Head of Sales, Ex-pack Corrugated Cartons PLC</p> -->
-                                        <!-- <div class="rating">
+        <!-- <div class="rating">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div> -->
-                                    <!-- </div>
+        <!-- </div>
                                 </div> -->
-                                <!-- <div class="testimonial-text"> -->
-                                    <!-- <p>"Hi, I’m Dr. Deepal Perera. York St John University’s local summit in Sri Lanka was excellently organized by Endevo Private Limited. The young team did a fantastic job with professionalism and style. I wish them all the very best"</p> -->
-                                    <!-- <div class="message-time">3 weeks ago</div> -->
-                                <!-- </div>
+        <!-- <div class="testimonial-text"> -->
+        <!-- <p>"Hi, I’m Dr. Deepal Perera. York St John University’s local summit in Sri Lanka was excellently organized by Endevo Private Limited. The young team did a fantastic job with professionalism and style. I wish them all the very best"</p> -->
+        <!-- <div class="message-time">3 weeks ago</div> -->
+        <!-- </div>
                             </div>
                         </div> -->
 
-                        <!-- <div class="testimonial-item" data-index="3">
+        <!-- <div class="testimonial-item" data-index="3">
                     <div class="testimonial-content">
                         <div class="user-info">
                             <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David K." class="user-avatar">
                             <div class="user-details">
                                 <h4>David Kim</h4>
                                 <p>Founder & CEO</p> -->
-                        <!-- <div class="rating">
+        <!-- <div class="rating">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="far fa-star"></i>
                                 </div> -->
-                        <!-- </div>
+        <!-- </div>
                         </div>
                         <div class="testimonial-text">
                             <p>"Endevo's mobile app development exceeded our expectations. They delivered on time and within budget, and the app has significantly boosted our customer engagement."</p> -->
-                        <!-- <div class="message-time">1 month ago</div> -->
-                        <!-- </div>
+        <!-- <div class="message-time">1 month ago</div> -->
+        <!-- </div>
                     </div>
                 </div> -->
 
-                        <!-- <div class="testimonial-item" data-index="4">
+        <!-- <div class="testimonial-item" data-index="4">
                     <div class="testimonial-content">
                         <div class="user-info">
                             <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Lisa M." class="user-avatar">
                             <div class="user-details">
                                 <h4>Lisa Martinez</h4>
                                 <p>Director of Operations</p> -->
-                        <!-- <div class="rating">
+        <!-- <div class="rating">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                 </div> -->
-                        <!-- </div>
+        <!-- </div>
                         </div>
                         <div class="testimonial-text">
                             <p>"The custom software solution Endevo built for us streamlined our operations and saved us countless hours. Their team was professional, responsive, and truly understood our needs."</p> -->
-                        <!-- <div class="message-time">2 months ago</div> -->
-                        <!-- </div>
+        <!-- <div class="message-time">2 months ago</div> -->
+        <!-- </div>
                     </div>
                 </div> -->
-                    <!-- </div> -->
+        <!-- </div> -->
 
-                    <!-- <button class="carousel-control next" aria-label="Next testimonial">
+        <!-- <button class="carousel-control next" aria-label="Next testimonial">
                         <img src="assets/chevron-right-solid.svg" alt="" style="width: 25px; height: 15px;">
                     </button>
                     <br><br> -->
-                    <!-- Carousel Indicators -->
-                    <!-- <div class="carousel-indicators">
+        <!-- Carousel Indicators -->
+        <!-- <div class="carousel-indicators">
                         <button class="indicator active" data-index="0"></button>
                         <button class="indicator" data-index="1"></button>
                         <button class="indicator" data-index="2"></button> -->
-                        <!-- <button class="indicator" data-index="3"></button> -->
-                        <!-- <button class="indicator" data-index="4"></button> -->
-                    <!-- </div>
+        <!-- <button class="indicator" data-index="3"></button> -->
+        <!-- <button class="indicator" data-index="4"></button> -->
+        <!-- </div>
 
                 </div>
             </div>

@@ -1,4 +1,12 @@
 /* About Section Styles */
+
+body {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.section-content {
+  font-family: 'Inter', sans-serif !important;
+}
 .about-hero {
   padding: 8rem 0;
   background-color: var(--color-black);
@@ -12,7 +20,7 @@
   line-height: 1.2;
   letter-spacing: -0.5px;
   margin-bottom: 2rem;
-  font-family: "Universal Sans PU", sans-serif;
+  font-family: 'Inter' !important;
   color: #fff;
   margin-left: 25px;
 }
