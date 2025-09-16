@@ -486,10 +486,10 @@
                     <!-- Testimonial 2 -->
                     <div class="testimonial-card">
                         <p class="testimonial-content">
-"A big thanks to Endevo for their outstanding support at this event. Their expertise in event management, media, and communications made it a memorable experience for York St John University. I highly recommend them."                        </p>
+"A big thanks to Endevo for their outstanding support at this important event. Their expertise in event management, media, and communications made it a truly memorable experience for York St John University. I highly recommend them."</p>
                         <div class="testimonial-author">
                             <div class="author-image">
-                                <img src="assets/images/IMG_4573.png" alt="Sarah Johnson">
+                                <img src="assets/images/mohsins.jpg" alt="Sarah Johnson">
                             </div>
                             <div class="author-details">
                                 <div class="author-name">Mohsin Ramzan</div>
@@ -530,15 +530,15 @@
 
                     <div class="testimonial-card">
                         <p class="testimonial-content">
-                            "The customer focus at Endevo Digital is exceptional. They took the time to understand our unique needs and delivered a solution that perfectly aligns with our goals."
+                            "I’ve worked with Endevo for over three years, and they consistently deliver outstanding results. Their web development is creative and precise, while their event management is professional and flawlessly executed. Dependable, innovative, and always going above and beyond, Endevo is a trusted partner I highly recommend."
                         </p>
                         <div class="testimonial-author">
                             <div class="author-image">
-                                <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Michael Chen">
+                                <img src="assets/images/farshath.jpg" alt="Michael Chen">
                             </div>
                             <div class="author-details">
-                                <div class="author-name">Michael Chen</div>
-                                <div class="author-position">Operations Manager, Global Retail</div>
+                                <div class="author-name">Mr. Farshath Jamal</div>
+                                <div class="author-position">Chief Executive Officer, BIMT Campus Colombo</div>
                                 <!-- <div class="rating">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
