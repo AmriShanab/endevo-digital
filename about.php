@@ -46,6 +46,9 @@
         .navbar-dark .navbar-logo-mine,
         .navbar-dark .navbar-menu-mine li a {
             color: white;
+            text-decoration: none;
+            font-size: 20px !important;
+            margin: 0 10px !important;
         }
 
         .navbar-dark .navbar-toggle-mine span {
@@ -306,7 +309,7 @@
             /* black text */
             padding: 0.5rem 1.25rem;
             /* vertical / horizontal padding */
-            border-radius: 9999px;
+            border-radius: 10px;
             /* pill shape */
             border: 1px solid #000000;
             /* thin black border */
