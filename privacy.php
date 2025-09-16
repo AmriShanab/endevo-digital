@@ -107,7 +107,7 @@
 <body>
     <header>
         <h1>Privacy Policy</h1>
-        <p class="effective-date">Effective Date: September 16, 2023</p>
+        <p class="effective-date">Effective Date: January 01, 2025</p>
         <p>At Endevo Digital, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.</p>
     </header>
     
@@ -207,7 +207,7 @@
     </div>
     
     <footer>
-        <p>&copy; 2023 Endevo Digital. All rights reserved.</p>
+        <p>&copy; 2025 Endevo Digital. All rights reserved.</p>
     </footer>
 </body>
 </html>

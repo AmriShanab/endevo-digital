@@ -93,7 +93,7 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background: silver;
+  /* background: silver; */
   transition: width 0.3s ease;
 }
 
@@ -376,10 +376,17 @@
 
 .navbar-menu-mine .nav-anchor:hover::after {
   width: 100%;
-  background-color: silver;
+  /* background-color: silver; */
+  /* color: #007aff !important; */
 }
 
 .navbar-menu-mine .nav-anchor.active::after {
   width: 100%;
-  background-color: blue;
+  /* background-color: blue; */
 }
+
+.nav-anchor:hover {
+    color: #0072ff; /* Blue color on hover */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+

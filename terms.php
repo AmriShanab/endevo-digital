@@ -177,7 +177,7 @@
     </div>
     
     <footer>
-        <p>&copy; 2023 Endevo Digital. All rights reserved.</p>
+        <p>&copy; 2025 Endevo Digital. All rights reserved.</p>
     </footer>
 </body>
 </html>

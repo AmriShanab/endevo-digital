@@ -379,7 +379,7 @@ include 'navbar.php';
                 </div>
                 <div class="project-info-proj">
                     <h3 class="project-title-proj">IHL Website</h3>
-                    <p class="project-desc-proj">Corporate website for international holdings with multilingual support.</p>
+                    <p class="project-desc-proj">Corporate website developed for focusing on modern design and functionality to strengthen their digital presence.</p>
                     <div class="project-tags-proj">
                         <span class="project-tag-proj">Branding</span>
                         <span class="project-tag-proj">Design</span>

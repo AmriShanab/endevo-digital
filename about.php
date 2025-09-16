@@ -756,33 +756,6 @@
     </script>
 
   
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const video = document.querySelector(".mission-video video");
-            if (!video) return;
-
-            // --- Autoplay fallback for mobile/desktop ---
-            video.play().catch(() => {
-                const resumePlay = () => {
-                    video.play();
-                    document.removeEventListener("click", resumePlay);
-                    document.removeEventListener("touchstart", resumePlay);
-                };
-                document.addEventListener("click", resumePlay);
-                document.addEventListener("touchstart", resumePlay);
-            });
-
-            // --- Hover behavior (only for desktop screens) ---
-            if (window.innerWidth > 768) {
-                video.addEventListener("mouseenter", () => {
-                    video.pause();
-                });
-                video.addEventListener("mouseleave", () => {
-                    video.play();
-                });
-            }
-        });
-    </script>
 
 
 </body>
