@@ -17,9 +17,12 @@
                 <div class="footer-contact">
                     <h2 class="footer-lets-talk">Let's Talk</h2>
                     <div class="contact-info">
-                        <a href="mailto:hello@endevodigital.com?subject=Inquiry&body=Hello%20Endevo%20Digital">hello@endevodigital.com</a>
+                        <a href="mailto:hello@endevodigital.com?subject=Inquiry&body=Hello%20Endevo%20Digital">
+                            hello@endevodigital.com
+                        </a>
 
-                        <p class="contact-phone">+94 77 55 18274</p>
+
+                        <p class="contact-phone mt-3">+94 77 55 18274</p>
                         <p class="contact-phone">+94 74 35 59668</p>
                         <p class="contact-phone">No. 654, Galle Road, Colombo 03, Sri Lanka.</p>
                     </div>
@@ -39,19 +42,19 @@
                     <!-- Navigation Links -->
                     <div class="footer-nav">
                         <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/about">About</a></li>
-                            <li><a href="/services">Services</a></li>
-                            <li><a href="/portfolio">Portfolio</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="about.php">About</a></li>
+                            <li><a href="services.php">Services</a></li>
+                            <li><a href="portfolio.php">Portfolio</a></li>
                             <!-- <li><a href="/careers">Careers</a></li> -->
                             <li><a href="#">Blog</a></li>
-                            <li><a href="careers.php">Carrers</a></li>
+                            <li><a href="careers.php">Careers</a></li>
                         </ul>
                     </div>
 
 
                     <div class="footer-badges">
-                        <div class="badge-item">
+                        <div class="badge-item teech">
                             <a href="https://techbehemoths.com/company/endevo-digital" target="_blank" rel="noopener">
                                 <img src="assets/images/tech_behemoths-removebg-preview.png" alt="">
                             </a>
@@ -69,9 +72,9 @@
                         </div>
 
                         <div class="badge-item">
-                             <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
+                            <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
                             <div data-designrush-widget data-agency-id="99274" data-style="dark" aria-label="DesignRush agency reviews section"></div>
-                           
+
                         </div>
 
                         <div class="badge-item">
@@ -92,9 +95,9 @@
                     <div class="footer-legal">
                         <p class="copyright">&copy; 2025 Endevo Digital.</p>
                         <div class="legal-links">
-                            <a href="/privacy">Privacy Policy</a>
-                            <a href="/terms">Terms of Service</a>
-                            <a href="/cookies">Cookie Policy</a>
+                            <a href="privacy.php">Privacy Policy</a>
+                            <a href="terms.php">Terms of Service</a>
+                            <!-- <a href="/cookies">Cookie Policy</a> -->
                         </div>
                     </div>
                 </div>

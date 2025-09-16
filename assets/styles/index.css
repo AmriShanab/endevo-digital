@@ -1083,7 +1083,8 @@ body {
   backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
-  top: 8rem;
+  top: 12rem;
+  margin-top: 10rem !important;
   margin-bottom: 15rem !important;
 }
 
@@ -1462,11 +1463,12 @@ body {
 .footer-nav ul {
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap */
-  gap: 1.5rem 3rem; /* Vertical and horizontal gap */
+  gap: 1.5rem 2rem; /* Vertical and horizontal gap */
   margin-bottom: 3rem;
   padding: 0;
   list-style: none;
   width: 100%; /* Ensure full width */
+  margin-left: 33px !important;
 }
 
 /* Make each item take up 1/3 of the width */
@@ -1522,7 +1524,7 @@ body {
 
 /* Remove unnecessary margin hack */
 .teech {
-    margin-left: -125px !important;
+    margin-left: -60px !important;
 }
 
 /* Legal Section */

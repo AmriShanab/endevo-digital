@@ -353,7 +353,7 @@ include 'navbar.php';
             <!-- Project 2 -->
             <div class="project-card-proj" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                 <div class="project-img-proj">
-                    <img src="assets/images/bimt.jpg" alt="Mobile App">
+                    <img src="assets/images/BIMT-NEW-LOGO.png" alt="Mobile App">
                     <div class="project-overlay-proj">
                         <a href="https://bimt.lk/"><button class="project-view-btn-proj">View Project</button></a>
                     </div>
@@ -363,8 +363,8 @@ include 'navbar.php';
                     <p class="project-desc-proj">Educational institution website with course management and student portal.</p>
                     <div class="project-tags-proj">
                         <span class="project-tag-proj">UI/UX</span>
-                        <span class="project-tag-proj">Mobile App</span>
-                        <span class="project-tag-proj">Health</span>
+                        <span class="project-tag-proj">Web Design</span>
+                        <span class="project-tag-proj">Web Development</span>
                     </div>
                 </div>
             </div>

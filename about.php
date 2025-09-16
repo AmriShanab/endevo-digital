@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- AOS CSS -->
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
@@ -296,47 +299,55 @@
         }
 
         .pill-btn {
-  display: inline-block;
-  background: #ffffff;            /* white background */
-  color: #000000 !important;                 /* black text */
-  padding: 0.5rem 1.25rem;        /* vertical / horizontal padding */
-  border-radius: 9999px;          /* pill shape */
-  border: 1px solid #000000;      /* thin black border */
-  text-decoration: none;          /* remove underline */
-  font-weight: 600;
-  font-size: 0.95rem;
-  line-height: 1;
-  transition: background-color .18s ease, color .18s ease, transform .08s ease;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
-}
+            display: inline-block;
+            background: #ffffff;
+            /* white background */
+            color: #000000 !important;
+            /* black text */
+            padding: 0.5rem 1.25rem;
+            /* vertical / horizontal padding */
+            border-radius: 9999px;
+            /* pill shape */
+            border: 1px solid #000000;
+            /* thin black border */
+            text-decoration: none;
+            /* remove underline */
+            font-weight: 600;
+            font-size: 0.95rem;
+            line-height: 1;
+            transition: background-color .18s ease, color .18s ease, transform .08s ease;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+        }
 
-/* Hover / focus (invert colors) */
-.pill-btn:hover,
-.pill-btn:focus {
-  background: #000000;            /* black background on hover */
-  color: #ffffff !important;                 /* white text on hover */
-  text-decoration: none;
-  transform: translateY(-1px);
-  outline: none;
-}
+        /* Hover / focus (invert colors) */
+        .pill-btn:hover,
+        .pill-btn:focus {
+            background: #000000;
+            /* black background on hover */
+            color: #ffffff !important;
+            /* white text on hover */
+            text-decoration: none;
+            transform: translateY(-1px);
+            outline: none;
+        }
 
-/* Visible keyboard focus ring */
-.pill-btn:focus-visible {
-  box-shadow: 0 0 0 4px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.08);
-}
+        /* Visible keyboard focus ring */
+        .pill-btn:focus-visible {
+            box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
 
-/* Small/compact variant (optional) */
-.pill-btn.small {
-  padding: 0.35rem 0.9rem;
-  font-size: 0.85rem;
-}
+        /* Small/compact variant (optional) */
+        .pill-btn.small {
+            padding: 0.35rem 0.9rem;
+            font-size: 0.85rem;
+        }
 
-/* If you want the icon + text centered nicely */
-.pill-btn .icon {
-  display: inline-block;
-  margin-right: 0.5rem;
-  vertical-align: middle;
-}
+        /* If you want the icon + text centered nicely */
+        .pill-btn .icon {
+            display: inline-block;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
     </style>
 </head>
 
@@ -361,7 +372,7 @@
                         <div class="social-icons">
                             <a href="#"><i class="bi bi-linkedin"></i></a>
                             <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <!-- <a href="#"><i class="bi bi-twitter-x"></i></a> -->
                             <a href="#"><i class="bi bi-instagram"></i></a>
                         </div>
                     </div>
@@ -408,58 +419,27 @@
                         At Endevo Digital, our goal is simple to help businesses move forward with confidence in a fast-changing digital world.
                     </p>
 
-                    <!-- <div class="highlight-box">
-                        <p class="section-content">Our mission is to transform ideas into impactful digital solutions that help businesses thrive in an ever-evolving digital landscape.</p>
-                    </div> -->
-
-                    <!-- <ul class="feature-list">
-                        <li>Creative problem solvers with a passion for innovation</li>
-                        <li>Experts in user experience and interface design</li>
-                        <li>Full-stack development capabilities</li>
-                        <li>Data-driven digital marketing strategies</li>
-                        <li>Commitment to excellence and client success</li>
-                    </ul> -->
-
-                    <!-- <div class="stats-container">
-                        <div class="stat-item">
-                            <div class="stat-number">150+</div>
-                            <div class="stat-text">Projects Completed</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">98%</div>
-                            <div class="stat-text">Client Satisfaction</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">12+</div>
-                            <div class="stat-text">Years Experience</div>
-                        </div>
-                    </div> -->
                 </div>
 
                 <!-- Right Column - Image -->
                 <div class="col-lg-6 col-md-5">
-                    <div class="mission-video" data-aos="fade-right" data-aos-delay="200">
+                    <div class="who-we-are-video" data-aos="fade-right" data-aos-delay="200">
                         <video src="assets/videos/who_we_are.mp4" autoplay muted loop playsinline></video>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
     <!-- OUR VISION -->
     <section class="content-section">
-        <div class="floating-elements">
-            <span class="circle"></span>
-            <span class="triangle"></span>
-            <span class="triangle"></span>
-            <!-- <span class="square"></span> -->
-        </div>
-
         <div class="container">
             <div class="row align-items-center">
                 <!-- Left Column - Content -->
                 <div class="col-lg-6 col-md-7">
                     <div class="video-container" data-aos="fade-right" data-aos-delay="200">
-                        <video src="assets/videos/vision.mp4"></video>
+                        <video src="assets/videos/vision.mp4" autoplay muted loop playsinline></video>
+
                     </div>
 
                 </div>
@@ -535,11 +515,7 @@
                     </div>
                 </div>
 
-                <!-- <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="company-card">
-                        <img src="logo5.png" alt="Company 5" class="img-fluid company-logo">
-                    </div>
-                </div> -->
+             
             </div>
         </div>
     </section>
@@ -549,284 +525,19 @@
 
 
 
-    <section class="values-section">
-        <div class="values-container">
-            <div class="values-header">
-                <h2 class="values-title">Our Core Values</h2>
-                <p class="values-subtitle">The principles that guide everything we do at Endevo Digital</p>
-            </div>
-
-            <!-- Value 1 -->
-            <div class="value-item">
-                <div class="value-content">
-                    <div class="value-number">01</div>
-                    <h3 class="value-heading">Innovation</h3>
-                    <p class="value-description">
-                        We constantly push boundaries and explore new technologies to deliver forward-thinking solutions.
-                    </p>
-                </div>
-                <div class="value-image">
-                    <div class="value-img-container">
-                        <img src="assets/images/innovation.jpg" alt="Innovation">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Value 2 -->
-            <div class="value-item">
-                <div class="value-content">
-                    <div class="value-number">02</div>
-                    <h3 class="value-heading">Integrity</h3>
-                    <p class="value-description">
-                        We maintain transparency and honesty in all our dealings, building trust with every interaction.
-                    </p>
-                </div>
-                <div class="value-image">
-                    <div class="value-img-container">
-                        <img src="assets/images/integrity.jpg" alt="Integrity">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Value 3 -->
-            <div class="value-item">
-                <div class="value-content">
-                    <div class="value-number">03</div>
-                    <h3 class="value-heading">Excellence</h3>
-                    <p class="value-description">
-                        We pursue perfection in every project, paying attention to even the smallest details.
-                    </p>
-                </div>
-                <div class="value-image">
-                    <div class="value-img-container">
-                        <img src="assets/images/excellence.jpg" alt="Excellence">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Value 4 -->
-            <div class="value-item">
-                <div class="value-content">
-                    <div class="value-number">04</div>
-                    <h3 class="value-heading">Collaboration</h3>
-                    <p class="value-description">
-                        We believe the best results come from teamwork, both within our company and with our clients.
-                    </p>
-                </div>
-                <div class="value-image">
-                    <div class="value-img-container">
-                        <img src="assets/images/collaboration.jpg" alt="Collaboration">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Value 5 -->
-            <div class="value-item">
-                <div class="value-content">
-                    <div class="value-number">05</div>
-                    <h3 class="value-heading">Customer Focus</h3>
-                    <p class="value-description">
-                        We listen carefully to understand our clients' unique needs and deliver personalized solutions.
-                    </p>
-                </div>
-                <div class="value-image">
-                    <div class="value-img-container">
-                        <img src="assets/images/customer_focus.jpg" alt="Customer Focus">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Value 6 - Last Item with Special Styling -->
-            <div class="value-item last-item">
-                <div class="value-content">
-                    <div class="value-number">06</div>
-                    <h3 class="value-heading">Sustainability</h3>
-                    <p class="value-description">
-                        We design solutions that stand the test of time, ensuring long-term value for our clients.
-                    </p>
-                </div>
-                <div class="value-image">
-                    <div class="value-img-container">
-                        <img src="assets/images/sustainability.jpg" alt="Sustainability">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="values-bottom-image">
-            <img src="assets/images/value_image_bottom.png" alt="Values Banner" class="img-fluid full-width-img">
-        </div> -->
-
-        <!-- <section class="client-testimonials">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">What Our Clients Say</h2>
-                    <p class="section-subtitle">Hear from those who've experienced our services</p>
-                </div>
-
-                <div class="testimonial-carousel"> -->
-        <!-- Carousel Controls -->
-        <!-- <button class="carousel-control prev" aria-label="Previous testimonial">
-                        <img src="assets/chevron-left-solid.svg" alt="" style="width: 25px; height: 15px;">
-                    </button>
-
-                    <div class="carousel-track"> -->
-        <!-- Testimonial Items -->
-        <!-- <div class="testimonial-item active" data-index="0">
-                            <div class="testimonial-content">
-                                <div class="user-info">
-                                    <img src="assets/testimonial_2.png" alt="Sarah J." class="user-avatar">
-                                    <div class="user-details">
-
-                                        <h4>Mohsin Ramzan</h4>
-                                        <p>Founder/ Managing Director, RTE Global</p> -->
-        <!-- <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div> -->
-        <!-- </div>
-                                </div> -->
-        <!-- <div class="testimonial-text"> -->
-        <!-- <p>"A big thanks to Endevo for their outstanding support at this event. Their expertise in event management, media, and communications made it a memorable experience for York St John University. I highly recommend them."</p> -->
-        <!-- <div class="message-time">2 days ago</div> -->
-        <!-- </div>
-                            </div>
-                        </div> -->
-        <!-- 
-                        <div class="testimonial-item" data-index="1">
-                            <div class="testimonial-content">
-                                <div class="user-info">
-                                    <img src="assets/testimonial_1.jpg" alt="Michael T." class="user-avatar">
-                                    <div class="user-details">
-
-                                        <h4>Prof. Rob Morter</h4>
-                                        <p>Pro Vice Chancellor, York St John University</p> -->
-        <!-- <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div> -->
-        <!-- </div>
-                                </div> -->
-        <!-- <div class="testimonial-text"> -->
-        <!-- <p>"Hi, I'm Professor Rob Morter, the Pro Vice Chancellor of York St John University. I’d like to recommend Endevo for event management services. They’ve done a fantastic job with our York St John University engagement event this evening in Colombo."</p> -->
-        <!-- <div class="message-time">1 week ago</div> -->
-        <!-- </div>
-                            </div>
-                        </div> -->
-
-        <!-- <div class="testimonial-item" data-index="2">
-                            <div class="testimonial-content">
-                                <div class="user-info">
-                                    <img src="assets/testimonial_3.png" alt="Emily R." class="user-avatar">
-                                    <div class="user-details">
-
-                                        <h4>Dr. Deepal Perera</h4>
-                                        <p>Head of Sales, Ex-pack Corrugated Cartons PLC</p> -->
-        <!-- <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div> -->
-        <!-- </div>
-                                </div> -->
-        <!-- <div class="testimonial-text"> -->
-        <!-- <p>"Hi, I’m Dr. Deepal Perera. York St John University’s local summit in Sri Lanka was excellently organized by Endevo Private Limited. The young team did a fantastic job with professionalism and style. I wish them all the very best"</p> -->
-        <!-- <div class="message-time">3 weeks ago</div> -->
-        <!-- </div>
-                            </div>
-                        </div> -->
-
-        <!-- <div class="testimonial-item" data-index="3">
-                    <div class="testimonial-content">
-                        <div class="user-info">
-                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David K." class="user-avatar">
-                            <div class="user-details">
-                                <h4>David Kim</h4>
-                                <p>Founder & CEO</p> -->
-        <!-- <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div> -->
-        <!-- </div>
-                        </div>
-                        <div class="testimonial-text">
-                            <p>"Endevo's mobile app development exceeded our expectations. They delivered on time and within budget, and the app has significantly boosted our customer engagement."</p> -->
-        <!-- <div class="message-time">1 month ago</div> -->
-        <!-- </div>
-                    </div>
-                </div> -->
-
-        <!-- <div class="testimonial-item" data-index="4">
-                    <div class="testimonial-content">
-                        <div class="user-info">
-                            <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Lisa M." class="user-avatar">
-                            <div class="user-details">
-                                <h4>Lisa Martinez</h4>
-                                <p>Director of Operations</p> -->
-        <!-- <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div> -->
-        <!-- </div>
-                        </div>
-                        <div class="testimonial-text">
-                            <p>"The custom software solution Endevo built for us streamlined our operations and saved us countless hours. Their team was professional, responsive, and truly understood our needs."</p> -->
-        <!-- <div class="message-time">2 months ago</div> -->
-        <!-- </div>
-                    </div>
-                </div> -->
-        <!-- </div> -->
-
-        <!-- <button class="carousel-control next" aria-label="Next testimonial">
-                        <img src="assets/chevron-right-solid.svg" alt="" style="width: 25px; height: 15px;">
-                    </button>
-                    <br><br> -->
-        <!-- Carousel Indicators -->
-        <!-- <div class="carousel-indicators">
-                        <button class="indicator active" data-index="0"></button>
-                        <button class="indicator" data-index="1"></button>
-                        <button class="indicator" data-index="2"></button> -->
-        <!-- <button class="indicator" data-index="3"></button> -->
-        <!-- <button class="indicator" data-index="4"></button> -->
-        <!-- </div>
-
-                </div>
-            </div>
-        </section> -->
-    </section>
-
+   <?php include 'values_section.php'; ?>
     <footer class="footer-section">
-        <!-- Floating Elements -->
-        <!-- <div class="footer-floating-elements">
-        <div class="footer-float-element element-1"></div>
-        <div class="footer-float-element element-2"></div>
-        <div class="footer-float-element element-3"></div>
-        </div> -->
-
         <div class="container-fluid">
             <div class="row">
 
                 <div class="col-lg-5 col-md-12">
                     <div class="footer-contact">
-                        <h2 class="footer-lets-talk">LET'S TALK</h2>
+                        <h2 class="footer-lets-talk">Let's Talk</h2>
                         <div class="contact-info">
                             <a href="mailto:hello@endevodigital.com?subject=Inquiry&body=Hello%20Endevo%20Digital">hello@endevodigital.com</a>
 
-                            <p class="contact-phone">+94 77 55 18274</p>
-                            <p class="contact-phone">+94 74 35 59668</p>
+                            <p class="contact-phone mt-3">+94 77 55 18274</p>
+                            <p class="contact-phone ">+94 74 35 59668</p>
                             <p class="contact-phone">No. 654, Galle Road, Colombo 03, Sri Lanka.</p>
                         </div>
                         <div class="social-links">
@@ -845,19 +556,19 @@
                         <!-- Navigation Links -->
                         <div class="footer-nav">
                             <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/about">About</a></li>
-                                <li><a href="/services">Services</a></li>
-                                <li><a href="/portfolio">Portfolio</a></li>
-                                <!-- <li><a href="/careers">Careers</a></li> -->
-                                <li><a href="/blog">Blog</a></li>
-                                <li><a href="careers.php">Careers</a></li>
+                                <li><a href="index.php">Home</a></li>
+                            <li><a href="about.php">About</a></li>
+                            <li><a href="services.php">Services</a></li>
+                            <li><a href="portfolio.php">Portfolio</a></li>
+                            <!-- <li><a href="/careers">Careers</a></li> -->
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="careers.php">Careers</a></li>
                             </ul>
                         </div>
 
 
                         <div class="footer-badges">
-                            <div class="badge-item">
+                            <div class="badge-item teech">
                                 <a href="https://techbehemoths.com/company/endevo-digital" target="_blank" rel="noopener">
                                     <img src="assets/images/tech_behemoths-removebg-preview.png" alt="">
                                 </a>
@@ -897,9 +608,9 @@
                         <div class="footer-legal">
                             <p class="copyright">&copy; 2025 Endevo Digital.</p>
                             <div class="legal-links">
-                                <a href="/privacy">Privacy Policy</a>
-                                <a href="/terms">Terms of Service</a>
-                                <a href="/cookies">Cookie Policy</a>
+                                <a href="privacy.php">Privacy Policy</a>
+                                <a href="terms.php">Terms of Service</a>
+                                <!-- <a href="/cookies">Cookie Policy</a> -->
                             </div>
                         </div>
                     </div>
@@ -1044,35 +755,7 @@
         });
     </script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const video = document.querySelector(".video-container video");
-
-            if (video) {
-                video.muted = true; // required for autoplay
-                video.loop = true;
-
-                function initVideo() {
-                    if (window.innerWidth <= 768) {
-                        // Mobile: autoplay
-                        video.play().catch(err => console.log("Autoplay blocked:", err));
-                    } else {
-                        // Desktop: play on hover
-                        video.addEventListener("mouseenter", () => video.play());
-                        video.addEventListener("mouseleave", () => {
-                            video.pause();
-                            video.currentTime = 0;
-                        });
-                    }
-                }
-
-                initVideo();
-
-                // Re-check when resizing (mobile ↔ desktop)
-                window.addEventListener("resize", initVideo);
-            }
-        });
-    </script>
+  
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const video = document.querySelector(".mission-video video");

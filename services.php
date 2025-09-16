@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- AOS CSS -->
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -24,7 +27,7 @@
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="header-content-container">
                         <h2 class="header-title">A full-service digital innovation partner</h2>
-                        <p class="header-content">Our rich design and technology expertise delivers top brands and digital experiences.</p>
+                        <p class="header-content">Delivering innovative digital solutions through expert design, development, and strategic insights to drive growth.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
@@ -282,6 +285,31 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row align-items-center service-item digital-marketing">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="service-content">
+                        <h3>EVENT MANAGEMENT</h3>
+                        <p>We create memorable experiences with professional event planning and execution. From corporate functions to social gatherings, we manage every detail with precision.</p>
+                        <ul>
+                            <li>Corporate Event Planning</li>
+                            <li>Wedding & Social Events</li>
+                            <li>Conference & Seminar Management</li>
+                            <li>Entertainment & Performances</li>
+                            <li>Logistics & Venue Coordination</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="floating-elements">
+                        <div class="floating-element"><i class="fas fa-calendar-alt"></i></div>
+                        <div class="floating-element"><i class="fas fa-microphone"></i></div>
+                        <div class="floating-element"><i class="fas fa-users"></i></div>
+                        <div class="floating-element"><i class="fas fa-music"></i></div>
+                        <div class="floating-element"><i class="fas fa-glass-cheers"></i></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -302,16 +330,16 @@
                         <div class="contact-info">
                             <p class="contact-email">hello@endevodigital.com</p>
                             <p class="contact-phone">+94 77 55 18274</p>
-                            <p class="contact-phone">+94 74 35 59668</p>
+                            <p class="contact-phone mt-3">+94 74 35 59668</p>
                             <p class="contact-phone">No. 654, Galle Road, Colombo 03, Sri Lanka.</p>
                         </div>
                         <div class="social-links">
-                        <a href="https://www.linkedin.com/company/endevo-holdings/" class="social-icon"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61564148454268&mibextid=wwXIfr&rdid=RokhX2XvDpODHrFN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C2fVTgRpT%2F%3Fmibextid%3DwwXIfr#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.tiktok.com/@endevo.co?_t=ZS-8wLvZ6UWhKi&_r=1" class="social-icon"><i class="bi bi-tiktok"></i></a>
-                        <a href="https://www.instagram.com/endevo.digital?igsh=Zmh5dmJwa2FpYzNx&utm_source=qr" class="social-icon"><i class="bi bi-instagram"></i></a>
-                        <a href="https://wa.me/94775518274?text=Hi%20there%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." class="social-icon"><i class="bi bi-whatsapp"></i></a>
-                    </div>
+                            <a href="https://www.linkedin.com/company/endevo-holdings/" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61564148454268&mibextid=wwXIfr&rdid=RokhX2XvDpODHrFN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C2fVTgRpT%2F%3Fmibextid%3DwwXIfr#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.tiktok.com/@endevo.co?_t=ZS-8wLvZ6UWhKi&_r=1" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                            <a href="https://www.instagram.com/endevo.digital?igsh=Zmh5dmJwa2FpYzNx&utm_source=qr" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="https://wa.me/94775518274?text=Hi%20there%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                        </div>
                     </div>
                 </div>
 
@@ -321,61 +349,61 @@
                         <!-- Navigation Links -->
                         <div class="footer-nav">
                             <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/about">About</a></li>
-                                <li><a href="/services">Services</a></li>
-                                <li><a href="/portfolio">Portfolio</a></li>
-                                <!-- <li><a href="/careers">Careers</a></li> -->
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="careers.php">Careers</a></li>
+                                <li><a href="index.php">Home</a></li>
+                            <li><a href="about.php">About</a></li>
+                            <li><a href="services.php">Services</a></li>
+                            <li><a href="portfolio.php">Portfolio</a></li>
+                            <!-- <li><a href="/careers">Careers</a></li> -->
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="careers.php">Careers</a></li>
                             </ul>
                         </div>
 
 
-                       <div class="footer-badges">
-                        <div class="badge-item">
-                            <a href="https://techbehemoths.com/company/endevo-digital" target="_blank" rel="noopener">
-                                <img src="assets/images/tech_behemoths-removebg-preview.png" alt="">
-                            </a>
-                        </div>
+                        <div class="footer-badges">
+                            <div class="badge-item teech">
+                                <a href="https://techbehemoths.com/company/endevo-digital" target="_blank" rel="noopener">
+                                    <img src="assets/images/tech_behemoths-removebg-preview.png" alt="">
+                                </a>
+                            </div>
 
-                        <div class="badge-item clutch-badge">
-                            <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
-                            <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-nofollow="false" data-expandifr="true" data-scale="100" data-clutchcompany-id="2551338"></div>
-                        </div>
+                            <div class="badge-item clutch-badge">
+                                <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+                                <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-nofollow="false" data-expandifr="true" data-scale="100" data-clutchcompany-id="2551338"></div>
+                            </div>
 
-                        <div class="badge-item teech">
-                            <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener">
-                                <img src="assets/images/trustpilot-removebg-preview.png" alt="">
-                            </a>
-                        </div>
+                            <div class="badge-item teech">
+                                <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener">
+                                    <img src="assets/images/trustpilot-removebg-preview.png" alt="">
+                                </a>
+                            </div>
 
-                        <div class="badge-item">
-                             <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
-                            <div data-designrush-widget data-agency-id="99274" data-style="dark" aria-label="DesignRush agency reviews section"></div>
-                           
-                        </div>
+                            <div class="badge-item">
+                                <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
+                                <div data-designrush-widget data-agency-id="99274" data-style="dark" aria-label="DesignRush agency reviews section"></div>
 
-                        <div class="badge-item">
-                            <a href="https://www.goodfirms.co/company/endevo-digital" target="_blank" rel="noopener">
-                                <img src="assets/images/goodfirms-removebg-preview.png" alt="">
-                            </a>
-                        </div>
+                            </div>
 
-                        <div class="badge-item teech">
-                            <a href="https://share.google/re9KrkLd1izA4NxRH" target="_blank" rel="noopener">
-                                <img src="assets/images/google_review-removebg-preview.png" alt="">
-                            </a>
+                            <div class="badge-item">
+                                <a href="https://www.goodfirms.co/company/endevo-digital" target="_blank" rel="noopener">
+                                    <img src="assets/images/goodfirms-removebg-preview.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="badge-item teech">
+                                <a href="https://share.google/re9KrkLd1izA4NxRH" target="_blank" rel="noopener">
+                                    <img src="assets/images/google_review-removebg-preview.png" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
 
                         <!-- Copyright and Legal -->
                         <div class="footer-legal">
                             <p class="copyright">&copy; 2025 Endevo Digital.</p>
                             <div class="legal-links">
-                                <a href="/privacy">Privacy Policy</a>
-                                <a href="/terms">Terms of Service</a>
-                                <a href="/cookies">Cookie Policy</a>
+                                <a href="privacy.php">Privacy Policy</a>
+                                <a href="terms.php">Terms of Service</a>
+                                <!-- <a href="/cookies">Cookie Policy</a> -->
                             </div>
                         </div>
                     </div>
@@ -497,4 +525,3 @@
 </body>
 
 </html>
-

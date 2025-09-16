@@ -117,7 +117,7 @@
                 <div class="col-lg-7 col-md-12">
                     <div class="welcome-container">
                         <h2 class="animate__fadeInUp">OUR SERVICES</h2>
-                        <p class="animate__fadeInUp animate__delay-1s">We specialize in building scalable software and next generation web solutions...</p>
+                        <p class="animate__fadeInUp animate__delay-1s">We specialize in building scalable software and next generation web solutions.</p>
                     </div>
                 </div>
 
@@ -254,7 +254,7 @@
                     <div class="logo-overlay"></div>
                 </div>
                 <div class="brand-logo">
-                    <img src="assets/images/Rte_logo-removebg-preview.png" alt="RTE" class="img-fluid">
+                    <img src="assets/images/nawaloka-removebg-preview.png" alt="RTE" class="img-fluid">
                     <div class="logo-overlay"></div>
                 </div>
                 <div class="brand-logo">
@@ -288,7 +288,7 @@
                     <div class="logo-overlay"></div>
                 </div>
                 <div class="brand-logo">
-                    <img src="assets/images/ihl.png" alt="Bradix" class="img-fluid">
+                    <img src="assets/images/cinnamon-removebg-preview-removebg-preview.png" alt="Bradix" class="img-fluid">
                     <div class="logo-overlay"></div>
                 </div>
                 <div class="brand-logo">
@@ -300,7 +300,7 @@
                     <div class="logo-overlay"></div>
                 </div>
                  <div class="brand-logo">
-                    <img src="assets/images/nawaloka-removebg-preview.png" alt="Bradix" class="img-fluid">
+                    <img src="assets/images/Rte_logo-removebg-preview.png" alt="Bradix" class="img-fluid">
                     <div class="logo-overlay"></div>
                 </div>    
                 <div class="brand-logo">
@@ -308,7 +308,7 @@
                     <div class="logo-overlay"></div>
                 </div>
                  <div class="brand-logo">
-                    <img src="assets/images/cinnamon-removebg-preview-removebg-preview.png" alt="Bradix" class="img-fluid">
+                    <img src="assets/images/ihl.png" alt="Bradix" class="img-fluid">
                     <div class="logo-overlay"></div>
                 </div>
             
@@ -345,7 +345,7 @@
                     <div class="col-lg-6 col-md-6 col-12">
                         <div class="value-content-right">
                             <h2 class="value-title animate__fadeInUp">Fearless Curiosity</h2>
-                            <p class="value-description animate__fadeInUp animate__delay-1s">We specialize in building scalable software and next generation web solutions. Our culture encourages asking tough questions and exploring unconventional solutions.</p>
+                            <p class="value-description animate__fadeInUp animate__delay-1s">We explore new tech, trends and territories, because innovation begins where comfort ends</p>
                             <!-- <a href="#" class="value-cta animate__fadeInUp animate__delay-2s">Learn More</a> -->
                         </div>
                     </div>
