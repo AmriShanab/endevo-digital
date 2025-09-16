@@ -2,12 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Load PHPMailer
-require 'vendor/autoload.php'; // if installed via Composer
-// OR
-// require 'PHPMailer/src/Exception.php';
-// require 'PHPMailer/src/PHPMailer.php';
-// require 'PHPMailer/src/SMTP.php';
+require 'vendor/autoload.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name    = htmlspecialchars($_POST['name']);
@@ -17,18 +12,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
 
     try {
-        // Server settings
+        // Gmail SMTP settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.hostinger.com';   // or smtp.hostinger.com
+        $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'amrishanab@gmail.com';
-        $mail->Password   = 'Aayeshanuha@2003';   // use App Password if Gmail
+        $mail->Username   = 'amrishanab@gmail.com';   // your full Gmail/Workspace email
+        $mail->Password   = 'Aayeshanuha@2003';         // App Password from Google
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 587;
 
-        // Recipients
-        $mail->setFrom($email, $name);
-        $mail->addAddress('your_email@example.com', 'Admin'); 
+        // Sender must be the Gmail/Workspace mailbox
+        $mail->setFrom('amrishanab@gmail.com', 'Endevo Digital');
+        // Add reply-to with visitor’s email
+        $mail->addReplyTo($email, $name);
+
+        // Recipient (your admin email)
+        $mail->addAddress('amrishanab@gmail.com', 'Admin');
 
         // Content
         $mail->isHTML(true);
@@ -43,4 +42,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo "Invalid request.";
 }
-?>

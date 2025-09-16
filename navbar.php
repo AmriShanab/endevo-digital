@@ -50,11 +50,11 @@
         <ul class="navbar-menu-mine" id="navbarMenu">
             <!-- Regular menu items -->
             <?php $current = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)); ?>
-            <li><a href="index.php" class="nav-anchor <?= $current == 'index.php' ? 'active' : '' ?>">Home</a></li>
-            <li><a href="about.php" class="nav-anchor <?= $current == 'about.php' ? 'active' : '' ?>">About</a></li>
-            <li><a href="services.php" class="nav-anchor <?= $current == 'services.php' ? 'active' : '' ?>">Services</a></li>
-            <li><a href="portfolio.php" class="nav-anchor <?= $current == 'portfolio.php' ? 'active' : '' ?>">Portfolio</a></li>
-            <li><a href="contact.php" class="btn-pill <?= $current == 'contact.php' ? 'active' : '' ?>">Let's Talk</a></li>
+            <li><a href="index.php" class="nav-anchor <?= $current == 'index' ? 'active' : '' ?>">Home</a></li>
+            <li><a href="about.php" class="nav-anchor <?= $current == 'about' ? 'active' : '' ?>">About</a></li>
+            <li><a href="services.php" class="nav-anchor <?= $current == 'services' ? 'active' : '' ?>">Services</a></li>
+            <li><a href="portfolio.php" class="nav-anchor <?= $current == 'portfolio' ? 'active' : '' ?>">Portfolio</a></li>
+            <li><a href="contact.php" class="btn-pill <?= $current == 'contact' ? 'active' : '' ?>">Let's Talk</a></li>
 
 
 
