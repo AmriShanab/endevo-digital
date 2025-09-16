@@ -400,9 +400,9 @@ include 'navbar.php';
                     <h3 class="project-title-proj">Asma Muftah Al-Ghanem Advocates</h3>
                     <p class="project-desc-proj">Professional legal services website with case management features.</p>
                     <div class="project-tags-proj">
-                        <span class="project-tag-proj">Dashboard</span>
-                        <span class="project-tag-proj">UI Design</span>
-                        <span class="project-tag-proj">Data</span>
+                        <span class="project-tag-proj">Web Design</span>
+                        <span class="project-tag-proj">Multilingual</span>
+                        <!-- <span class="project-tag-proj">Data</span> -->
                     </div>
                 </div>
             </div>
@@ -417,11 +417,11 @@ include 'navbar.php';
                 </div>
                 <div class="project-info-proj">
                     <h3 class="project-title-proj">RUA Pvt Ltd</h3>
-                    <p class="project-desc-proj">A software-as-a-service solution with subscription management and user portal.</p>
+                    <p class="project-desc-proj">RUA website designed and developed to reflect the brand’s identity with a modern and professional digital presence.</p>
                     <div class="project-tags-proj">
-                        <span class="project-tag-proj">Web Site</span>
+                        <span class="project-tag-proj">Web Design</span>
                         <!-- <span class="project-tag-proj">SaaS</span> -->
-                        <span class="project-tag-proj">Development</span>
+                        <span class="project-tag-proj">Web Development</span>
                     </div>
                 </div>
             </div>
