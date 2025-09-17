@@ -26,7 +26,23 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/styles/main_styles.css">
+
+    <!-- Structured Data for Google Sitelinks -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://endevodigital.com/",
+      "name": "Endevo Digital",
+      "sameAs": [
+        "https://endevodigital.com/about.php",
+        "https://endevodigital.com/services.php",
+        "https://endevodigital.com/contact.php"
+      ]
+    }
+    </script>
 </head>
+
 
 
 
