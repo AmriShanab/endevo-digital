@@ -48,7 +48,8 @@
             color: white;
             text-decoration: none;
             font-size: 20px !important;
-            margin: 0 10px !important;
+            margin-top: -10px;
+            margin: 0 10px;
         }
 
         .navbar-dark .navbar-toggle-mine span {
@@ -307,7 +308,7 @@
             /* white background */
             color: #000000 !important;
             /* black text */
-            padding: 0.5rem 1.25rem;
+            padding: 0.75rem 0.75rem;
             /* vertical / horizontal padding */
             border-radius: 10px;
             /* pill shape */
@@ -315,13 +316,14 @@
             /* thin black border */
             text-decoration: none;
             /* remove underline */
-            font-weight: 600;
-            font-size: 0.95rem;
+            font-weight: 400;
+            font-size: 0.85rem;
             line-height: 1;
             transition: background-color .18s ease, color .18s ease, transform .08s ease;
             box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+            margin-top: -10px !important;
         }
-
+        
         /* Hover / focus (invert colors) */
         .pill-btn:hover,
         .pill-btn:focus {
@@ -351,6 +353,12 @@
             margin-right: 0.5rem;
             vertical-align: middle;
         }
+
+        .navbar-menu-mine .nav-anchor.active {
+  color: #0072ff !important; /* Blue font for active link */
+  margin-top: -8px !important;
+}
+
     </style>
 </head>
 
@@ -361,7 +369,8 @@
 
             <ul class="navbar-menu-mine" id="navbarMenu">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
+                <li><a href="about.php" class="nav-anchor active">About</a></li>
+
                 <li><a href="services.php">Services</a></li>
                 <li><a href="portfolio.php">Portfolio</a></li>
                 <li>

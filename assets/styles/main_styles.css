@@ -125,25 +125,6 @@
   transform-origin: center;
 }
 
-/* .navbar-toggle-mine.active span {
-  background: #fff; 
-} */
-
-/* .navbar-toggle-mine.active span:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
-} */
-
-/* .navbar-toggle-mine.active span:nth-child(2) {
-  opacity: 0;
-} */
-
-/* .navbar-toggle-mine.active span:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
-} */
-
-/* .navbar-mine.active-background {
-  background: #000 !important; 
-} */
 
 /* Mobile Social Links - Hidden by default */
 .mobile-social-container {
@@ -380,13 +361,29 @@
   /* color: #007aff !important; */
 }
 
-.navbar-menu-mine .nav-anchor.active::after {
-  width: 100%;
-  /* background-color: blue; */
-}
+
 
 .nav-anchor:hover {
     color: #0072ff; /* Blue color on hover */
     transition: color 0.3s ease; /* Smooth transition */
 }
 
+.navbar-menu-mine .nav-anchor.active {
+  color: #0072ff !important; /* Blue font */
+}
+
+/* Remove underline on hover */
+.navbar-menu-mine .nav-anchor::after {
+  display: none;
+}
+
+/* Hover = blue text only */
+.nav-anchor:hover {
+  color: #0072ff; /* Blue color on hover */
+  transition: color 0.3s ease;
+}
+
+/* Active = blue text */
+.navbar-menu-mine .nav-anchor.active {
+  color: #0072ff !important;
+}
