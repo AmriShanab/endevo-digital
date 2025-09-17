@@ -65,6 +65,48 @@
     </script>
 </head>
 
+<?php
+$current = basename($_SERVER['PHP_SELF']);
+
+if ($current == "index.php") {
+?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://endevodigital.com/",
+  "name": "Endevo Digital"
+}
+</script>
+<?php
+} elseif ($current == "about.php") {
+?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "url": "https://endevodigital.com/about.php",
+  "name": "About Endevo Digital",
+  "description": "Learn more about Endevo Digital, our mission, and our expertise in software and web development."
+}
+</script>
+<?php
+} elseif ($current == "contact.php") {
+?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "url": "https://endevodigital.com/contact.php",
+  "name": "Contact Endevo Digital",
+  "description": "Get in touch with Endevo Digital for software and web development services."
+}
+</script>
+<?php
+}
+?>
+
+
 
 
 
