@@ -34,11 +34,33 @@
       "@type": "WebSite",
       "url": "https://endevodigital.com/",
       "name": "Endevo Digital",
-      "sameAs": [
-        "https://endevodigital.com/about.php",
-        "https://endevodigital.com/services.php",
-        "https://endevodigital.com/contact.php"
-      ]
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://endevodigital.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- About Page Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "url": "https://endevodigital.com/about.php",
+      "name": "About Endevo Digital",
+      "description": "Learn more about Endevo Digital, our mission, and our expertise in software and web development."
+    }
+    </script>
+
+    <!-- Contact Page Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "url": "https://endevodigital.com/contact.php",
+      "name": "Contact Endevo Digital",
+      "description": "Get in touch with Endevo Digital for software and web development services."
     }
     </script>
 </head>
