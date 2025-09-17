@@ -1,5 +1,34 @@
 <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Endevo Digital | Creative Digital Solutions</title>
+    <meta name="description" content="Endevo Digital provides innovative digital solutions including web development, branding, and digital marketing to help your business grow online.">
+    <meta name="keywords" content="Endevo Digital, web development, branding, digital marketing, SEO, creative solutions, portfolio">
+    <meta name="author" content="Endevo Digital">
+
+    <!-- Open Graph (Facebook & LinkedIn) -->
+    <meta property="og:title" content="Endevo Digital | Creative Digital Solutions">
+    <meta property="og:description" content="Discover Endevo Digital's services in web development, branding, and digital marketing. We help businesses thrive online.">
+    <meta property="og:image" content="https://endevodigital.com/assets/images/endevo_logo_big.png">
+    <meta property="og:url" content="https://endevodigital.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Endevo Digital | Creative Digital Solutions">
+    <meta name="twitter:description" content="Discover Endevo Digital's services in web development, branding, and digital marketing.">
+    <meta name="twitter:image" content="https://endevodigital.com/assets/images/endevo_logo_big.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/android-chrome-192x192.png">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/styles/main_styles.css">
+
     <style>
         .nav-anchor {
             position: relative;
@@ -20,27 +49,17 @@
             transition: width 0.3s ease;
         }
 
-        .nav-anchor:hover::after {
-            width: 100%;
-        }
-
-        /* Active state */
+        .nav-anchor:hover::after,
         .nav-anchor.active::after {
             width: 100%;
         }
 
-        /* Active state for nav links */
-.nav-anchor.active::after {
-    width: 100%;
-}
-
-/* Active state for Let's Talk button */
-.btn-pill.active {
-    border-bottom: 2px solid blue;
-}
-
+        .btn-pill.active {
+            border-bottom: 2px solid blue;
+        }
     </style>
 </head>
+
 
 <nav class="navbar-mine">
     <div class="navbar-container-mine">
