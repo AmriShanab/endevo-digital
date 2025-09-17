@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>Endevo Digital | Creative Digital Solutions</title>
-    <meta name="description" content="Endevo Digital provides innovative digital solutions including web development, branding, and digital marketing to help your business grow online.">
-    <meta name="keywords" content="Endevo Digital, web development, branding, digital marketing, SEO, creative solutions, portfolio">
-    <meta name="author" content="Endevo Digital">
+    <title>Endevo Digital | Software & Web Development</title>
+    <meta name="description" content="Endevo Digital is a software and web development company dedicated to building scalable, high-performance digital solutions. We specialize in custom software, responsive web applications, and modern user experiences tailored to meet the unique needs of businesses across various industries.">
 
     <!-- Open Graph (Facebook & LinkedIn) -->
-    <meta property="og:title" content="Endevo Digital | Creative Digital Solutions">
-    <meta property="og:description" content="Discover Endevo Digital's services in web development, branding, and digital marketing. We help businesses thrive online.">
+    <meta property="og:title" content="Endevo Digital | Software & Web Development">
+    <meta property="og:description" content="Endevo Digital is a software and web development company dedicated to building scalable, high-performance digital solutions. We specialize in custom software, responsive web applications, and modern user experiences tailored to meet the unique needs of businesses across various industries.">
     <meta property="og:image" content="https://endevodigital.com/assets/images/endevo_logo_big.png">
     <meta property="og:url" content="https://endevodigital.com/">
     <meta property="og:type" content="website">
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Endevo Digital | Creative Digital Solutions">
-    <meta name="twitter:description" content="Discover Endevo Digital's services in web development, branding, and digital marketing.">
+    <meta name="twitter:title" content="Endevo Digital | Software & Web Development">
+    <meta name="twitter:description" content="Endevo Digital is a software and web development company dedicated to building scalable, high-performance digital solutions. We specialize in custom software, responsive web applications, and modern user experiences tailored to meet the unique needs of businesses across various industries.">
     <meta name="twitter:image" content="https://endevodigital.com/assets/images/endevo_logo_big.png">
 
     <!-- Favicon -->
@@ -28,37 +26,8 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/styles/main_styles.css">
-
-    <style>
-        .nav-anchor {
-            position: relative;
-            text-decoration: none;
-            color: black;
-            padding-bottom: 5px;
-            transition: color 0.3s;
-        }
-
-        .nav-anchor::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0%;
-            height: 2px;
-            background-color: blue;
-            transition: width 0.3s ease;
-        }
-
-        .nav-anchor:hover::after,
-        .nav-anchor.active::after {
-            width: 100%;
-        }
-
-        .btn-pill.active {
-            border-bottom: 2px solid blue;
-        }
-    </style>
 </head>
+
 
 
 <nav class="navbar-mine">
