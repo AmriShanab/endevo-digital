@@ -90,7 +90,7 @@
       <a href="https://www.linkedin.com/company/endevo-holdings/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
       <a href="https://wa.me/94775518274?text=Hi%20there%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
     </div>
-
+<!--  -->
 </div>
 
 
