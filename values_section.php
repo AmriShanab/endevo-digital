@@ -456,7 +456,7 @@
             <div class="testimonials-section">
                 <div class="testimonials-header">
                     <h2 class="testimonials-title">What Our Clients Say</h2>
-                    <p class="testimonials-subtitle">Hear from businesses that have experienced the Endevo Digital difference</p>
+                    <p class="testimonials-subtitle">Trusted by businesses worldwide, Stories of success, straight from our clients.</p>
                 </div>
                 
                 <div class="testimonials-container">

@@ -80,18 +80,19 @@
       </div>
 
       <!-- Info / Image Column -->
-      <div class="col-lg-6 col-md-6 text-center d-flex align-items-center justify-content-center"
-        data-aos="fade-left" data-aos-delay="200">
+   <div class="col-lg-6 col-md-6 text-center d-flex align-items-center justify-content-center d-none d-md-flex"
+     data-aos="fade-left" data-aos-delay="200">
+    
+    <div class="cnt-social">
+      <a href="https://www.facebook.com/profile.php?id=61564148454268&mibextid=wwXIfr&rdid=RokhX2XvDpODHrFN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C2fVTgRpT%2F%3Fmibextid%3DwwXIfr#" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <!-- <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a> -->
+      <a href="https://www.instagram.com/endevo.digital?igsh=Zmh5dmJwa2FpYzNx&utm_source=qr" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/endevo-holdings/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://wa.me/94775518274?text=Hi%20there%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    </div>
 
-        <div class="cnt-social">
-          <a href="https://www.facebook.com/profile.php?id=61564148454268&mibextid=wwXIfr&rdid=RokhX2XvDpODHrFN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C2fVTgRpT%2F%3Fmibextid%3DwwXIfr#" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <!-- <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a> -->
-          <a href="https://www.instagram.com/endevo.digital?igsh=Zmh5dmJwa2FpYzNx&utm_source=qr" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.linkedin.com/company/endevo-holdings/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          <a href="https://wa.me/94775518274?text=Hi%20there%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-        </div>
+</div>
 
-      </div>
 
     </div>
   </div>

@@ -159,13 +159,15 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -10px;
+  bottom: -5px;
   width: 70px;
   height: 5px;
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  /* background: linear-gradient(90deg, #00c6ff, #0072ff); */
   align-items: left;
   border-radius: 10px;
 }
+
+
 
 .section-content {
   font-size: clamp(1rem, 3vw, 1.2rem);
@@ -636,6 +638,7 @@ body {
     padding: 0 1rem;
   }
 
+
   .footer-badges {
     grid-template-columns: 1fr;
   }
@@ -663,6 +666,14 @@ body {
 
   .clutch-badge div {
     padding-left: 75px !important;
+  }
+
+    .footer-nav a {
+    margin-left: -35px !important;
+  }
+
+  .footer-nav {
+    margin-top: 60px;
   }
 }
 
@@ -1080,6 +1091,16 @@ body {
     border-radius: 2px;
 }
 
+@media (max-width: 768px) {
+    .section-title::after {
+        left: 40px; /* reduce left on mobile */
+    }
+
+    .section-content {
+      text-align: justify;
+    }
+}
+
 .who-we-are-video {
     width: 100%;          /* full width of parent */
     max-width: auto;     /* optional max width */
@@ -1094,4 +1115,65 @@ body {
     height: 100%;
     object-fit: cover;    /* maintain aspect ratio and fill container */
     display: block;
+}
+
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 576px) {
+  .social-links {
+    order: 2;  /* move to bottom */
+    margin-top: 1.5rem; /* spacing */
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 10px 20px; /* row-gap, col-gap */
+    padding: 0;
+    margin-top: 10px ;
+    list-style: none;
+  }
+
+  .footer-nav li {
+    margin: 0; /* reset margins */
+  }
+
+  .footer-nav {
+    margin-top: 30px; /* adjust spacing if needed */
+  }
+}
+/* Mobile only */
+@media (max-width: 768px) {
+  .footer-badges {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px; /* space between items */
+    justify-items: center;
+  }
+
+  .footer-badges .badge-item {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .pill-btn {
+    /* background: #ffffff !important;  keep white background */
+    color: #000000 !important;       /* force black text */
+    font-size: 5rem;                 /* slightly larger for readability */
+    padding: 0.75rem 1rem;           /* add horizontal padding */
+    display: inline-block;           /* ensure text shows properly */
+  }
+
+  .pill-btn:hover,
+  .pill-btn:focus {
+    background: #000000 !important;
+    /* color: #ffffff !important; */
+  }
 }

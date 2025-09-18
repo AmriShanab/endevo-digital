@@ -264,6 +264,7 @@ body {
   }
 
   .image-wrapper img {
+    height: 500px !important;
     aspect-ratio: 1/1;
     align-items: center;
     margin-left: 25px;
@@ -591,6 +592,7 @@ body {
   }
 
   .welcome-container {
+    margin-top: -100px !important;
     margin-right: 0;
     max-width: 100%;
     border-radius: 0;
@@ -1830,4 +1832,103 @@ body {
 .main-title-index,
 .sub-title-index {
     transition: opacity 0.5s ease-in-out;
+}
+
+
+.trusted-brands {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px; /* space between logos */
+}
+
+/* Force 3 per row on mobile */
+@media (max-width: 576px) {
+    .trusted-brands {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-logo img {
+    max-width: 80%; /* adjust size inside grid cell */
+    height: auto;
+}
+
+.tech-logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    gap: 20px;
+    text-align: center;
+}
+
+/* Force exactly 3 per row only on mobile */
+@media (max-width: 576px) {
+    .tech-logos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.tech-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-logo img {
+    max-width: 60px;
+    height: auto;
+    margin-bottom: 8px;
+}
+.tech-logo span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 576px) {
+  .social-links {
+    order: 2;  /* move to bottom */
+    margin-top: 1.5rem; /* spacing */
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 10px 20px; /* row-gap, col-gap */
+    padding: 0;
+    margin-top: 10px ;
+    list-style: none;
+  }
+
+  .footer-nav li {
+    margin: 0; /* reset margins */
+  }
+
+  .footer-nav {
+    margin-top: 30px; /* adjust spacing if needed */
+  }
+}
+/* Mobile only */
+@media (max-width: 768px) {
+  .footer-badges {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px; /* space between items */
+    justify-items: center;
+  }
+
+  .footer-badges .badge-item {
+    text-align: center;
+  }
 }

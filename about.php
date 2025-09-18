@@ -45,12 +45,14 @@
 
         .navbar-dark .navbar-logo-mine,
         .navbar-dark .navbar-menu-mine li a {
-            color: white;
+            color: #ffffff ;
             text-decoration: none;
             font-size: 20px !important;
             margin-top: -10px;
             margin: 0 10px;
         }
+
+      
 
         .navbar-dark .navbar-toggle-mine span {
             background: white;
@@ -269,9 +271,9 @@
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .navbar-logo-mine img {
-                max-height: 70px;
+                max-height: 40px;
                 /* Slightly smaller on mobile */
-                margin-top: 10px !important;
+                margin-top: 5px !important;
             }
         }
 
@@ -354,11 +356,26 @@
             vertical-align: middle;
         }
 
+        /* Mobile fix */
+        .txt-black {
+            color: black !important;
+        }
+
+
         .navbar-menu-mine .nav-anchor.active {
   color: #0072ff !important; /* Blue font for active link */
   margin-top: -8px !important;
 }
 
+.navbar-dark .navbar-menu-mine li a.pill-btn {
+  color: #000000 !important; /* force black text */
+  background: #ffffff;
+  border: 1px solid #000000;
+}
+.navbar-dark .navbar-menu-mine li a.pill-btn:hover {
+  background: #000000;
+  color: #ffffff !important;
+}
     </style>
 </head>
 
@@ -368,13 +385,13 @@
             <a href="/" class="navbar-logo-mine"><img src="assets/images/endevo_logo_big.png" alt=""></a>
 
             <ul class="navbar-menu-mine" id="navbarMenu">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index.php" class="">Home</a></li>
                 <li><a href="about.php" class="nav-anchor active">About</a></li>
 
-                <li><a href="services.php">Services</a></li>
-                <li><a href="portfolio.php">Portfolio</a></li>
+                <li><a href="services.php" class="">Services</a></li>
+                <li><a href="portfolio.php" class="">Portfolio</a></li>
                 <li>
-                    <a href="contact.php" class="pill-btn">Let's Talk</a>
+                    <a href="contact.php" class="pill-btn txt-black">Let's Talk</a>
                 </li>
 
                 <li class="mobile-social-container">
@@ -423,7 +440,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <!-- Left Column - Content -->
-                <div class="col-lg-6 col-md-7">
+                <div class="col-lg-6 col-md-7 order-1 order-md-1">
                     <h2 class="section-title">Who We Are</h2>
                     <p class="section-content">
                         At Endevo Digital, software is at the heart of everything we do. We design and develop smart solutions that help businesses grow, connect, and succeed in today’s digital era. From custom applications to dynamic web platforms, our work is built to simplify challenges and create real impact.
@@ -434,7 +451,7 @@
                 </div>
 
                 <!-- Right Column - Image -->
-                <div class="col-lg-6 col-md-5">
+                <div class="col-lg-6 col-md-5 order-2 order-md-2">
                     <div class="who-we-are-video" data-aos="fade-right" data-aos-delay="200">
                         <video src="assets/videos/who_we_are.mp4" autoplay muted loop playsinline></video>
                     </div>
@@ -444,29 +461,27 @@
         </div>
     </section>
     <!-- OUR VISION -->
-    <section class="content-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Left Column - Content -->
-                <div class="col-lg-6 col-md-7">
-                    <div class="video-container" data-aos="fade-right" data-aos-delay="200">
-                        <video src="assets/videos/vision.mp4" autoplay muted loop playsinline></video>
-
-                    </div>
-
-                </div>
-
-                <!-- Right Column - Image -->
-                <div class="col-lg-6 col-md-5">
-
-                    <h2 class="section-title">OUR VISION</h2>
-                    <p class="section-content">
-                        To be a global leader in digital innovation, empowering businesses to reach their full potential through tailored web, mobile, marketing, and event solutions that drive success.
-                    </p>
+ <section class="content-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Video Column -->
+            <div class="col-lg-6 col-md-6 col-12 order-2 order-md-1">
+                <div class="video-container" data-aos="fade-right" data-aos-delay="200">
+                    <video src="assets/videos/vision.mp4" autoplay muted loop playsinline></video>
                 </div>
             </div>
+
+            <!-- Content Column -->
+            <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2">
+                <h2 class="section-title">OUR VISION</h2>
+                <p class="section-content">
+                    To be a global leader in digital innovation, empowering businesses to reach their full potential through tailored web, mobile, marketing, and event solutions that drive success.
+                </p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- OUR MISSION SECTION -->
     <section class="content-section">
@@ -538,98 +553,120 @@
 
 
    <?php include 'values_section.php'; ?>
-    <footer class="footer-section">
-        <div class="container-fluid">
-            <div class="row">
+  <footer class="footer-section">
+    <!-- Floating Elements -->
+    <!-- <div class="footer-floating-elements">
+        <div class="footer-float-element element-1"></div>
+        <div class="footer-float-element element-2"></div>
+        <div class="footer-float-element element-3"></div>
+    </div> -->
 
-                <div class="col-lg-5 col-md-12">
-                    <div class="footer-contact">
-                        <h2 class="footer-lets-talk">Let's Talk</h2>
-                        <div class="contact-info">
-                            <a href="mailto:hello@endevodigital.com?subject=Inquiry&body=Hello%20Endevo%20Digital">hello@endevodigital.com</a>
+    <div class="container-fluid">
+        <div class="row">
 
-                            <p class="contact-phone mt-3">+94 77 55 18274</p>
-                            <p class="contact-phone ">+94 74 35 59668</p>
-                            <p class="contact-phone">No. 654, Galle Road, Colombo 03, Sri Lanka.</p>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/company/endevo-holdings/" class="social-icon"><i class="bi bi-linkedin"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=61564148454268&mibextid=wwXIfr&rdid=RokhX2XvDpODHrFN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C2fVTgRpT%2F%3Fmibextid%3DwwXIfr#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                            <a href="https://www.tiktok.com/@endevo.co?_t=ZS-8wLvZ6UWhKi&_r=1" class="social-icon"><i class="bi bi-tiktok"></i></a>
-                            <a href="https://www.instagram.com/endevo.digital?igsh=Zmh5dmJwa2FpYzNx&utm_source=qr" class="social-icon"><i class="bi bi-instagram"></i></a>
-                            <a href="https://wa.me/94775518274?text=Hi%20there%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." class="social-icon"><i class="bi bi-whatsapp"></i></a>
-                        </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="footer-contact">
+                    <h2 class="footer-lets-talk">Let's Talk</h2>
+                    <div class="contact-info">
+                        <a href="mailto:hello@endevodigital.com?subject=Inquiry&body=Hello%20Endevo%20Digital">
+                            hello@endevodigital.com
+                        </a>
+
+
+                        <p class="contact-phone mt-3">+94 77 55 18274</p>
+                        <p class="contact-phone">+94 74 35 59668</p>
+                        <p class="contact-phone">No. 654, Galle Road, Colombo 03, Sri Lanka.</p>
+                    </div>
+                    <div class="social-links d-none d-md-flex">
+                        <a href="https://www.linkedin.com/company/endevo-holdings/" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61564148454268&mibextid=wwXIfr&rdid=RokhX2XvDpODHrFN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C2fVTgRpT%2F%3Fmibextid%3DwwXIfr#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@endevo.co?_t=ZS-8wLvZ6UWhKi&_r=1" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://www.instagram.com/endevo.digital?igsh=Zmh5dmJwa2FpYzNx&utm_source=qr" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/94775518274?text=Hi%20there%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." class="social-icon"><i class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Right Column (col-lg-7) -->
-                <div class="col-lg-7 col-md-12">
-                    <div class="footer-right-content">
-                        <!-- Navigation Links -->
-                        <div class="footer-nav">
-                            <ul>
-                                <li><a href="index.php">Home</a></li>
+            <!-- Right Column (col-lg-7) -->
+            <div class="col-lg-7 col-md-12">
+                <div class="footer-right-content">
+                    <!-- Navigation Links -->
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="index.php">Home</a></li>
                             <li><a href="about.php">About</a></li>
                             <li><a href="services.php">Services</a></li>
                             <li><a href="portfolio.php">Portfolio</a></li>
                             <!-- <li><a href="/careers">Careers</a></li> -->
                             <li><a href="#">Blog</a></li>
                             <li><a href="careers.php">Careers</a></li>
-                            </ul>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-badges">
+                        <div class="badge-item teech">
+                            <a href="https://techbehemoths.com/company/endevo-digital" target="_blank" rel="noopener">
+                                <img src="assets/images/tech_behemoths-removebg-preview.png" alt="">
+                            </a>
                         </div>
 
-
-                        <div class="footer-badges">
-                            <div class="badge-item teech">
-                                <a href="https://techbehemoths.com/company/endevo-digital" target="_blank" rel="noopener">
-                                    <img src="assets/images/tech_behemoths-removebg-preview.png" alt="">
-                                </a>
-                            </div>
-
-                            <div class="badge-item clutch-badge">
-                                <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
-                                <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-nofollow="false" data-expandifr="true" data-scale="100" data-clutchcompany-id="2551338"></div>
-                            </div>
-
-                            <div class="badge-item teech">
-                                <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener">
-                                    <img src="assets/images/trustpilot-removebg-preview.png" alt="">
-                                </a>
-                            </div>
-
-                            <div class="badge-item">
-                                <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
-                                <div data-designrush-widget data-agency-id="99274" data-style="dark" aria-label="DesignRush agency reviews section"></div>
-
-                            </div>
-
-                            <div class="badge-item">
-                                <a href="https://www.goodfirms.co/company/endevo-digital" target="_blank" rel="noopener">
-                                    <img src="assets/images/goodfirms-removebg-preview.png" alt="">
-                                </a>
-                            </div>
-
-                            <div class="badge-item teech">
-                                <a href="https://share.google/re9KrkLd1izA4NxRH" target="_blank" rel="noopener">
-                                    <img src="assets/images/google_review-removebg-preview.png" alt="">
-                                </a>
-                            </div>
+                        <div class="badge-item clutch-badge">
+                            <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
+                            <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="2" data-height="45" data-nofollow="false" data-expandifr="true" data-scale="100" data-clutchcompany-id="2551338"></div>
                         </div>
 
-                        <!-- Copyright and Legal -->
-                        <div class="footer-legal">
-                            <p class="copyright">&copy; 2025 Endevo Digital.</p>
-                            <div class="legal-links">
-                                <a href="privacy.php">Privacy Policy</a>
-                                <a href="terms.php">Terms of Service</a>
-                                <!-- <a href="/cookies">Cookie Policy</a> -->
+                        <div class="badge-item teech">
+                            <a href="https://www.trustpilot.com/review/endevodigital.com" target="_blank" rel="noopener">
+                                <img src="assets/images/trustpilot-removebg-preview.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="badge-item">
+                            <script type="text/javascript" src="https://www.designrush.com/topbest/js/widgets/agency-reviews.js"></script>
+                            <div data-designrush-widget data-agency-id="99274" data-style="dark" aria-label="DesignRush agency reviews section"></div>
+
+                        </div>
+
+                        <div class="badge-item">
+                            <a href="https://www.goodfirms.co/company/endevo-digital" target="_blank" rel="noopener">
+                                <img src="assets/images/goodfirms-removebg-preview.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="badge-item teech">
+                            <a href="https://share.google/re9KrkLd1izA4NxRH" target="_blank" rel="noopener">
+                                <img src="assets/images/google_review-removebg-preview.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row d-md-none">
+                        <div class="col-12">
+                            <div class="social-links social-links-mobile justify-content-center">
+                                <a href="https://www.linkedin.com/company/endevo-holdings/" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.facebook.com/..." class="social-icon"><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.tiktok.com/..." class="social-icon"><i class="bi bi-tiktok"></i></a>
+                                <a href="https://www.instagram.com/..." class="social-icon"><i class="bi bi-instagram"></i></a>
+                                <a href="https://wa.me/..." class="social-icon"><i class="bi bi-whatsapp"></i></a>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Copyright and Legal -->
+                    <div class="footer-legal">
+                        <p class="copyright">&copy; 2025 Endevo Digital.</p>
+                        <div class="legal-links">
+                            <a href="privacy.php">Privacy Policy</a>
+                            <a href="terms.php">Terms of Service</a>
+                            <!-- <a href="/cookies">Cookie Policy</a> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+
+    </div>
+</footer>
 
     <!-- TrustBox script -->
     <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>

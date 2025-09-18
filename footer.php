@@ -1,5 +1,7 @@
 <head>
     <link rel="stylesheet" href="assets/styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 
 <footer class="footer-section">
@@ -26,7 +28,7 @@
                         <p class="contact-phone">+94 74 35 59668</p>
                         <p class="contact-phone">No. 654, Galle Road, Colombo 03, Sri Lanka.</p>
                     </div>
-                    <div class="social-links">
+                    <div class="social-links d-none d-md-flex">
                         <a href="https://www.linkedin.com/company/endevo-holdings/" class="social-icon"><i class="bi bi-linkedin"></i></a>
                         <a href="https://www.facebook.com/profile.php?id=61564148454268&mibextid=wwXIfr&rdid=RokhX2XvDpODHrFN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C2fVTgRpT%2F%3Fmibextid%3DwwXIfr#" class="social-icon"><i class="bi bi-facebook"></i></a>
                         <a href="https://www.tiktok.com/@endevo.co?_t=ZS-8wLvZ6UWhKi&_r=1" class="social-icon"><i class="bi bi-tiktok"></i></a>
@@ -89,7 +91,17 @@
                             </a>
                         </div>
                     </div>
-
+                    <div class="row d-md-none">
+                        <div class="col-12">
+                            <div class="social-links social-links-mobile justify-content-center">
+                                <a href="https://www.linkedin.com/company/endevo-holdings/" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.facebook.com/..." class="social-icon"><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.tiktok.com/..." class="social-icon"><i class="bi bi-tiktok"></i></a>
+                                <a href="https://www.instagram.com/..." class="social-icon"><i class="bi bi-instagram"></i></a>
+                                <a href="https://wa.me/..." class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Copyright and Legal -->
                     <div class="footer-legal">
@@ -103,6 +115,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </footer>
 
