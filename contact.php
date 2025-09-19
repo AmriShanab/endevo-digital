@@ -14,8 +14,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   try {
     // Enable verbose debug output (set to 0 in production)
-    // $mail->SMTPDebug = 2; 
-    // $mail->Debugoutput = 'html';
+    $mail->SMTPDebug = 2; 
+    $mail->Debugoutput = 'html';
 
     $mail->isSMTP();
     $mail->Host       = 'smtp.hostinger.com';
