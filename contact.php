@@ -98,7 +98,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
           <div class="alert alert-danger"><?= $error_message ?></div>
         <?php endif; ?>
 
-        <form action="" method="POST">
+       <form action="contact.php" method="POST">
+
           <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
             <input type="text" class="form-control form-control-lg" id="name" name="name" required>
