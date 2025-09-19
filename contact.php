@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $message = htmlspecialchars(trim($_POST["message"] ?? ""));
 
     // Your email
-    $to = "info@endevodigital.com";
+    $to = "hello@endevodigital.com";
 
     // Email subject
     $email_subject = "New Contact Form Submission: " . ($subject ?: "No Subject");
