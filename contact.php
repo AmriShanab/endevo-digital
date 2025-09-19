@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   <!-- Hero Section End -->
 
   <!-- Contact Form Start -->
-  <div class="container my-5">
+  <div class="container my-5" style="bottom: 15rem;">
     <div class="row align-items-center">
       <!-- Form Column -->
       <div class="col-lg-6 col-md-6 contact-form" data-aos="fade-up" data-aos-delay="150">
@@ -142,6 +142,76 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     AOS.init({
       duration: 1200,
       once: true
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- ✅ AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
+
+  <!-- Custom Navbar Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.getElementById('navbarToggle');
+      const menu = document.getElementById('navbarMenu');
+      const navbar = document.querySelector('.navbar-mine');
+
+      if (toggleBtn && menu && navbar) {
+        const toggleMenu = () => {
+          const isActive = menu.classList.toggle('active');
+          toggleBtn.classList.toggle('active', isActive);
+          navbar.classList.toggle('active-background', isActive);
+          document.querySelector('.mobile-social-container').style.display = isActive ? 'block' : 'none';
+          document.body.style.overflow = isActive ? 'hidden' : '';
+        };
+
+        toggleBtn.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking links (mobile only)
+        document.querySelectorAll('.navbar-menu-mine a').forEach(link => {
+          link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) toggleMenu();
+          });
+        });
+      }
+
+      // Scroll hide/show functionality
+      const hideClass = 'navbar-hidden';
+      const scrollThreshold = 100;
+      const hideDelay = 1000;
+      let scrollTimeout;
+
+      window.addEventListener('scroll', () => {
+        const navbar = document.querySelector('.navbar-mine');
+        if (!navbar) return;
+
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll <= 0) {
+          navbar.classList.remove(hideClass);
+          clearTimeout(scrollTimeout);
+          return;
+        }
+
+        if (navbar.classList.contains('active-background')) return;
+
+        clearTimeout(scrollTimeout);
+        navbar.classList.remove(hideClass);
+
+        scrollTimeout = setTimeout(() => {
+          if (currentScroll > scrollThreshold) {
+            navbar.classList.add(hideClass);
+          }
+        }, hideDelay);
+      });
     });
   </script>
 </body>

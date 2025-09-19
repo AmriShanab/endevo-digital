@@ -267,7 +267,7 @@ body {
     height: 500px !important;
     aspect-ratio: 1/1;
     align-items: center;
-    margin-left: 25px;
+    /* margin-left: 25px; */
   }
 
   .image-wrapper-ocu img {
@@ -1124,7 +1124,7 @@ body {
 .brand-logo {
   position: relative;
   padding: 0.1rem;
-  background: white;
+  /* background: white; */
   border-radius: 12px;
   /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); */
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1187,12 +1187,14 @@ body {
   }
 
   .brand-logo {
-    height: 100px;
+    height: 120px;
+    width: 120px;
     padding: 1rem;
   }
 
   .brand-logo img {
     max-height: 50px;
+    width: 120px !important;
   }
 }
 
@@ -1612,7 +1614,7 @@ body {
   }
 
   .clutch-badge div {
-    padding-left: 75px !important;
+    padding-left: 5px !important;
   }
 }
 
@@ -1854,8 +1856,9 @@ body {
     align-items: center;
 }
 .brand-logo img {
-    max-width: 80%; /* adjust size inside grid cell */
+    max-width: 100%; /* adjust size inside grid cell */
     height: auto;
+
 }
 
 .tech-logos-grid {
@@ -1930,5 +1933,34 @@ body {
 
   .footer-badges .badge-item {
     text-align: center;
+  }
+}
+
+/* Remove gap between image and frame on mobile */
+@media (max-width: 768px) {
+  #imageWrapper .row {
+    margin: 0 !important;
+  }
+  #imageWrapper .col-12 {
+    padding: 0 !important;
+  }
+  #imageWrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* Reduce only this DesignRush badge on mobile */
+@media (max-width: 768px) {
+  .badge-designrush {
+    max-width: 250px; /* adjust size as needed */
+    margin: 0 auto;   /* center it */
+  }
+
+  .badge-designrush iframe,
+  .badge-designrush div[data-designrush-widget] {
+    max-width: 100% !important;
   }
 }
