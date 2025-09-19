@@ -2,43 +2,45 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require __DIR__ . 'vendor/autoload.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name    = htmlspecialchars($_POST['name']);
     $email   = htmlspecialchars($_POST['email']);
+    $subject = htmlspecialchars($_POST['subject']);
     $message = htmlspecialchars($_POST['message']);
 
     $mail = new PHPMailer(true);
 
     try {
-        // Gmail SMTP settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
+        $mail->Host       = 'smtp.hostinger.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'amrishanab@gmail.com';   // your full Gmail/Workspace email
-        $mail->Password   = 'Aayeshanuha@2003';         // App Password from Google
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port       = 587;
+        $mail->Username   = 'info@endevodigital.com';  
+        $mail->Password   = 'yourPasswordHere';      
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Port       = 465;
 
-        // Sender must be the Gmail/Workspace mailbox
-        $mail->setFrom('amrishanab@gmail.com', 'Endevo Digital');
-        // Add reply-to with visitor’s email
+        $mail->setFrom('info@endevodigital.com', 'Endevo Digital');
         $mail->addReplyTo($email, $name);
+        $mail->addAddress('info@endevodigital.com', 'Admin');
 
-        // Recipient (your admin email)
-        $mail->addAddress('amrishanab@gmail.com', 'Admin');
-
-        // Content
         $mail->isHTML(true);
-        $mail->Subject = 'New Contact Form Message';
-        $mail->Body    = "<b>Name:</b> $name <br><b>Email:</b> $email <br><b>Message:</b><br>$message";
+        $mail->Subject = !empty($subject) ? $subject : 'New Contact Form Message';
+        $mail->Body    = "
+            <h2>New Contact Form Submission</h2>
+            <p><b>Name:</b> {$name}</p>
+            <p><b>Email:</b> {$email}</p>
+            <p><b>Subject:</b> {$subject}</p>
+            <p><b>Message:</b><br>{$message}</p>
+        ";
+        $mail->AltBody = "Name: {$name}\nEmail: {$email}\nSubject: {$subject}\nMessage:\n{$message}";
 
         $mail->send();
-        echo "Message has been sent successfully!";
+        echo "✅ Message has been sent successfully!";
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        echo "❌ Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 } else {
-    echo "Invalid request.";
+    echo "❌ Invalid request.";
 }
