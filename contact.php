@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host       = 'smtp.hostinger.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'hello@endevodigital.com';
-        $mail->Password   = 'YOUR_EMAIL_PASSWORD'; // Replace with your real password
+        $mail->Password   = 'Endevo@5'; // Replace with your real password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
         $mail->Port       = 587;
 
