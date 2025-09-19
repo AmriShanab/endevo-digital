@@ -1,48 +1,50 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require __DIR__ . '/vendor/autoload.php'; // Load Composer's autoloader
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name    = $_POST['name'] ?? '';
-    $email   = $_POST['email'] ?? '';
-    $message = $_POST['message'] ?? '';
+  $name    = $_POST['name'] ?? '';
+  $email   = $_POST['email'] ?? '';
+  $message = $_POST['message'] ?? '';
 
-    $mail = new PHPMailer(true);
+  $mail = new PHPMailer(true);
 
-    try {
-        // Enable verbose debug output (set to 0 in production)
-        // $mail->SMTPDebug = 2; 
-        // $mail->Debugoutput = 'html';
+  try {
+    // Enable verbose debug output (set to 0 in production)
+    // $mail->SMTPDebug = 2; 
+    // $mail->Debugoutput = 'html';
 
-        $mail->isSMTP();
-        $mail->Host       = 'smtp.hostinger.com';
-        $mail->SMTPAuth   = true;
-        $mail->Username   = 'hello@endevodigital.com';
-        $mail->Password   = 'Endevo@5'; // Replace with your real password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
-        $mail->Port       = 587;
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.hostinger.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'hello@endevodigital.com';
+    $mail->Password   = 'Endevo@5'; // Replace with your real password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port = 465;
 
-        // Recipients
-        $mail->setFrom('hello@endevodigital.com', 'Endevo Digital Website');
-        $mail->addAddress('hello@endevodigital.com'); // Receiver
 
-        // Content
-        $mail->isHTML(true);
-        $mail->Subject = "New Contact Form Submission from $name";
-        $mail->Body    = "
+    // Recipients
+    $mail->setFrom('hello@endevodigital.com', 'Endevo Digital Website');
+    $mail->addAddress('hello@endevodigital.com'); // Receiver
+
+    // Content
+    $mail->isHTML(true);
+    $mail->Subject = "New Contact Form Submission from $name";
+    $mail->Body    = "
             <h3>You have a new contact form submission</h3>
             <p><strong>Name:</strong> $name</p>
             <p><strong>Email:</strong> $email</p>
             <p><strong>Message:</strong><br>$message</p>
         ";
 
-        $mail->send();
-        echo "<p style='color:green;'>Message sent successfully!</p>";
-    } catch (Exception $e) {
-        echo "<p style='color:red;'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</p>";
-    }
+    $mail->send();
+    echo "<p style='color:green;'>Message sent successfully!</p>";
+  } catch (Exception $e) {
+    echo "<p style='color:red;'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</p>";
+  }
 }
 ?>
 
@@ -113,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <div class="alert alert-danger"><?= $error_message ?></div>
         <?php endif; ?>
 
-       <form action="contact.php" method="POST">
+        <form action="contact.php" method="POST">
 
           <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
@@ -230,6 +232,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     });
   </script>
 </body>
+
 </html>
 
 <?php include 'footer.php'; ?>
