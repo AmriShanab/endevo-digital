@@ -2,48 +2,46 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/phpmailer/phpmailer/src/Exception.php';
-require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
-require 'vendor/phpmailer/phpmailer/src/SMTP.php';
+require __DIR__ . '/vendor/autoload.php'; // Load Composer's autoloader
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $name = htmlspecialchars(trim($_POST["name"] ?? ""));
-    $email = htmlspecialchars(trim($_POST["email"] ?? ""));
-    $subject = htmlspecialchars(trim($_POST["subject"] ?? "No Subject"));
-    $message = htmlspecialchars(trim($_POST["message"] ?? ""));
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name    = $_POST['name'] ?? '';
+    $email   = $_POST['email'] ?? '';
+    $message = $_POST['message'] ?? '';
 
     $mail = new PHPMailer(true);
 
     try {
-        // SMTP settings
+        // Enable verbose debug output (set to 0 in production)
+        // $mail->SMTPDebug = 2; 
+        // $mail->Debugoutput = 'html';
+
         $mail->isSMTP();
-        $mail->Host = 'smtp.hostinger.com';   // ✅ replace with your host (cPanel users: mail.yourdomain.com)
-        $mail->SMTPAuth = true;
-        $mail->Username = 'hello@endevodigital.com';  // ✅ your full email
-        $mail->Password = 'Endevo@5';      // ✅ email password (or app password)
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
+        $mail->Host       = 'smtp.hostinger.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'hello@endevodigital.com';
+        $mail->Password   = 'YOUR_EMAIL_PASSWORD'; // Replace with your real password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
+        $mail->Port       = 587;
 
-        // From & To
-        $mail->setFrom('hello@endevodigital.com', 'Website Contact');
-        $mail->addAddress('hello@endevodigital.com'); // ✅ receiver (you)
-        $mail->addReplyTo($email, $name);
+        // Recipients
+        $mail->setFrom('hello@endevodigital.com', 'Endevo Digital Website');
+        $mail->addAddress('hello@endevodigital.com'); // Receiver
 
-        // Email content
+        // Content
         $mail->isHTML(true);
-        $mail->Subject = "New Contact Form Submission: $subject";
+        $mail->Subject = "New Contact Form Submission from $name";
         $mail->Body    = "
-            <h3>New Contact Form Submission</h3>
+            <h3>You have a new contact form submission</h3>
             <p><strong>Name:</strong> $name</p>
             <p><strong>Email:</strong> $email</p>
-            <p><strong>Subject:</strong> $subject</p>
             <p><strong>Message:</strong><br>$message</p>
         ";
 
         $mail->send();
-        $success_message = "✅ Thank you! Your message has been sent.";
+        echo "<p style='color:green;'>Message sent successfully!</p>";
     } catch (Exception $e) {
-        $error_message = "❌ Mailer Error: {$mail->ErrorInfo}";
+        echo "<p style='color:red;'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</p>";
     }
 }
 ?>
