@@ -52,13 +52,12 @@
   <!-- Hero Section End -->
 
   <!-- Contact Form Start -->
-  <!-- Contact Form Section -->
   <div class="container my-5">
     <div class="row align-items-center">
       <!-- Form Column -->
       <div class="col-lg-6 col-md-6 contact-form" data-aos="fade-up" data-aos-delay="150">
         <h2 class="form-heading">Send us a Message</h2>
-        <form action="send_mail.php" method="POST">
+        <form action="send_mail" method="POST">
           <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
             <input type="text" class="form-control form-control-lg" id="name" name="name" required>
