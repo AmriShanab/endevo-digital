@@ -1,36 +1,53 @@
 <?php
-// Handle form submission
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'vendor/phpmailer/phpmailer/src/Exception.php';
+require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require 'vendor/phpmailer/phpmailer/src/SMTP.php';
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = htmlspecialchars(trim($_POST["name"] ?? ""));
     $email = htmlspecialchars(trim($_POST["email"] ?? ""));
-    $subject = htmlspecialchars(trim($_POST["subject"] ?? ""));
+    $subject = htmlspecialchars(trim($_POST["subject"] ?? "No Subject"));
     $message = htmlspecialchars(trim($_POST["message"] ?? ""));
 
-    // Your email
-    $to = "hello@endevodigital.com";
+    $mail = new PHPMailer(true);
 
-    // Email subject
-    $email_subject = "New Contact Form Submission: " . ($subject ?: "No Subject");
+    try {
+        // SMTP settings
+        $mail->isSMTP();
+        $mail->Host = 'smtp.hostinger.com';   // ✅ replace with your host (cPanel users: mail.yourdomain.com)
+        $mail->SMTPAuth = true;
+        $mail->Username = 'hello@endevodigital.com';  // ✅ your full email
+        $mail->Password = 'Endevo@5';      // ✅ email password (or app password)
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
 
-    // Email body
-    $email_body = "You have received a new message from the contact form.\n\n";
-    $email_body .= "Name: $name\n";
-    $email_body .= "Email: $email\n";
-    $email_body .= "Subject: $subject\n";
-    $email_body .= "Message:\n$message\n";
+        // From & To
+        $mail->setFrom('hello@endevodigital.com', 'Website Contact');
+        $mail->addAddress('hello@endevodigital.com'); // ✅ receiver (you)
+        $mail->addReplyTo($email, $name);
 
-    // Headers
-    $headers = "From: $name <$email>\r\n";
-    $headers .= "Reply-To: $email\r\n";
+        // Email content
+        $mail->isHTML(true);
+        $mail->Subject = "New Contact Form Submission: $subject";
+        $mail->Body    = "
+            <h3>New Contact Form Submission</h3>
+            <p><strong>Name:</strong> $name</p>
+            <p><strong>Email:</strong> $email</p>
+            <p><strong>Subject:</strong> $subject</p>
+            <p><strong>Message:</strong><br>$message</p>
+        ";
 
-    // Send email
-    if (mail($to, $email_subject, $email_body, $headers)) {
+        $mail->send();
         $success_message = "✅ Thank you! Your message has been sent.";
-    } else {
-        $error_message = "❌ Sorry, there was an error sending your message. Please try again.";
+    } catch (Exception $e) {
+        $error_message = "❌ Mailer Error: {$mail->ErrorInfo}";
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
