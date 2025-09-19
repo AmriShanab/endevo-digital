@@ -1,3 +1,36 @@
+<?php
+// Handle form submission
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $name = htmlspecialchars(trim($_POST["name"] ?? ""));
+    $email = htmlspecialchars(trim($_POST["email"] ?? ""));
+    $subject = htmlspecialchars(trim($_POST["subject"] ?? ""));
+    $message = htmlspecialchars(trim($_POST["message"] ?? ""));
+
+    // Your email
+    $to = "info@endevodigital.com";
+
+    // Email subject
+    $email_subject = "New Contact Form Submission: " . ($subject ?: "No Subject");
+
+    // Email body
+    $email_body = "You have received a new message from the contact form.\n\n";
+    $email_body .= "Name: $name\n";
+    $email_body .= "Email: $email\n";
+    $email_body .= "Subject: $subject\n";
+    $email_body .= "Message:\n$message\n";
+
+    // Headers
+    $headers = "From: $name <$email>\r\n";
+    $headers .= "Reply-To: $email\r\n";
+
+    // Send email
+    if (mail($to, $email_subject, $email_body, $headers)) {
+        $success_message = "✅ Thank you! Your message has been sent.";
+    } else {
+        $error_message = "❌ Sorry, there was an error sending your message. Please try again.";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,7 +90,15 @@
       <!-- Form Column -->
       <div class="col-lg-6 col-md-6 contact-form" data-aos="fade-up" data-aos-delay="150">
         <h2 class="form-heading">Send us a Message</h2>
-        <form action="send_mail" method="POST">
+
+        <!-- Success / Error Messages -->
+        <?php if (!empty($success_message)): ?>
+          <div class="alert alert-success"><?= $success_message ?></div>
+        <?php elseif (!empty($error_message)): ?>
+          <div class="alert alert-danger"><?= $error_message ?></div>
+        <?php endif; ?>
+
+        <form action="" method="POST">
           <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
             <input type="text" class="form-control form-control-lg" id="name" name="name" required>
@@ -78,32 +119,23 @@
         </form>
       </div>
 
-      <!-- Info / Image Column -->
-   <div class="col-lg-6 col-md-6 text-center d-flex align-items-center justify-content-center d-none d-md-flex"
-     data-aos="fade-left" data-aos-delay="200">
-    
-    <div class="cnt-social">
-      <a href="https://www.facebook.com/profile.php?id=61564148454268&mibextid=wwXIfr&rdid=RokhX2XvDpODHrFN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1C2fVTgRpT%2F%3Fmibextid%3DwwXIfr#" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-      <!-- <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a> -->
-      <a href="https://www.instagram.com/endevo.digital?igsh=Zmh5dmJwa2FpYzNx&utm_source=qr" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-      <a href="https://www.linkedin.com/company/endevo-holdings/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      <a href="https://wa.me/94775518274?text=Hi%20there%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-    </div>
-<!--  -->
-</div>
+      <!-- Info / Social Column -->
+      <div class="col-lg-6 col-md-6 text-center d-flex align-items-center justify-content-center d-none d-md-flex"
+        data-aos="fade-left" data-aos-delay="200">
 
-
+        <div class="cnt-social">
+          <a href="https://www.facebook.com/profile.php?id=61564148454268" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/endevo.digital" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/endevo-holdings/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://wa.me/94775518274?text=Hi%20there%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Contact Form Section End -->
 
-
   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-  <!-- ✅ AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -111,65 +143,7 @@
       once: true
     });
   </script>
-
-  <!-- Custom Navbar Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggleBtn = document.getElementById('navbarToggle');
-      const menu = document.getElementById('navbarMenu');
-      const navbar = document.querySelector('.navbar-mine');
-
-      if (toggleBtn && menu && navbar) {
-        const toggleMenu = () => {
-          const isActive = menu.classList.toggle('active');
-          toggleBtn.classList.toggle('active', isActive);
-          navbar.classList.toggle('active-background', isActive);
-          document.querySelector('.mobile-social-container').style.display = isActive ? 'block' : 'none';
-          document.body.style.overflow = isActive ? 'hidden' : '';
-        };
-
-        toggleBtn.addEventListener('click', toggleMenu);
-
-        // Close menu when clicking links (mobile only)
-        document.querySelectorAll('.navbar-menu-mine a').forEach(link => {
-          link.addEventListener('click', () => {
-            if (window.innerWidth <= 768) toggleMenu();
-          });
-        });
-      }
-
-      // Scroll hide/show functionality
-      const hideClass = 'navbar-hidden';
-      const scrollThreshold = 100;
-      const hideDelay = 1000;
-      let scrollTimeout;
-
-      window.addEventListener('scroll', () => {
-        const navbar = document.querySelector('.navbar-mine');
-        if (!navbar) return;
-
-        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (currentScroll <= 0) {
-          navbar.classList.remove(hideClass);
-          clearTimeout(scrollTimeout);
-          return;
-        }
-
-        if (navbar.classList.contains('active-background')) return;
-
-        clearTimeout(scrollTimeout);
-        navbar.classList.remove(hideClass);
-
-        scrollTimeout = setTimeout(() => {
-          if (currentScroll > scrollThreshold) {
-            navbar.classList.add(hideClass);
-          }
-        }, hideDelay);
-      });
-    });
-  </script>
 </body>
-
 </html>
+
 <?php include 'footer.php'; ?>
